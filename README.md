@@ -101,7 +101,7 @@ Allowed `type`: `image` | `pdf`.
 | **Validate**  | Every pull‑request           | `scripts/validate.js` runs AJV against modified `providers/*/data.json`. Build fails on any schema error or illegal score.                                                                                     |
 | **Aggregate** | Merge to `main` (or nightly) | `scripts/build-aggregate.js` re‑validates, applies penalty rules, calculates totals & risk bands, writes `dist/all-providers.json` and `dist/all-providers.min.json`, then commits or deploys to GitHub Pages. |
 
-### ### Dependencies
+### Dependencies
 
 - **Node ≥ 20** (LTS)
 - `npm ci` installs `ajv` (+ `prettier` for formatting)
