@@ -18,10 +18,10 @@ This repository hosts the _raw research files_ maintained by Zone21 analysts **p
 | [Motivation](#motivation)                      | What problem this dataset solves.                                |
 | [Folder layout](#folder-layout)                | Where everything lives & who edits what.                         |
 | [Data model](#data-model)                      | Field‑by‑field rundown of a provider JSON file.                  |
-| [Build & validation](#build--validation)       | How CI turns raw files into an aggregate & guarantees integrity. |
+| [Build & validation](#build-validation)       | How CI turns raw files into an aggregate & guarantees integrity. |
 | [Quick start](#quick-start)                    | Two‑minute guide to cloning, validating, and building.           |
 | [Contributing](#contributing)                  | Ground rules for PRs & coding style.                             |
-| [License & attribution](#license--attribution) | CC‑BY‑4.0 terms, citation format.                                |
+| [License & attribution](#license-attribution) | CC‑BY‑4.0 terms, citation format.                                |
 
 ---
 
@@ -33,7 +33,7 @@ The full methodology is described in the [**Zone21 Risk Model**](https://www.zo
 
 ---
 
-## Folder layout
+## Folder Layout
 
 ```
 /                            # repo root
@@ -67,7 +67,7 @@ Humans **must not** commit directly to `dist/`; branch protection will reject su
 
 ---
 
-## Data model
+## Data Model
 
 Each `data.json` is validated by [`schema/provider.schema.json`](./schema/provider.schema.json). Key required fields:
 
@@ -94,7 +94,7 @@ Allowed `type`: `image` | `pdf`.
 
 ---
 
-## Build & validation
+## Build & Validation
 
 | Stage         | Trigger                      | What happens                                                                                                                                                                                                   |
 | ------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -141,7 +141,7 @@ Coding style: Prettier default settings (`npm run format`). Scripts are tiny—p
 
 ---
 
-## License & attribution
+## License & Attribution
 
 - **Data:** Creative Commons **CC‑BY‑4.0**. Cite “Zone21 Risk Scores” and link back to this repo.
 
