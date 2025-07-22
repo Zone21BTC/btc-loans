@@ -1,6 +1,6 @@
 # Zone21 Risk Scores
 
-**Public dataset & build tooling for 13‑factor risk assessments of Bitcoin‑collateralized loan products.**
+**Public dataset & build tooling for 13‑factor risk assessments of Bitcoin‑backed loan products.**
 
 This repository hosts the *raw research files* maintained by Zone21 analysts **plus** a fully reproducible build pipeline that compiles those files into a single machine‑readable dataset.  The data is open for researchers, developers & the curious to audit, remix, or integrate.
 
