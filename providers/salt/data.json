@@ -1,0 +1,48 @@
+{
+  "provider_name": "Salt",
+  "slug": "salt",
+  "version": "1.0",
+  "highlights": "High risk driven by pooled hot-wallet custody, opaque pricing, and missing proof-of-reserves. A full stack audit, public price-feed disclosure, and a clear commitment to park most collateral with the regulated custodian while keeping the hot-wallet float small would halve its exposure.",
+  "factors": {
+    "collateral": { "score": 0, "note": "Native BTC (on-chain UTXO)." },
+    "rehypothecation": {
+      "score": 7,
+      "note": "Salt's terms explicitly state the lender may \"repledge, sell or otherwise transfer or use Stored Coins\" under the applicable loan agreement."
+    },
+    "custody": {
+      "score": 7,
+      "note": "Salt touts BitGo Trust cold storage but still pushes a \"distributed, custody-agnostic\" model using Fireblocks MPC, never disclosing how much BTC sits with each custodian. Fireblocks is wallet-tech, not a qualified trust; coins in its omnibus MPC vaults remain under Salt's ultimate control. The Terms of Use let Salt's in-house custodian name sub-custodians and provide no wallet-level proofs or audits. Lacking evidence that all collateral is ring-fenced in a bankruptcy-remote trust, the model conservatively assigns Custody = 7."
+    },
+    "security_governance": {
+      "score": 4,
+      "note": "Custodians BitGo & Fireblocks both carry SOC 2 Type 2, yet Salt discloses no independent audit of its own application layer, only recurring pen-tests."
+    },
+    "platform": { "score": 0, "note": "Native Bitcoin script." },
+    "oracle": {
+      "score": 10,
+      "note": "SALT uses a volume-weighted algorithm for BTC/ETH–USD rates but doesn't disclose source exchanges."
+    },
+    "liquidation_buffer": {
+      "score": 2,
+      "note": "Margin calls at 75%, 83.33%, and 88%; liquidation at 90.91% LTV. Max LTV is 70%, with a 48-hour grace window before forced liquidation."
+    },
+    "rate_and_term": {
+      "score": 2,
+      "note": "Fixed-term 12-month loans; APR 8.95-14.45 % with 0-1 % origination; no variable-rate surprises."
+    },
+    "transparency": {
+      "score": 10,
+      "note": "Salt talks about PoR and transparency but publishes no on‑chain addresses, no live or scheduled PoR, and no liability data. Custody and software remain proprietary. With zero publicly verifiable proof and a Terms-of-Use clause that disclaims any accuracy, Salt remains a total black box."
+    },
+    "loan_currency": {
+      "score": 4,
+      "note": "US dollars or stablecoin (USDC / USDT)."
+    },
+    "privacy": { "score": 7, "note": "Full KYC; Large Data Trove." },
+    "history": {
+      "score": 7,
+      "note": "Salt was fined by the SEC in 2020 for an unregistered ICO and by California's DFPI in 2024 for misleading lending practices. No fund losses, but repeated violations signal high compliance risk."
+    },
+    "jurisdiction": { "score": 2, "note": "U.S. Licensed Lender." }
+  }
+} 

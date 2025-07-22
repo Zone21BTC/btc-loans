@@ -1,0 +1,60 @@
+name: Check & Build
+
+on:
+  pull_request:
+    paths: ['providers/**']
+  push:
+    branches: [main]
+    paths: ['providers/**']
+
+jobs:
+  test:
+    # runs on every PR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Cache npm dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - run: npm ci
+      - run: npm run validate
+      - run: npm run build-aggregate # but DON'T commit
+      - name: Upload aggregate artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: all-providers.json
+          path: dist/all-providers.json
+
+  publish:
+    # runs only after merge to main
+    if: github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Cache npm dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - run: npm ci
+      - run: npm run build-aggregate # rebuild against up-to-date main
+      - name: Commit and push dist/
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dist/
+          git commit -m "chore: update aggregate data" --no-verify || echo "No changes to commit"
+          git push

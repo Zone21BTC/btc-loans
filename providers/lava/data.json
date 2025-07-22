@@ -1,0 +1,73 @@
+{
+  "provider_name": "Lava",
+  "slug": "lava",
+  "version": "1.0",
+  "highlights": "Innovative DLC-based model hampered by closed-source key generation and a single price oracle; in a DLC setup the entire contract integrity hinges on oracle robustness. Open-sourcing the wallet and adopting multiple independent, attestable oracles could quickly elevate Lava to a top-tier lender.",
+  "factors": {
+    "collateral": { 
+      "score": 0, 
+      "note": "Native BTC (on-chain UTXO).",
+      "evidence": []
+    },
+    "rehypothecation": { 
+      "score": 0, 
+      "note": "Non-rehypothecable collateral.",
+      "evidence": []
+    },
+    "custody": {
+      "score": 0,
+      "note": "DLC escrow with unilateral refund. Borrower's Bitcoin is locked in a timelocked script that allows them to reclaim unilaterally after timeout.",
+      "evidence": []
+    },
+    "security_governance": {
+      "score": 10,
+      "note": "Lava's closed-source mobile app generates the borrower's private key, with no source code or audit available. Lava also currently runs the only Sibyls oracle at oracle.lava.xyz. The internal oracle key lets Lava sign any price and immediately sweep collateral, yet the company provides no public audit or SOC-2 report.",
+      "evidence": []
+    },
+    "platform": { 
+      "score": 0, 
+      "note": "Native Bitcoin script.",
+      "evidence": []
+    },
+    "oracle": {
+      "score": 7,
+      "note": "Open-source Sibyls oracle blends Bitstamp, Gate.io, Kraken and Binance prices, but Lava alone signs and publishes the output via an off-chain API. No on-chain verification.",
+      "evidence": []
+    },
+    "liquidation_buffer": {
+      "score": 2,
+      "note": "Origination LTV is around 50%, with liquidation at 95%, giving a 45% buffer but no margin calls or grace window; liquidation happens instantly, exposing users to intraday price swings.",
+      "evidence": []
+    },
+    "rate_and_term": { 
+      "score": 2, 
+      "note": "Fixed APR, funding opaque.",
+      "evidence": []
+    },
+    "transparency": {
+      "score": 7,
+      "note": "Oracle and loan-script repos are open-source, but the production wallet app, Solana contracts, and reserve attestations for LavaUSD remain closed; no proof-of-liabilities.",
+      "evidence": []
+    },
+    "loan_currency": {
+      "score": 7,
+      "note": "Lava disburses loans in LavaUSD, its own Solana stablecoin backed only by self-published monthly reserve statements—no live proof-of-reserves or independent audit. Borrowers can immediately swap those dollars to USDC on Solana inside the Vault or off-ramp via bank ACH/wire, but both paths still depend on Solana's uptime. The network has suffered repeated multi-hour halts, most recently a five-hour main-net freeze on 6 Feb 2024 and several outages in prior years. A thin-history, mid-tier stable-coin plus reliance on a chain with documented availability issues squarely maps to ladder level 7 for Loan Currency.",
+      "evidence": []
+    },
+    "privacy": { 
+      "score": 2, 
+      "note": "No KYC.",
+      "evidence": []
+    },
+    "history": { 
+      "score": 4, 
+      "note": "< 1 yr in production, no incidents.",
+      "evidence": []
+    },
+    "jurisdiction": { 
+      "score": 2, 
+      "note": "Delaware, US.",
+      "evidence": []
+    }
+  }
+} 

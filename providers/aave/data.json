@@ -1,0 +1,73 @@
+{
+  "provider_name": "Aave",
+  "slug": "aave",
+  "version": "1.0",
+  "highlights": "Long-standing, high-volume on-chain lending platform, yet its thin liquidation buffer and floating rates invite forced liquidations during volatility. Raising the collateral cushion and offering fixed-rate loan options would markedly improve borrower safety in stressed markets.",
+  "factors": {
+    "collateral": {
+      "score": 4,
+      "note": "wBTC is wrapped BTC via BitGo with 1:1 backing.",
+      "evidence": []
+    },
+    "rehypothecation": {
+      "score": 2,
+      "note": "Assets are pooled and reused only within Aave; no external rehypothecation.",
+      "evidence": []
+    },
+    "custody": {
+      "score": 7,
+      "note": "Aave's Bitcoin-backed loans are classified as primarily \"CeFi\" in our model because the BTC underlying wBTC is held by a centralized custodian.\nBecause of wBTC, these loans carry two distinct custody exposures. We split them in the risk model: the custodian risk is reflected in Collateral = 4, while Aave's pooled, upgradeable smart-contract vault scores Custody = 7 on the DeFi ladder.",
+      "evidence": []
+    },
+    "security_governance": {
+      "score": 4,
+      "note": ">5 independent audits (Trail of Bits, OpenZeppelin, PeckShield, ABDK, SigmaPrime) and a US $1m Immunefi bounty prove strong review depth, but upgradeable contracts leave admin risk, so the protocol stays mid-risk.",
+      "evidence": []
+    },
+    "platform": {
+      "score": 7,
+      "note": "Aave's core markets operate on Ethereum mainnet, inheriting both the network's scale and its full EVM complexity. In July 2016, Ethereum developers coordinated a state-reversing hard fork to undo the DAO exploit—establishing precedent that the chain can roll back under extreme pressure. Combined with the EVM's well-documented vulnerabilities (re-entrancy, integer overflows, etc.), the platform carries elevated technical and governance risk.",
+      "evidence": []
+    },
+    "oracle": {
+      "score": 4,
+      "note": "Aave relies on a single oracle provider, Chainlink, whose \"Decentralized Oracle Networks\" typically contain 21–31 permissioned nodes. Those operators (e.g., LinkPool, T-Systems, Chainlayer) are hand-picked and replaceable by a Chainlink-Labs multisig that owns the OffchainAggregator contracts, so no permissionless process exists to add independent competitors. Operator rosters overlap heavily (four to five nodes appear in most major USD feeds) so a coordinated fault could still push a bad price through every Aave market.\nThat risk materialized on 29 May 2025 when Chainlink's deUSD feed on Avalanche printed a false $1.03 quote, triggering ≈ $500k in wrongful liquidations on Euler Finance. All nodes reported the same bad price, proving a multi-node DON can fail when data sources or incentives align poorly.\nBecause Aave has no fallback oracle or circuit breaker on Ethereum, it inherits this correlated-failure exposure. Chainlink's audited, multi-node design is safer than a single API (score 7) yet still more centralized than a dual-provider setup (score 2), so we assign Oracle = 4.",
+      "evidence": []
+    },
+    "liquidation_buffer": {
+      "score": 10,
+      "note": "wBTC on Ethereum V3 Core Market: LTV 73%, liquidation at 78%, 5% buffer.",
+      "evidence": []
+    },
+    "rate_and_term": {
+      "score": 7,
+      "note": "Borrow APR is algorithmic and can spike instantly with utilisation (e.g., USDC de-peg event). Variable-rate model fits \"instant, uncapped rate shocks.\".",
+      "evidence": []
+    },
+    "transparency": {
+      "score": 4,
+      "note": "Fully open-source code and on-chain balances; real-time PoR is inherent, so no separate attestation needed.",
+      "evidence": []
+    },
+    "loan_currency": {
+      "score": 7,
+      "note": "Fully open-source code and on-chain balances; real-time PoR is inherent, so no separate attestation needed.",
+      "evidence": []
+    },
+    "privacy": {
+      "score": 2,
+      "note": "Protocol is permissionless. No KYC, users only connect a wallet.",
+      "evidence": []
+    },
+    "history": {
+      "score": 4,
+      "note": "One \"minor\" loss event (Nov 2022 CRV liquidation ≈ $1.6 M, repaid).",
+      "evidence": []
+    },
+    "jurisdiction": {
+      "score": 4,
+      "note": "Cayman Islands.",
+      "evidence": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "provider_name": "Lendasat",
+  "slug": "lendasat",
+  "version": "1.0",
+  "highlights": "N/A",
+  "is_beta": true,
+  "factors": {
+    "collateral": { "score": 0, "note": "N/A" },
+    "rehypothecation": { "score": 0, "note": "N/A" },
+    "custody": { "score": 0, "note": "N/A" },
+    "security_governance": { "score": 0, "note": "N/A" },
+    "platform": { "score": 0, "note": "N/A" },
+    "oracle": { "score": 0, "note": "N/A" },
+    "liquidation_buffer": { "score": 0, "note": "N/A" },
+    "rate_and_term": { "score": 0, "note": "N/A" },
+    "transparency": { "score": 0, "note": "N/A" },
+    "loan_currency": { "score": 0, "note": "N/A" },
+    "privacy": { "score": 0, "note": "N/A" },
+    "history": { "score": 0, "note": "N/A" },
+    "jurisdiction": { "score": 0, "note": "N/A" }
+  }
+}

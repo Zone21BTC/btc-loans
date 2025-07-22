@@ -1,0 +1,73 @@
+{
+  "provider_name": "Coinbase",
+  "slug": "coinbase",
+  "version": "1.0",
+  "highlights": "Severe risk flows from the massive KYC trove that has already leaked, compounded by a solo price oracle. Harden access controls around user data, make the wallet reproducible for independent verification, and bring in multiple external pricing feeds to restore confidence.",
+  "factors": {
+    "collateral": {
+      "score": 4,
+      "note": "BTC is withdrawn from your Coinbase account, wrapped into cbBTC and deposited to a Morpho smart-contract vault – i.e., an ERC-20 representation, not native UTXOs.",
+      "evidence": []
+    },
+    "rehypothecation": {
+      "score": 2,
+      "note": "Coinbase doesn't reuse customer crypto without consent; cbBTC is locked in a Morpho contract and not rehypothecated. All borrower collateral is pooled in a single Morpho Blue market.",
+      "evidence": []
+    },
+    "custody": {
+      "score": 4,
+      "note": "Coinbase's Bitcoin-backed loans are treated as mainly \"CeFi\" because the BTC that backs cbBTC is held by a centralized custodian (Coinbase Custody). Because the product uses a wrapped asset, it introduces two custody layers. We split them in the model: the centralized custodian exposure is captured in Collateral = 4, while the cbBTC that borrowers pledge is commingled inside a single, immutable Morpho Blue vault, so the DeFi ladder assigns Custody = 4.",
+      "evidence": []
+    },
+    "security_governance": {
+      "score": 7,
+      "note": "Morpho's lending code has undergone dozens of public audits (Spearbit, OpenZeppelin, Runtime Verification) and is covered by a large bug-bounty program. Borrower keys come from Coinbase Smart Wallet passkeys; the on-chain wallet contract is open-source and audited, but the mobile/browser client remains closed-source and non-reproducible. Coinbase cosigner keys reside in HSM-backed cold storage, yet Chainlink oracle-signer key custody is undisclosed. A Chainlink mis-price on 29 May 2025 (deUSD at $1.03) wiped out ≈ $500 k on Avalanche, highlighting single-provider risk. Together these gaps place Coinbase-Morpho at Security & Governance = 7.",
+      "evidence": []
+    },
+    "platform": {
+      "score": 7,
+      "note": "Coinbase-Morpho's Bitcoin-backed loan service runs on Base. Base is an Ethereum Layer-2 optimistic roll-up that posts its batches to Ethereum mainnet for final settlement and security. All in-flight transactions are ordered by a single sequencer operated by Coinbase, so liveness depends on one centralized node. That sequencer has already faltered once: on 5 September 2023 block production stopped for about 43 minutes before engineers restored the chain. Ethereum itself once executed a state-reversing hard fork after the 2016 DAO exploit.",
+      "evidence": []
+    },
+    "oracle": {
+      "score": 4,
+      "note": "Coinbase-Morpho pulls price data from a single on-chain Chainlink feed (via MorphoChainlinkOracleV2) for both BTC/USD and cbBTC/BTC. Chainlink is an independent, publicly auditable oracle, satisfying the \"one independent feed\" criterion, but the lack of a second source keeps the score above 2. The 29 May 2025 deUSD mis-price, which triggered ≈ $500k of liquidations on Avalanche when Chainlink's VWAP logic flagged a stray trade, underscores why single-provider dependence is risky.",
+      "evidence": []
+    },
+    "liquidation_buffer": {
+      "score": 4,
+      "note": "Max LTV 75% (email notice), liquidation at 86% → 11 pp buffer. No grace window. LTV moves continuously per loan within set guardrails.",
+      "evidence": []
+    },
+    "rate_and_term": {
+      "score": 7,
+      "note": "Interest \"varies every few seconds with each block\" under Morpho's AdaptiveCurve IRM; no APR cap or notice period.",
+      "evidence": []
+    },
+    "transparency": {
+      "score": 4,
+      "note": "Coinbase gives continuous, on-chain asset proof for cbBTC, but no comparable proof of liabilities and only partial, non-reproducible source-code openness.",
+      "evidence": []
+    },
+    "loan_currency": { 
+      "score": 4, 
+      "note": "Loans are disbursed in USDC.",
+      "evidence": []
+    },
+    "privacy": {
+      "score": 10,
+      "note": "Coinbase requires full photo-ID KYC for all customers; data is stored on centralized infrastructure.",
+      "evidence": []
+    },
+    "history": {
+      "score": 4,
+      "note": "One significant event inside 5-year window: May 2025 data-breach/extortion (PII leak); no loss of customer funds.",
+      "evidence": []
+    },
+    "jurisdiction": {
+      "score": 2,
+      "note": "US MSB/NYDFS qualified custodian, SEC-registered public company.",
+      "evidence": []
+    }
+  }
+} 

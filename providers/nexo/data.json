@@ -1,0 +1,51 @@
+{
+  "provider_name": "Nexo",
+  "slug": "nexo",
+  "version": "1.0",
+  "highlights": "Nexo's loan product carries high risk: unrestricted rehypothecation and pooled custody without verified bankruptcy-remote segregation, a fully opaque in-house price oracle, and discontinued real-time proof-of-reserves. Limiting reuse, migrating collateral into independently attested bankruptcy-remote trust accounts, restoring on-chain PoR, and adopting multi-feed pricing would materially cut exposure.",
+  "factors": {
+    "collateral": { "score": 0, "note": "Native BTC (on-chain UTXO)." },
+    "rehypothecation": {
+      "score": 7,
+      "note": "Terms grant Nexo the right to rehypothecate customer assets; extent and counterparties undisclosed."
+    },
+    "custody": {
+      "score": 7,
+      "note": "Coins are pooled across third-party custodians (Ledger Vault, Fireblocks, BitGo, Bakkt, etc.) in a mix of hot + cold storage.\nNexo claims those partners \"maintain segregated wallets for each of their clients,\" but there is no independent, wallet-level attestation and no statement that assets are bankruptcy-remote; in fact, the loan T&Cs say Nexo \"acquires the ownership of the Collateral\" while a credit line is open."
+    },
+    "security_governance": {
+      "score": 4,
+      "note": "Nexo itself holds SOC 2 Type 2 and ISO 27001/27017/27018 certifications, and stores client assets with custodians who also carry independent SOC 2 Type 2 attestations. These audits cover the custody tech, yet Nexo never discloses an externally-verified cold-vs-hot split or publishes controls over its cold-to-hot workflow; those aspects remain self-declared."
+    },
+    "platform": { "score": 0, "note": "Native Bitcoin script." },
+    "oracle": {
+      "score": 10,
+      "note": "All collateral pricing, LTV changes, margin-calls and liquidations are controlled by the in-house \"Nexo Oracle,\" a proprietary algorithm whose code, data feeds and governance are completely opaque. Clients receive warnings or forced repayments triggered by this closed system, but they cannot audit its logic or price sources."
+    },
+    "liquidation_buffer": {
+      "score": 2,
+      "note": "Nexo provides a 33pp liquidation buffer (50% → 83%), with multiple warnings at 71.4%, 74.1%, and 76.9%; auto liquidation at 83%."
+    },
+    "rate_and_term": {
+      "score": 4,
+      "note": "Variable APR, presently 18.9 %. A BTC borrower who holds zero NEXO tokens pays the base 18.9 % rate. Nexo reviews and may revise borrowing rates each year or during \"extreme market conditions,\" so the 18.9 % figure is not contractually capped."
+    },
+    "transparency": {
+      "score": 7,
+      "note": "Nexo previously provided real-time on-chain attestations through Armanino (via TrustExplorer) and later through Moore (via TrustReserve); however, both services have since been discontinued. \nAs of July 2023, Nexo no longer offers active real-time proof of reserves, does not disclose on-chain wallet addresses, and uses a closed-source attestation mechanism."
+    },
+    "loan_currency": { "score": 4, "note": "USDC, USDT, USD, EUR, GBP." },
+    "privacy": {
+      "score": 7,
+      "note": "Full KYC/AML mandatory; large trove of personal data held with third-party vendors."
+    },
+    "history": {
+      "score": 7,
+      "note": "Paid $45 M SEC settlement (Jan 2023) for unregistered securities offering; no insolvencies, but regulatory breach recorded."
+    },
+    "jurisdiction": {
+      "score": 2,
+      "note": "The lending entity is Nexo AG, incorporated in Zug, Switzerland (Commercial-Register No. CH-170.3.042.338-1)"
+    }
+  }
+} 

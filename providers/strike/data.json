@@ -1,0 +1,54 @@
+{
+  "provider_name": "Strike",
+  "slug": "strike",
+  "version": "1.0",
+  "highlights": "Elevated risk stems from in-house custody, hidden reserves, and undisclosed price feeds. Moving collateral to a bankruptcy-remote regulated custodian, supplying PoR or per-loan UTXOs, and revealing pricing sources are priority fixes.",
+  "factors": {
+    "collateral": { "score": 0, "note": "Native BTC (on-chain UTXO)." },
+    "rehypothecation": {
+      "score": 4,
+      "note": "Collateral may be pledged once to a single outside funding partner under a 'no further rehypothecation' clause; enforceability of that clause against Strike's partner is unverified, so the borrower still bears partner-failure risk."
+    },
+    "custody": {
+      "score": 7,
+      "note": "Omnibus custody with self-declared segregation (no external audit). Strike's bitcoin-backed loan collateral is not held by a regulated third-party custodian with formal bankruptcy-remote arrangements. Instead, collateral BTC is either kept in Strike's own custody or transferred to \"trusted\" third-party capital partners who fund the loans. Strike confirms that these coins are held in segregated wallets and never re-hypothecated (i.e. not lent out or mixed elsewhere). However, this segregation is an internal policy – Strike remains legally responsible for the collateral during the loan, so client BTC is not explicitly ring-fenced from Strike's corporate estate via any independent trust or custodian. No public audit or proof-of-reserves is in place yet."
+    },
+    "security_governance": {
+      "score": 7,
+      "note": "Strike lists a SOC 2 logo in its Trust Center, but the report is gated behind an NDA and the firm discloses no scope or summary covering wallet tech, key-management or oracles. All critical signing code remains closed-source."
+    },
+    "platform": { "score": 0, "note": "Native Bitcoin script." },
+    "oracle": {
+      "score": 10,
+      "note": "No information at all about where the BTC price comes from or how it is validated, the only safe assumption is that the feed is an internal, centralized endpoint fully controlled by Strike (or its unnamed capital-provider partner)."
+    },
+    "liquidation_buffer": {
+      "score": 2,
+      "note": "Max LTV 50%, margin call at 70%, auto-liquidation at 85%. ~35pp buffer, 24h grace, no circuit breaker."
+    },
+    "rate_and_term": {
+      "score": 2,
+      "note": "Borrowers can choose monthly interest or pay-at-maturity, but once the loan is issued the rate is locked-in."
+    },
+    "transparency": {
+      "score": 10,
+      "note": "Fully closed-source. In Strike's 29 May 2025 upgrade post the team lists \"Proof-of-reserves–backed lending\" under What's next?—i.e., planned, not live. Strike has also promised that each loan will show its own on-chain BTC address, but those features are still absent. Until PoR is published or borrowers can actually view their collateral UTXOs, Strike remains a black box."
+    },
+    "loan_currency": {
+      "score": 2,
+      "note": "Funds are delivered in USD fiat, not a crypto-pegged token."
+    },
+    "privacy": {
+      "score": 7,
+      "note": "Strike's lending product requires strict KYC verification (government ID, personal info) as part of account onboarding."
+    },
+    "history": {
+      "score": 4,
+      "note": "New platform (< 12 mo) with no incidents yet."
+    },
+    "jurisdiction": {
+      "score": 2,
+      "note": "Strike is registered in the United States."
+    }
+  }
+} 

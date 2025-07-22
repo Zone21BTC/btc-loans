@@ -1,0 +1,73 @@
+{
+  "provider_name": "Ledn",
+  "slug": "ledn",
+  "version": "1.0",
+  "highlights": "Ledn's Custodied Loans score well for CeFi: borrower BTC stays segregated in BitGo's cold, insured vaults, and the firm has survived the bankruptcy wave that sank early Bitcoin lenders during 2022-23 while maintaining a long-running incident-free record. Improvement areas remain: liquidations still rely on a single undisclosed price feed, and Ledn's cold-to-hot wallet operations lack an independent audit.",
+  "factors": {
+    "collateral": { 
+      "score": 0, 
+      "note": "Native BTC (on-chain UTXO).",
+      "evidence": []
+    },
+    "rehypothecation": {
+      "score": 4,
+      "note": "Collateral may be re-posted once to one institutional USD funding partner; on-chain segregation claimed and partner barred from onward rehypothecation, but the borrower has no direct contractual recourse if Ledn's partner violates the restriction.",
+      "evidence": []
+    },
+    "custody": {
+      "score": 4,
+      "note": "Ledn parks borrower BTC at BitGo Trust Company, a regulated, insured qualified custodian. BitGo keeps keys offline in cold-storage vaults and runs segregated, bankruptcy-remote accounts. Ledn states collateral is \"never commingled\" with other assets and is held in segregated on-chain addresses ring-fenced from any funding-partner bankruptcy.",
+      "evidence": []
+    },
+    "security_governance": {
+      "score": 4,
+      "note": "Achieved SOC 2 Type II on 10 Sep 2024 and stores client BTC with BitGo Trust, a SOC-2-audited qualified custodian. Help-centre states assets in Transaction accounts are \"primarily held in cold storage\", implying only a small operational hot wallet outside the audit scope. Ledn's own cold-to-hot workflow is merely self-described and not independently audited.",
+      "evidence": []
+    },
+    "platform": { 
+      "score": 0, 
+      "note": "Native Bitcoin script.",
+      "evidence": []
+    },
+    "oracle": {
+      "score": 10,
+      "note": "Ledn fully controls the oracle, with no public disclosure of its design or data sources.",
+      "evidence": []
+    },
+    "liquidation_buffer": {
+      "score": 2,
+      "note": "Ledn provides a 30% liquidation buffer (50% → 80% LTV), sends automated notifications at 70% and 75%, but has no margin call system. Borrowers are not required to act, and liquidation is triggered automatically and immediately once the liquidation threshold (80% LTV) is breached, with no contractual grace window.",
+      "evidence": []
+    },
+    "rate_and_term": {
+      "score": 2,
+      "note": "Fixed 12-month coupon; funding stack opaque but rate cannot float mid-term.",
+      "evidence": []
+    },
+    "transparency": {
+      "score": 4,
+      "note": "Publishes CPA-attested Proof-of-Reserves twice a year; backend code closed-source.",
+      "evidence": []
+    },
+    "loan_currency": {
+      "score": 4,
+      "note": "Top-tier fiat stable (USDC) or USD wire.",
+      "evidence": []
+    },
+    "privacy": { 
+      "score": 7, 
+      "note": "KYC required for all clients.",
+      "evidence": []
+    },
+    "history": {
+      "score": 2,
+      "note": "Clean record since 2018 but limited OSS/audits.",
+      "evidence": []
+    },
+    "jurisdiction": { 
+      "score": 4, 
+      "note": "Cayman Islands.",
+      "evidence": []
+    }
+  }
+} 

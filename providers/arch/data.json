@@ -1,0 +1,73 @@
+{
+  "provider_name": "Arch",
+  "slug": "arch",
+  "version": "1.0",
+  "highlights": "Uses native BTC escrow but offers no public proof-of-reserves and depends on a single oracle, leaving users blind to hidden leverage or price-feed failure. Live PoR and multiple independent pricing sources would materially shrink uncertainty.",
+  "factors": {
+    "collateral": { 
+      "score": 0, 
+      "note": "Native BTC (on-chain UTXO).",
+      "evidence": []
+    },
+    "rehypothecation": {
+      "score": 2,
+      "note": "Collateral is held in cold, bankruptcy-remote custody at Anchorage Digital under a strict \"no-rehypothecation\" policy; assets are pooled in omnibus wallets (individual segregated wallets only for loans > $100k).",
+      "evidence": []
+    },
+    "custody": {
+      "score": 4,
+      "note": "Assets are held in segregated, bankruptcy-remote trust accounts at Anchorage. Borrowers have no key.",
+      "evidence": []
+    },
+    "security_governance": {
+      "score": 7,
+      "note": "Collateral sits at Anchorage, a SOC 1/SOC 2-certified, federally-chartered custodian, in cold, bankruptcy-remote trusts. Arch cites penetration testing & a bug-bounty program but discloses no independent security audit or SOC-2 for its own key-management / wallet software.",
+      "evidence": []
+    },
+    "platform": { 
+      "score": 0, 
+      "note": "Native Bitcoin script.",
+      "evidence": []
+    },
+    "oracle": {
+      "score": 10,
+      "note": "Arch Lending's public materials never disclose where their BTC-USD price comes from, how often it updates, or whether more than one exchange is consulted.",
+      "evidence": []
+    },
+    "liquidation_buffer": {
+      "score": 2,
+      "note": "Arch sets LTV at 60%, issues margin calls at 70%, and triggers partial liquidation at 80% with a 24h grace window.",
+      "evidence": []
+    },
+    "rate_and_term": { 
+      "score": 2, 
+      "note": "Fixed APR; no uncapped variability.",
+      "evidence": []
+    },
+    "transparency": {
+      "score": 7,
+      "note": "Collateral sits with Anchorage; no public PoR or liability proof.  Borrowers over  $100  k can request a block‑explorer link to their segregated wallet  – a one‑off, opt‑in disclosure. Smaller loans stay pooled and opaque; code is closed‑source.",
+      "evidence": []
+    },
+    "loan_currency": {
+      "score": 4,
+      "note": "Borrowers receive USD wires or stablecoin (USDC).",
+      "evidence": []
+    },
+    "privacy": {
+      "score": 7,
+      "note": "Arch requires full KYC with government ID, handled via Persona. Personal data is encrypted and stored in the cloud.",
+      "evidence": []
+    },
+    "history": { 
+      "score": 4, 
+      "note": "Official Launch Jan 2023.",
+      "evidence": []
+    },
+    "jurisdiction": {
+      "score": 2,
+      "note": "Operated by ChainFi Inc. (NMLS #2637200); crypto-loan licences filed, product geofenced to permitted U.S. states—more regulated than most peers but not a bank or trust itself.",
+      "evidence": []
+    }
+  }
+} 
