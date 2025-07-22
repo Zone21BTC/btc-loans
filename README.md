@@ -16,12 +16,12 @@ This repository hosts the _raw research files_ maintained by Zone21 analysts **p
 | Section                                            | Why read it                                                      |
 | -------------------------------------------------- | ---------------------------------------------------------------- |
 | [Motivation](#motivation)                      | What problem this dataset solves.                                |
-| [Folder layout](#folder-layout)                | Where everything lives & who edits what.                         |
-| [Data model](#data-model)                      | Field‑by‑field rundown of a provider JSON file.                  |
-| [Build & validation](#build-validation)       | How CI turns raw files into an aggregate & guarantees integrity. |
-| [Quick start](#quick-start)                    | Two‑minute guide to cloning, validating, and building.           |
+| [Folder Layout](#folderlayout)                | Where everything lives & who edits what.                         |
+| [Data Model](#datamodel)                      | Field‑by‑field rundown of a provider JSON file.                  |
+| [Build & Validation](#build-validation)       | How CI turns raw files into an aggregate & guarantees integrity. |
+| [Quick start](#quickstart)                    | Two‑minute guide to cloning, validating, and building.           |
 | [Contributing](#contributing)                  | Ground rules for PRs & coding style.                             |
-| [License & attribution](#license-attribution) | CC‑BY‑4.0 terms, citation format.                                |
+| [License & Attribution](#licenseattribution) | CC‑BY‑4.0 terms, citation format.                                |
 
 ---
 
