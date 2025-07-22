@@ -25,7 +25,7 @@ jobs:
             ${{ runner.os }}-node-
       - run: npm ci
       - run: npm run validate
-      - run: npm run build-aggregate # but DON'T commit
+      - run: npm run build # but DON'T commit
       - name: Upload aggregate artifact
         uses: actions/upload-artifact@v4
         with:
@@ -50,7 +50,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - run: npm ci
-      - run: npm run build-aggregate # rebuild against up-to-date main
+      - run: npm run build # rebuild against up-to-date main
       - name: Commit and push dist/
         run: |
           git config user.name "github-actions[bot]"
