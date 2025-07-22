@@ -1,6 +1,7 @@
 name: Check & Build
 
 on:
+  workflow_dispatch:
   pull_request:
     paths: ['providers/**']
   push:
