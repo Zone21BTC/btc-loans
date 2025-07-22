@@ -2,7 +2,7 @@
 
 **Public dataset & build tooling for 13‑factor risk assessments of Bitcoin‑backed loan products.**
 
-This repository hosts the *raw research files* maintained by Zone21 analysts **plus** a fully reproducible build pipeline that compiles those files into a single machine‑readable dataset.  The data is open for researchers, developers & the curious to audit, remix, or integrate.
+This repository hosts the _raw research files_ maintained by Zone21 analysts **plus** a fully reproducible build pipeline that compiles those files into a single machine‑readable dataset. The data is open for researchers, developers & the curious to audit, remix, or integrate.
 
 > **TL;DR** &#x20;
 > • Each provider lives at `providers/<slug>/data.json` and contains only the 13 factor inputs + metadata. &#x20;
@@ -27,9 +27,9 @@ This repository hosts the *raw research files* maintained by Zone21 analysts **p
 
 ## 1 Motivation
 
-Bitcoin‑backed lenders differ wildly in custody, rehypothecation practices, oracle design, and jurisdictional safeguards.  Zone21’s **13‑factor Risk Score** surfaces these differences quantitatively so borrowers can compare apples to apples and researchers can back‑test systemic‑risk scenarios.
+Bitcoin‑backed lenders differ wildly in custody, rehypothecation practices, oracle design, and jurisdictional safeguards. Zone21’s **13‑factor Risk Score** surfaces these differences quantitatively so borrowers can compare apples to apples and researchers can back‑test systemic‑risk scenarios.
 
-The full methodology is described in the [**Zone21 Risk Model**](https://www.zone21.com/risk-model).  In short, each factor is graded on $0, 2, 4, 7, 10$ where 10 is worst.  Bonus or critical penalties are automatically added based on specific risk patterns, producing a **0–100 total score** (lower is safer).
+The full methodology is described in the [**Zone21 Risk Model**](https://www.zone21.com/risk-model). In short, each factor is graded on $0, 2, 4, 7, 10$ where 10 is worst. Bonus or critical penalties are automatically added based on specific risk patterns, producing a **0–100 total score** (lower is safer).
 
 ---
 
@@ -69,7 +69,7 @@ Humans **must not** commit directly to `dist/`; branch protection will reject su
 
 ## 3 Data model
 
-Each `data.json` is validated by [`schema/provider.schema.json`](./schema/provider.schema.json) (currently **v1.5**).  Key required fields:
+Each `data.json` is validated by [`schema/provider.schema.json`](./schema/provider.schema.json). Key required fields:
 
 | Field        | Type                | Notes                                                                  |
 | ------------ | ------------------- | ---------------------------------------------------------------------- |
@@ -98,13 +98,13 @@ Allowed `type`: `image` | `pdf`.
 
 | Stage         | Trigger                      | What happens                                                                                                                                                                                                   |
 | ------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Validate**  | Every pull‑request           | `scripts/validate.js` runs AJV against modified `providers/*/data.json`.  Build fails on any schema error or illegal score.                                                                                    |
+| **Validate**  | Every pull‑request           | `scripts/validate.js` runs AJV against modified `providers/*/data.json`. Build fails on any schema error or illegal score.                                                                                     |
 | **Aggregate** | Merge to `main` (or nightly) | `scripts/build-aggregate.js` re‑validates, applies penalty rules, calculates totals & risk bands, writes `dist/all-providers.json` and `dist/all-providers.min.json`, then commits or deploys to GitHub Pages. |
 
 ### ### Dependencies
 
-* **Node ≥ 20** (LTS)
-* `npm ci` installs `ajv` (+ `prettier` for formatting)
+- **Node ≥ 20** (LTS)
+- `npm ci` installs `ajv` (+ `prettier` for formatting)
 
 ---
 
@@ -131,18 +131,18 @@ curl -sL https://raw.githubusercontent.com/Zone21BTC/zone21-risk-scores/main/dis
 
 ## 6 Contributing
 
-1. **Fork → branch → PR.**  One logical change per PR (e.g., update `rehypothecation.score` for `ledn`).
-2. **Run `npm run validate`** before pushing.  Zero schema errors.
-3. **Explain *why*** in the PR description — link to audits, docs.
-4. CI must pass.  Reviewers focus on factor reasoning; the bot enforces math.
+1. **Fork → branch → PR.** One logical change per PR (e.g., update `rehypothecation.score` for `ledn`).
+2. **Run `npm run validate`** before pushing. Zero schema errors.
+3. **Explain _why_** in the PR description — link to audits, docs.
+4. CI must pass. Reviewers focus on factor reasoning; the bot enforces math.
 5. No direct edits to `dist/`; those commits will be rejected.
 
-Coding style: Prettier default settings (`npm run format`).  Scripts are tiny—plain ESM Node preferred, no TS for now.
+Coding style: Prettier default settings (`npm run format`). Scripts are tiny—plain ESM Node preferred, no TS for now.
 
 ---
 
 ## 7 License & attribution
 
-* **Data:** Creative Commons **CC‑BY‑4.0**.  Cite “Zone21 Risk Scores” and link back to this repo.
+- **Data:** Creative Commons **CC‑BY‑4.0**. Cite “Zone21 Risk Scores” and link back to this repo.
 
-> *Disclaimer: The scores are research opinions, not financial advice.  Do your own due diligence.*
+> _Disclaimer: The scores are research opinions, not financial advice. Do your own due diligence._
