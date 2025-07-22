@@ -29,7 +29,7 @@ This repository hosts the _raw research files_ maintained by Zone21 analysts **p
 
 Bitcoin‑backed lenders differ wildly in custody, rehypothecation practices, oracle design, and jurisdictional safeguards. Zone21’s **13‑factor Risk Score** surfaces these differences quantitatively so borrowers can compare apples to apples and researchers can back‑test systemic‑risk scenarios.
 
-The full methodology is described in the [**Zone21 Risk Model**](https://www.zone21.com/risk-model). In short, each factor is graded on $0, 2, 4, 7, 10$ where 10 is worst. Bonus or critical penalties are automatically added based on specific risk patterns, producing a **0–100 total score** (lower is safer).
+The full methodology is described in the [**Zone21 Risk Model**](https://www.zone21.com/risk-model). In short, each factor is graded on **0, 2, 4, 7, 10** where 10 is worst. Bonus or critical penalties are automatically added based on specific risk patterns, producing a **0–100 total score** (lower is safer).
 
 ---
 
