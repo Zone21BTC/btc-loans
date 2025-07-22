@@ -331,15 +331,15 @@
     "critical_penalties": [],
     "bonus_penalties": [
       {
-        "key": "oracle_10",
-        "label": "Oracle = 10",
-        "description": "Closed, provider-controlled feed can inject hidden spreads or false prints to force liquidations.",
-        "penalty": 5
-      },
-      {
         "key": "security_governance_7",
         "label": "Security & Governance = 7",
         "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. \nCeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
+        "penalty": 5
+      },
+      {
+        "key": "oracle_10",
+        "label": "Oracle = 10",
+        "description": "Closed, provider-controlled feed can inject hidden spreads or false prints to force liquidations.",
         "penalty": 5
       }
     ]
@@ -512,12 +512,6 @@
         "penalty": 5
       },
       {
-        "key": "oracle_10",
-        "label": "Oracle = 10",
-        "description": "Closed, provider-controlled feed can inject hidden spreads or false prints to force liquidations.",
-        "penalty": 5
-      },
-      {
         "key": "custody_7",
         "label": "Custody = 7",
         "description": "DeFi: no fallback or funds locked in upgradeable contract. \nCeFi: pooled hot wallet with self-declared segregation and zero external audit.",
@@ -527,6 +521,12 @@
         "key": "security_governance_7",
         "label": "Security & Governance = 7",
         "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. \nCeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
+        "penalty": 5
+      },
+      {
+        "key": "oracle_10",
+        "label": "Oracle = 10",
+        "description": "Closed, provider-controlled feed can inject hidden spreads or false prints to force liquidations.",
         "penalty": 5
       }
     ]
@@ -602,15 +602,15 @@
         "penalty": 10
       },
       {
-        "key": "oracle_10",
-        "label": "Oracle = 10",
-        "description": "Closed, provider-controlled feed can inject hidden spreads or false prints to force liquidations.",
-        "penalty": 5
-      },
-      {
         "key": "custody_7",
         "label": "Custody = 7",
         "description": "DeFi: no fallback or funds locked in upgradeable contract. \nCeFi: pooled hot wallet with self-declared segregation and zero external audit.",
+        "penalty": 5
+      },
+      {
+        "key": "oracle_10",
+        "label": "Oracle = 10",
+        "description": "Closed, provider-controlled feed can inject hidden spreads or false prints to force liquidations.",
         "penalty": 5
       },
       {
@@ -692,15 +692,15 @@
         "penalty": 10
       },
       {
-        "key": "oracle_10",
-        "label": "Oracle = 10",
-        "description": "Closed, provider-controlled feed can inject hidden spreads or false prints to force liquidations.",
-        "penalty": 5
-      },
-      {
         "key": "custody_7",
         "label": "Custody = 7",
         "description": "DeFi: no fallback or funds locked in upgradeable contract. \nCeFi: pooled hot wallet with self-declared segregation and zero external audit.",
+        "penalty": 5
+      },
+      {
+        "key": "oracle_10",
+        "label": "Oracle = 10",
+        "description": "Closed, provider-controlled feed can inject hidden spreads or false prints to force liquidations.",
         "penalty": 5
       },
       {
