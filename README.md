@@ -15,17 +15,17 @@ This repository hosts the _raw research files_ maintained by Zone21 analysts **p
 
 | Section                                            | Why read it                                                      |
 | -------------------------------------------------- | ---------------------------------------------------------------- |
-| [1 Motivation](#1-motivation)                      | What problem this dataset solves.                                |
-| [2 Folder layout](#2-folder-layout)                | Where everything lives & who edits what.                         |
-| [3 Data model](#3-data-model)                      | Field‑by‑field rundown of a provider JSON file.                  |
-| [4 Build & validation](#4-build--validation)       | How CI turns raw files into an aggregate & guarantees integrity. |
-| [5 Quick start](#5-quick-start)                    | Two‑minute guide to cloning, validating, and building.           |
-| [6 Contributing](#6-contributing)                  | Ground rules for PRs & coding style.                             |
-| [7 License & attribution](#7-license--attribution) | CC‑BY‑4.0 terms, citation format.                                |
+| [Motivation](#motivation)                      | What problem this dataset solves.                                |
+| [Folder layout](#folder-layout)                | Where everything lives & who edits what.                         |
+| [Data model](#data-model)                      | Field‑by‑field rundown of a provider JSON file.                  |
+| [Build & validation](#build--validation)       | How CI turns raw files into an aggregate & guarantees integrity. |
+| [Quick start](#quick-start)                    | Two‑minute guide to cloning, validating, and building.           |
+| [Contributing](#contributing)                  | Ground rules for PRs & coding style.                             |
+| [License & attribution](#license--attribution) | CC‑BY‑4.0 terms, citation format.                                |
 
 ---
 
-## 1 Motivation
+## Motivation
 
 Bitcoin‑backed lenders differ wildly in custody, rehypothecation practices, oracle design, and jurisdictional safeguards. Zone21’s **13‑factor Risk Score** surfaces these differences quantitatively so borrowers can compare apples to apples and researchers can back‑test systemic‑risk scenarios.
 
@@ -33,7 +33,7 @@ The full methodology is described in the [**Zone21 Risk Model**](https://www.zo
 
 ---
 
-## 2 Folder layout
+## Folder layout
 
 ```
 /                            # repo root
@@ -67,7 +67,7 @@ Humans **must not** commit directly to `dist/`; branch protection will reject su
 
 ---
 
-## 3 Data model
+## Data model
 
 Each `data.json` is validated by [`schema/provider.schema.json`](./schema/provider.schema.json). Key required fields:
 
@@ -94,7 +94,7 @@ Allowed `type`: `image` | `pdf`.
 
 ---
 
-## 4 Build & validation
+## Build & validation
 
 | Stage         | Trigger                      | What happens                                                                                                                                                                                                   |
 | ------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -108,7 +108,7 @@ Allowed `type`: `image` | `pdf`.
 
 ---
 
-## 5 Quick start
+## Quick start
 
 ```bash
 # 1. clone the repo
@@ -129,7 +129,7 @@ curl -sL https://raw.githubusercontent.com/Zone21BTC/zone21-risk-scores/main/dis
 
 ---
 
-## 6 Contributing
+## Contributing
 
 1. **Fork → branch → PR.** One logical change per PR (e.g., update `rehypothecation.score` for `ledn`).
 2. **Run `npm run validate`** before pushing. Zero schema errors.
@@ -141,7 +141,7 @@ Coding style: Prettier default settings (`npm run format`). Scripts are tiny—p
 
 ---
 
-## 7 License & attribution
+## License & attribution
 
 - **Data:** Creative Commons **CC‑BY‑4.0**. Cite “Zone21 Risk Scores” and link back to this repo.
 
