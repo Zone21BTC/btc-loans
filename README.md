@@ -75,7 +75,7 @@ Each `data.json` is validated by [`schema/provider.schema.json`](./schema/provid
 | `slug`          | `string`             | Unique, URL-safe, lowercase kebab-case identifier (e.g., 'ledn').               |
 | `model_version` | `string`             | Version of the Zone21 risk-scoring methodology (e.g., '1.0').                   |
 | `highlights`    | `string`             | Short narrative summary highlighting key strengths or weaknesses.               |
-| `introduction`  | `string`             | Elevator pitch describing the provider.                                         |
+| `introduction`  | `string`             | Background information about the provider.                                         |
 | `status`        | `string`             | Operational status: 'active', 'inactive', or 'withdrawn'.                       |
 | `is_beta`       | `boolean` (optional) | Flag indicating if the provider is a beta product.                              |
 | `notes`         | `string` (optional)  | Additional remarks not covered by specific factor notes.                        |
@@ -104,7 +104,7 @@ The repository uses [AJV](https://ajv.js.org/) for schema validation, ensuring d
 
 ### Dependencies
 
-- **Node.js ≥ 20 (latest LTS recommended)**
+- **Node.js version ≥ 20 (latest LTS recommended)**
 - Install dependencies with `npm install` (AJV schema validation, Prettier formatting).
 
 ---
