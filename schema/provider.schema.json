@@ -14,56 +14,47 @@
     "factors",
     "status"
   ],
-
   "properties": {
     "provider_name": {
       "type": "string",
       "minLength": 1,
       "description": "Human-readable name of the loan provider / product."
     },
-
     "slug": {
       "type": "string",
       "pattern": "^[a-z0-9-]+$",
       "minLength": 3,
       "description": "URL-safe, lowercase kebab-case identifier used to distinguish this provider (e.g. 'unchained', 'ledn-rehypothecated'). Must be unique across the repository."
     },
-
     "model_version": {
       "type": "string",
       "pattern": "^\\d+\\.0$",
       "description": "Version of the Zone21 risk-scoring methodology this file conforms to. Major releases only (e.g. '1.0', '2.0', '3.0'). Increment when the underlying model rules change in a non-backwards-compatible way."
     },
-
     "highlights": {
       "type": "string",
       "minLength": 1,
       "description": "Short narrative summary of key strengths / weaknesses."
     },
-
     "introduction": {
       "type": "string",
       "minLength": 1,
-      "description": "Elevator pitch describing the provider."
+      "description": "Background information about the provider."
     },
-
     "status": {
       "type": "string",
       "enum": ["active", "inactive", "withdrawn"],
       "default": "active",
       "description": "Operational status of this loan product."
     },
-
     "is_beta": {
       "type": "boolean",
       "description": "Optional flag indicating if the provider is a beta product. Beta providers will be sorted at the end of the aggregated list."
     },
-
     "notes": {
       "type": "string",
       "description": "Optional free-form remarks not covered by factor notes."
     },
-
     "details": {
       "type": "object",
       "description": "Structured product details surfaced in the UI tables. The object itself is required, but every sub-field is optional so analysts can populate them gradually.",
@@ -85,12 +76,16 @@
         },
         "custodians": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": {
+            "type": "string"
+          },
           "description": "Human-readable list of keyholders or multisig thresholds (e.g. '3-of-4 multisig')."
         },
         "collateral_type": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": {
+            "type": "string"
+          },
           "description": "Assets accepted as collateral (e.g. ['BTC'])."
         },
         "rehypothecation": {
@@ -105,31 +100,64 @@
         },
         "loan_type": {
           "type": "array",
-          "items": { "type": "string", "enum": ["Consumer", "Business"] },
+          "items": {
+            "type": "string",
+            "enum": ["Consumer", "Business"]
+          },
           "description": "Loan purpose or audience (e.g. ['Consumer', 'Business'])."
         },
         "loan_currency": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": {
+            "type": "string"
+          },
           "description": "Currencies a borrower can draw (e.g. ['USD', 'USDC'])."
         },
         "support_channels": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": {
+            "type": "string"
+          },
           "description": "Customer support contact paths (e.g. ['Email', 'Chat'])."
         },
-        "apr_type": { "$ref": "#/definitions/aprType", "description": "Type of APR (e.g. 'Fixed', 'Variable')." },
-        "ltv": { "$ref": "#/definitions/valueMetric", "description": "Loan-to-value ratio (e.g. '70%')." },
-        "margin_call": { "$ref": "#/definitions/valueArrayMetric", "description": "Margin call thresholds (e.g. [75, 80, 85])." },
-        "liquidation_ltv": { "$ref": "#/definitions/valueMetric", "description": "Liquidation LTV (e.g. '90%')." },
-        "loan_value_min": { "$ref": "#/definitions/valueMetric", "description": "Minimum loan value (e.g. '100 USD')." },
-        "loan_value_max": { "$ref": "#/definitions/valueMetric", "description": "Maximum loan value (e.g. '1000000 USD')." },
-        "loan_duration_min": { "$ref": "#/definitions/valueMetric", "description": "Minimum loan duration (e.g. '1 month')." },
-        "loan_duration_max": { "$ref": "#/definitions/valueMetric", "description": "Maximum loan duration (e.g. '12 months')." },
-        "total_loan_issued": { "$ref": "#/definitions/valueMetric", "description": "Total loan issued (e.g. '700000 USD')." }
+        "apr_type": {
+          "$ref": "#/definitions/aprType",
+          "description": "Type of APR (e.g. 'Fixed', 'Variable')."
+        },
+        "ltv": {
+          "$ref": "#/definitions/valueMetric",
+          "description": "Loan-to-value ratio (e.g. '70%')."
+        },
+        "margin_call": {
+          "$ref": "#/definitions/valueArrayMetric",
+          "description": "Margin call thresholds (e.g. [75, 80, 85])."
+        },
+        "liquidation_ltv": {
+          "$ref": "#/definitions/valueMetric",
+          "description": "Liquidation LTV (e.g. '90%')."
+        },
+        "loan_value_min": {
+          "$ref": "#/definitions/valueMetric",
+          "description": "Minimum loan value (e.g. '100 USD')."
+        },
+        "loan_value_max": {
+          "$ref": "#/definitions/valueMetric",
+          "description": "Maximum loan value (e.g. '1000000 USD')."
+        },
+        "loan_duration_min": {
+          "$ref": "#/definitions/valueMetric",
+          "description": "Minimum loan duration (e.g. '1 month')."
+        },
+        "loan_duration_max": {
+          "$ref": "#/definitions/valueMetric",
+          "description": "Maximum loan duration (e.g. '12 months')."
+        },
+        "total_loan_issued": {
+          "$ref": "#/definitions/valueMetric",
+          "description": "Total loan issued (e.g. '700000 USD')."
+        }
       }
     },
-
     "factors": {
       "type": "object",
       "description": "The 13 risk factors. Each key is required and contains an object with a mandatory score (0/2/4/7/10) and explanatory note plus an optional array of evidence items.",
@@ -150,29 +178,53 @@
         "jurisdiction"
       ],
       "properties": {
-        "collateral": { "$ref": "#/definitions/factor" },
-        "rehypothecation": { "$ref": "#/definitions/factor" },
-        "custody": { "$ref": "#/definitions/factor" },
-        "security_governance": { "$ref": "#/definitions/factor" },
-        "platform": { "$ref": "#/definitions/factor" },
-        "oracle": { "$ref": "#/definitions/factor" },
-        "liquidation_buffer": { "$ref": "#/definitions/factor" },
-        "rate_and_term": { "$ref": "#/definitions/factor" },
-        "transparency": { "$ref": "#/definitions/factor" },
-        "loan_currency": { "$ref": "#/definitions/factor" },
-        "privacy": { "$ref": "#/definitions/factor" },
-        "history": { "$ref": "#/definitions/factor" },
-        "jurisdiction": { "$ref": "#/definitions/factor" }
+        "collateral": {
+          "$ref": "#/definitions/factor"
+        },
+        "rehypothecation": {
+          "$ref": "#/definitions/factor"
+        },
+        "custody": {
+          "$ref": "#/definitions/factor"
+        },
+        "security_governance": {
+          "$ref": "#/definitions/factor"
+        },
+        "platform": {
+          "$ref": "#/definitions/factor"
+        },
+        "oracle": {
+          "$ref": "#/definitions/factor"
+        },
+        "liquidation_buffer": {
+          "$ref": "#/definitions/factor"
+        },
+        "rate_and_term": {
+          "$ref": "#/definitions/factor"
+        },
+        "transparency": {
+          "$ref": "#/definitions/factor"
+        },
+        "loan_currency": {
+          "$ref": "#/definitions/factor"
+        },
+        "privacy": {
+          "$ref": "#/definitions/factor"
+        },
+        "history": {
+          "$ref": "#/definitions/factor"
+        },
+        "jurisdiction": {
+          "$ref": "#/definitions/factor"
+        }
       }
     }
   },
-
   "definitions": {
     "scoreEnum": {
       "type": "integer",
       "enum": [0, 2, 4, 7, 10]
     },
-
     "evidenceItem": {
       "type": "object",
       "additionalProperties": false,
@@ -200,47 +252,75 @@
         }
       }
     },
-
     "factor": {
       "type": "object",
       "additionalProperties": false,
       "required": ["score", "note"],
       "properties": {
-        "score": { "$ref": "#/definitions/scoreEnum" },
-        "note": { "type": "string", "minLength": 3, "description": "Short explanation for the assigned score." },
-        "evidence": { "type": "array", "items": { "$ref": "#/definitions/evidenceItem" }, "description": "Optional list of evidence items supporting this score." }
+        "score": {
+          "$ref": "#/definitions/scoreEnum"
+        },
+        "note": {
+          "type": "string",
+          "minLength": 3,
+          "description": "Short explanation for the assigned score."
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/evidenceItem"
+          },
+          "description": "Optional list of evidence items supporting this score."
+        }
       }
     },
-
     "valueMetric": {
       "type": "object",
       "additionalProperties": false,
       "required": ["value"],
       "properties": {
-        "value": { "type": "number" },
-        "unit": { "type": "string" },
-        "note": { "type": "string" }
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
       }
     },
-
     "valueArrayMetric": {
       "type": "object",
       "additionalProperties": false,
       "required": ["value"],
       "properties": {
-        "value": { "type": "array", "items": { "type": "number" } },
-        "unit": { "type": "string" },
-        "note": { "type": "string" }
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "unit": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
       }
     },
-
     "aprType": {
       "type": "object",
       "additionalProperties": false,
       "required": ["value"],
       "properties": {
-        "value": { "type": "string", "enum": ["Fixed", "Variable"] },
-        "note": { "type": "string" }
+        "value": {
+          "type": "string",
+          "enum": ["Fixed", "Variable"]
+        },
+        "note": {
+          "type": "string"
+        }
       }
     }
   }
