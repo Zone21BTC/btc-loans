@@ -2,7 +2,7 @@
   "provider_name": "Binance",
   "slug": "binance",
   "model_version": "1.0",
-  "introduction": "Launched in 2023, Binance's Flexible Rate Loan allows users to borrow against their crypto assets with automatic rehypothecation through Simple Earn. The platform offers variable interest rates that adjust minute-by-minute based on market conditions, with collateral held in pooled omnibus wallets.",
+  "introduction": "Binance's lending arm operates under a Dubai VARA VASP licence issued 15 Apr 2024 that explicitly covers \"Lending and Borrowing Services,\" giving it a formal (but still young) regulatory footing. Disputes, however, are governed by Hong Kong law with HKIAC arbitration, and the firm still has no settled global headquarters, leaving creditors to rely on contract arbitration rather than a proven bankruptcy court.",
   "highlights": "Under Binance's Flexible Rate Loan, client BTC collateral is immediately rehypothecated via Simple Earn and swept into pooled omnibus wallets with no bankruptcy-remote segregation. Liquidations hinge on a Binance-run price index, a thin 13 pp buffer, and minute-to-minute variable rates. Past failures (including a 7,000 BTC hot-wallet hack, a mass KYC data leak exposing ~60,000 users, and a US $4.3B DOJ settlement) underscore the counter-party risk. Segregating collateral with a regulated trustee, reviving third-party PoR audits, adopting independent multi-signer oracles, and widening the collateral cushion would sharply reduce exposure.",
   "status": "active",
   "is_beta": false,

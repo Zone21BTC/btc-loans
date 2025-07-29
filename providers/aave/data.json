@@ -2,7 +2,7 @@
   "provider_name": "Aave",
   "slug": "aave",
   "model_version": "1.0",
-  "introduction": "Founded in 2017, Aave is a decentralized lending protocol operating on Ethereum that allows users to borrow against their crypto assets. It uses smart contracts to facilitate peer-to-peer lending with automated liquidation mechanisms and variable interest rates based on market utilization.",
+  "introduction": "Aave, launched as ETHLend in 2017 and rebranded in 2018, is an open-source, non-custodial \"DeFi\" protocol for supplying and borrowing crypto. Within Aave, USDT can be lent into liquidity pools at variable rates, earning interest paid by borrowers.",
   "highlights": "Long-standing, high-volume on-chain lending platform, yet its thin liquidation buffer and floating rates invite forced liquidations during volatility. Raising the collateral cushion and offering fixed-rate loan options would markedly improve borrower safety in stressed markets.",
   "status": "active",
   "is_beta": false,

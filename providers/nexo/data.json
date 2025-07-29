@@ -2,7 +2,7 @@
   "provider_name": "Nexo",
   "slug": "nexo",
   "model_version": "1.0",
-  "introduction": "Founded in 2018, Nexo is a crypto lending platform that offers Bitcoin-backed loans with variable interest rates. The platform supports over 100 crypto assets as collateral and provides loans in multiple fiat currencies, with assets held across multiple custodians including Ledger Vault and Fireblocks.",
+  "introduction": "Founded in 2018 and registered in the Cayman Islands, Nexo offers crypto trading, interest accounts, and collateral-backed loans. In January 2023 it paid a $45 million settlement to US federal and state regulators after its Earn Interest Product was judged an unregistered security. The firm has also faced UK Financial Conduct Authority scrutiny, pausing new registrations until compliance updates, and a Bulgarian money-laundering probe that was closed for lack of evidence.",
   "highlights": "Nexo's loan product carries high risk: unrestricted rehypothecation and pooled custody without verified bankruptcy-remote segregation, a fully opaque in-house price oracle, and discontinued real-time proof-of-reserves. Limiting reuse, migrating collateral into independently attested bankruptcy-remote trust accounts, restoring on-chain PoR, and adopting multi-feed pricing would materially cut exposure.",
   "status": "active",
   "is_beta": false,

@@ -2,7 +2,7 @@
   "provider_name": "Salt",
   "slug": "salt",
   "model_version": "1.0",
-  "introduction": "Founded in 2016, Salt Lending is a crypto-backed lending platform that offers fixed-rate 12-month loans against Bitcoin and other crypto assets. The platform uses a distributed custody model with BitGo and Fireblocks, supporting both USD and stablecoin loan options.",
+  "introduction": "Founded in 2016, SALT (Secured Automated Lending Technology) pioneered crypto-backed loans, letting users borrow cash using crypto, stablecoins, or tokenized gold as collateral without credit checks. It serves individuals, businesses, and private clients, also offering custody and risk-monitoring services.",
   "highlights": "High risk driven by pooled hot-wallet custody, opaque pricing, and missing proof-of-reserves. A full stack audit, public price-feed disclosure, and a clear commitment to park most collateral with the regulated custodian while keeping the hot-wallet float small would halve its exposure.",
   "status": "active",
   "is_beta": false,

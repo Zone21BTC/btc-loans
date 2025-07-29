@@ -2,7 +2,7 @@
   "provider_name": "Firefish",
   "slug": "firefish",
   "model_version": "1.0",
-  "introduction": "Firefish is a Bitcoin-backed lending platform that uses browser-generated keys and a unique setup that blocks blinded oracles. The platform is non-custodial, supports instant liquidations, and does not require KYC, but has limitations in user privacy and oracle diversity.",
+  "introduction": "Founded in 2022 and headquartered in Prague, Firefish is a non-custodial, peer-to-peer marketplace that locks bitcoin collateral in on-chain multisig escrow, letting borrowers obtain fiat or stablecoin liquidity while lenders earn yield (no rehypothecation).",
   "highlights": "Chief weaknesses are the browser-generated borrower key and a setup that blocks blinded oracles, limiting user privacy and plausible deniability. Open-sourcing the wallet code and migrating to a blinded oracle setup would sharply improve privacy and resilience.",
   "status": "active",
   "is_beta": false,

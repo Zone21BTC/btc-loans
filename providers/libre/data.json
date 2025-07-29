@@ -2,7 +2,7 @@
   "provider_name": "Libre",
   "slug": "libre",
   "model_version": "1.0",
-  "introduction": "Libre is a cross-chain lending platform that uses an unaudited CrossLink MPC bridge to secure both collateral and loan proceeds. The platform supports multiple assets and chains, but redemptions depend on the bridge's integrity and governance.",
+  "introduction": "Libre Labs launched the Libre Antelope (DPoS) mainnet in April 2022 and opened its Bitcoin‑backed loans to the public on 19 April 2025. Borrowers lock native BTC in the CrossLink MPC bridge, pledge the bridged BTC as collateral, and receive a bridged version of Tether's USDT at fixed APRs. The network is secured by a 21‑validator delegated proof‑of‑stake chain and governed by the LIBRE token.",
   "highlights": "Both collateral and loan proceeds are trapped behind Libre's unaudited CrossLink MPC bridge, so redemptions are hostage to the chain. Dashboard data (24 Jul 2025, ≈ 212 k votes) show the bridge is widely used, but its security and governance remain unproven.",
   "status": "active",
   "is_beta": false,

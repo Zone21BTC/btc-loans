@@ -2,7 +2,7 @@
   "provider_name": "Lendasat",
   "slug": "lendasat",
   "model_version": "1.0",
-  "introduction": "Lendasat is a beta-stage lending platform. Detailed information about its custody, collateral, and operational model is not yet available.",
+  "introduction": "Launched in 2024, Lendasat is a non‐custodial P2P platform offering Bitcoin-collateralized loans in stablecoins or fiat without rehypothecation, credit checks, or KYC. It uses multisig and DLC smart contracts, granting borrowers control and lenders transparent, secure yields.",
   "highlights": "N/A",
   "status": "active",
   "is_beta": true,

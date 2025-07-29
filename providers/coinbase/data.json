@@ -2,7 +2,7 @@
   "provider_name": "Coinbase",
   "slug": "coinbase",
   "model_version": "1.0",
-  "introduction": "Launched in 2025, Coinbase offers Bitcoin-backed loans through a partnership with Morpho, using cbBTC (wrapped Bitcoin) as collateral. The platform operates on Base, an Ethereum Layer-2, and provides variable interest rates with automated liquidation mechanisms.",
+  "introduction": "Coinbase relaunched its Bitcoin-backed lending service in early 2025, partnering with Morpho on Base to offer U.S. users (excluding NY) over‐collateralized USDC loans up to $100 K with flexible repayment terms.",
   "highlights": "Severe risk flows from the massive KYC trove that has already leaked, compounded by a solo price oracle. Harden access controls around user data, make the wallet reproducible for independent verification, and bring in multiple external pricing feeds to restore confidence.",
   "status": "active",
   "is_beta": false,

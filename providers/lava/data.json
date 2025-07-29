@@ -2,7 +2,7 @@
   "provider_name": "Lava",
   "slug": "lava",
   "model_version": "1.0",
-  "introduction": "Launched in 2024, Lava is a DeFi lending platform using Discreet Log Contracts (DLCs) to enable Bitcoin-backed loans. Collateral is locked in a DLC escrow, with fixed-rate terms and instant liquidations based on a single, Lava-operated oracle. The platform is non-custodial and does not require KYC.",
+  "introduction": "Lava enables instant USD loans using Bitcoin collateral through its self-custody wallet, requiring no credit checks or KYC. Launched circa 2023, it uses on-chain guarantees and leverages DLCs for trustless lending.",
   "highlights": "Innovative DLC-based model hampered by closed-source key generation and a single price oracle; in a DLC setup the entire contract integrity hinges on oracle robustness. Open-sourcing the wallet and adopting multiple independent, attestable oracles could quickly elevate Lava to a top-tier lender.",
   "status": "active",
   "is_beta": false,

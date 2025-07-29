@@ -2,7 +2,7 @@
   "provider_name": "Ledn",
   "slug": "ledn",
   "model_version": "1.0",
-  "introduction": "Founded in 2018, Ledn provides Bitcoin-backed loans with collateral held in segregated, bankruptcy-remote accounts at BitGo Trust Company. The platform offers fixed-rate 12-month loans with native BTC as collateral and has maintained an incident-free record through multiple market cycles.",
+  "introduction": "Founded in 2018 and based in the Cayman Islands, Ledn offers Bitcoin-backed loans. Borrower collateral sits in cold, insured vaults at BitGo Trust Company, and the platform backs its controls with a SOC 2 Type II attestation and semi-annual proof-of-reserves.",
   "highlights": "Ledn's Custodied Loans score well for CeFi: borrower BTC stays segregated in BitGo's cold, insured vaults, and the firm has survived the bankruptcy wave that sank early Bitcoin lenders during 2022-23 while maintaining a long-running incident-free record. Improvement areas remain: liquidations still rely on a single undisclosed price feed, and Ledn's cold-to-hot wallet operations lack an independent audit.",
   "status": "active",
   "is_beta": false,

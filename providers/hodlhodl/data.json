@@ -2,7 +2,7 @@
   "provider_name": "Hodl Hodl",
   "slug": "hodlhodl",
   "model_version": "1.0",
-  "introduction": "Hodl Hodl is a global, non-custodial Bitcoin lending platform that uses multisig escrow contracts to secure collateral. The platform does not require KYC, supports peer-to-peer lending, and allows users to retain control over their keys, but relies on a closed-source wallet for key generation.",
+  "introduction": "Since 2016, Hodl Hodl's LEND platform offers global, non‐custodial P2P Bitcoin-backed loans using multisig escrow. Borrowers and lenders set their own terms—anonymous, self-custody, no KYC required.",
   "highlights": "Core vulnerability is the closed-source wallet that generates the borrower's key directly in the browser, creating a wide attack surface. Open-sourcing that code (or letting users bring their own key) would close the main gap.",
   "status": "active",
   "is_beta": false,

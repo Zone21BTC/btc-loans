@@ -2,7 +2,7 @@
   "provider_name": "Strike",
   "slug": "strike",
   "model_version": "1.0",
-  "introduction": "Launched in 2025, Strike offers Bitcoin-backed loans with native BTC as collateral and in-house custody. The platform provides fixed-rate 12-month loans with USD delivery, featuring a conservative 50% LTV and 35% liquidation buffer.",
+  "introduction": "Chicago-based Bitcoin payments platform founded by Zap Solutions in 2018. It serves users in 65-plus countries with Lightning-powered buying, selling and cross-border transfers. In May 2025 Strike introduced Bitcoin-backed loans for eligible U.S. customers, letting them borrow cash without selling their BTC.",
   "highlights": "Elevated risk stems from in-house custody, hidden reserves, and undisclosed price feeds. Moving collateral to a bankruptcy-remote regulated custodian, supplying PoR or per-loan UTXOs, and revealing pricing sources are priority fixes.",
   "status": "active",
   "is_beta": false,
