@@ -1,26 +1,21 @@
 # Zone21 Risk Scores
 
-**Public dataset & build tooling for 13‑factor risk assessments of Bitcoin‑backed loan products.**
+A public repository of the **raw 13‑factor risk scores** that Zone21 assigns to Bitcoin‑collateralized loan products. Each provider’s file lives in `providers/<slug>/data.json`, and CI bundles them into aggregate datasets at `dist/all-providers.json` (pretty) **and** `dist/all-providers.min.json` (compact) for easy download.
 
-This repository hosts the _raw research files_ maintained by Zone21 analysts **plus** a fully reproducible build pipeline that compiles those files into a single machine‑readable dataset. The data is open for researchers, developers & the curious to audit, remix, or integrate.
-
-> **TL;DR** &#x20;
-> • Each provider lives at `providers/<slug>/data.json` and contains only the 13 factor inputs + metadata. &#x20;
-> • CI validates those files, then builds `dist/all-providers.json` (and a minified `dist/all-providers.min.json`) with derived risk metrics. &#x20;
-> • Nothing inside `dist/` is ever edited by humans.
+→ **Full methodology:** see [`docs/risk-model.md`](docs/risk-model.md)
 
 ---
 
 ## 📑 Contents
 
-| Section                                            | Why read it                                                      |
-| -------------------------------------------------- | ---------------------------------------------------------------- |
-| [Motivation](#motivation)                      | What problem this dataset solves.                                |
-| [Folder Layout](#folderlayout)                | Where everything lives & who edits what.                         |
-| [Data Model](#datamodel)                      | Field‑by‑field rundown of a provider JSON file.                  |
-| [Build & Validation](#build-validation)       | How CI turns raw files into an aggregate & guarantees integrity. |
-| [Quick start](#quickstart)                    | Two‑minute guide to cloning, validating, and building.           |
-| [Contributing](#contributing)                  | Ground rules for PRs & coding style.                             |
+| Section                                      | Why read it                                                      |
+| -------------------------------------------- | ---------------------------------------------------------------- |
+| [Motivation](#motivation)                    | What problem this dataset solves.                                |
+| [Folder Layout](#folderlayout)               | Where everything lives & who edits what.                         |
+| [Data Model](#datamodel)                     | Field‑by‑field rundown of a provider JSON file.                  |
+| [Build & Validation](#build-validation)      | How CI turns raw files into an aggregate & guarantees integrity. |
+| [Quick start](#quickstart)                   | Two‑minute guide to cloning, validating, and building.           |
+| [Contributing](#contributing)                | Ground rules for PRs & coding style.                             |
 | [License & Attribution](#licenseattribution) | CC‑BY‑4.0 terms, citation format.                                |
 
 ---
@@ -45,6 +40,8 @@ The full methodology is described in the [**Zone21 Risk Model**](https://www.zo
 │   └── …
 ├── schema/
 │   └── provider.schema.json  # JSON‑Schema (single source of truth)
+├── docs/
+│   └── risk-model.md         # Human‑readable methodology & future docs
 ├── scripts/
 │   ├── validate.js           # AJV schema‑lint
 │   └── build-aggregate.js    # generates dist/ artefacts
@@ -58,10 +55,11 @@ The full methodology is described in the [**Zone21 Risk Model**](https://www.zo
 
 ### Source‑of‑truth vs artefacts
 
-| Directory               | Edited by       | Contains                                          |
-| ----------------------- | --------------- | ------------------------------------------------- |
-| `providers/*/data.json` | Analysts via PR | Raw factor scores, notes, evidence URLs, metadata |
-| `dist/*`                | CI bot          | Auto‑calculated fields and aggregate JSON files   |
+| Directory               | Edited by                  | Contains                                          |
+| ----------------------- | -------------------------- | ------------------------------------------------- |
+| `providers/*/data.json` | Analysts via PR            | Raw factor scores, notes, evidence URLs, metadata |
+| `docs/`                 | Zone21 team & contributors | Risk‑model explainer and other human docs         |
+| `dist/*`                | CI bot                     | Auto‑calculated fields and aggregate JSON files   |
 
 Humans **must not** commit directly to `dist/`; branch protection will reject such PRs.
 
@@ -104,7 +102,7 @@ Allowed `type`: `image` | `pdf`.
 ### Dependencies
 
 - **Node ≥ 20** (LTS)
-- `npm ci` installs `ajv` (+ `prettier` for formatting)
+- `npm install` – installs dev dependencies (`ajv` for schema validation, `prettier` for formatting).
 
 ---
 
@@ -114,7 +112,7 @@ Allowed `type`: `image` | `pdf`.
 # 1. clone the repo
 $ git clone https://github.com/Zone21BTC/zone21-risk-scores.git && cd zone21-risk-scores
 # 2. install dev deps
-$ npm ci
+$ npm install
 # 3. validate all provider files
 $ npm run validate
 # 4. build aggregate dataset locally (outputs to ./dist)
