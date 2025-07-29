@@ -84,13 +84,12 @@ Each `data.json` is validated by [`schema/provider.schema.json`](./schema/provid
 
 The `evidence` sub-object includes:
 
-* `link`: URL to the supporting document (image or PDF).
-* `type`: Type of evidence ('image' or 'pdf').
-* `source_url`: URL to the original source of evidence.
-* `created_at`: UTC datetime indicating when the evidence was retrieved (e.g., '2025-07-29T05:04:11Z').
+- `link`: URL to the supporting document (image or PDF).
+- `type`: Type of evidence ('image' or 'pdf').
+- `source_url`: URL to the original source of evidence.
+- `created_at`: UTC datetime indicating when the evidence was retrieved (e.g., '2025-07-29T05:04:11Z').
 
 > **Note:** Fields like `final_score`, `risk_band`, and penalty-related fields are calculated automatically and do not appear in source files.
-
 
 ---
 

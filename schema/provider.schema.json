@@ -32,7 +32,7 @@
     "model_version": {
       "type": "string",
       "pattern": "^\\d+\\.0$",
-      "description": "Version of the Zone21 risk‑scoring methodology this file conforms to. Major releases only (e.g. '1.0', '2.0', '3.0'). Increment when the underlying model rules change in a non‑backwards‑compatible way."
+      "description": "Version of the Zone21 risk-scoring methodology this file conforms to. Major releases only (e.g. '1.0', '2.0', '3.0'). Increment when the underlying model rules change in a non-backwards-compatible way."
     },
 
     "highlights": {
@@ -61,12 +61,12 @@
 
     "notes": {
       "type": "string",
-      "description": "Optional free‑form remarks not covered by factor notes."
+      "description": "Optional free-form remarks not covered by factor notes."
     },
 
     "details": {
       "type": "object",
-      "description": "Structured product details surfaced in the UI tables. The object itself is required, but every sub‑field is optional so analysts can populate them gradually.",
+      "description": "Structured product details surfaced in the UI tables. The object itself is required, but every sub-field is optional so analysts can populate them gradually.",
       "additionalProperties": false,
       "properties": {
         "launch_year": {
@@ -88,7 +88,7 @@
         "custodians": {
           "type": "array",
           "items": { "type": "string" },
-          "description": "Human‑readable list of keyholders or multisig thresholds (e.g. '3‑of‑4 multisig')."
+          "description": "Human-readable list of keyholders or multisig thresholds (e.g. '3-of-4 multisig')."
         },
         "collateral_type": {
           "type": "array",
@@ -120,15 +120,15 @@
           "items": { "type": "string" },
           "description": "Customer support contact paths (e.g. ['Email', 'Chat'])."
         },
-        "apr_type": { "$ref": "#/definitions/aprType" },
-        "ltv": { "$ref": "#/definitions/valueMetric" },
-        "margin_call": { "$ref": "#/definitions/valueArrayMetric" },
-        "liquidation_ltv": { "$ref": "#/definitions/valueMetric" },
-        "loan_value_min": { "$ref": "#/definitions/valueMetric" },
-        "loan_value_max": { "$ref": "#/definitions/valueMetric" },
-        "loan_duration_min": { "$ref": "#/definitions/valueMetric" },
-        "loan_duration_max": { "$ref": "#/definitions/valueMetric" },
-        "total_loan_issued": { "$ref": "#/definitions/valueMetric" }
+        "apr_type": { "$ref": "#/definitions/aprType", "description": "Type of APR (e.g. 'Fixed', 'Variable')." },
+        "ltv": { "$ref": "#/definitions/valueMetric", "description": "Loan-to-value ratio (e.g. '70%')." },
+        "margin_call": { "$ref": "#/definitions/valueArrayMetric", "description": "Margin call thresholds (e.g. [75, 80, 85])." },
+        "liquidation_ltv": { "$ref": "#/definitions/valueMetric", "description": "Liquidation LTV (e.g. '90%')." },
+        "loan_value_min": { "$ref": "#/definitions/valueMetric", "description": "Minimum loan value (e.g. '100 USD')." },
+        "loan_value_max": { "$ref": "#/definitions/valueMetric", "description": "Maximum loan value (e.g. '1000000 USD')." },
+        "loan_duration_min": { "$ref": "#/definitions/valueMetric", "description": "Minimum loan duration (e.g. '1 month')." },
+        "loan_duration_max": { "$ref": "#/definitions/valueMetric", "description": "Maximum loan duration (e.g. '12 months')." },
+        "total_loan_issued": { "$ref": "#/definitions/valueMetric", "description": "Total loan issued (e.g. '700000 USD')." }
       }
     },
 
@@ -241,7 +241,7 @@
       "additionalProperties": false,
       "required": ["value"],
       "properties": {
-        "value": { "type": "string" },
+        "value": { "type": "string", "enum": ["Fixed", "Variable"] },
         "note": { "type": "string" }
       }
     }
