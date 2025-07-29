@@ -2,8 +2,74 @@
   {
     "provider_name": "Unchained",
     "slug": "unchained",
-    "version": "1.0",
+    "model_version": "1.0",
     "highlights": "Well-run, ultra-conservative lender with user-controlled multisig and zero rehypo. The lone gap is the missing external audit of Kingdom Trust (its sole custody partner) together with reliance on a single in-house price feed. Independent custody attestation and multiple oracles would close the last material risks.",
+    "introduction": "Founded in 2016 in Austin, TX, Unchained Capital provides Bitcoin-native financial services, offering multisig vaults, trading, inheritance planning, IRAs, and Bitcoin-backed loans with collaborative custody—ensuring no rehypothecation of assets.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2017,
+      "website": "https://unchained.com",
+      "custody_model": "DeFi",
+      "custodians": [
+        "2-of-3 multisig"
+      ],
+      "collateral_type": [
+        "BTC"
+      ],
+      "rehypothecation": "No",
+      "kyc": "Yes",
+      "loan_type": [
+        "Business"
+      ],
+      "loan_currency": [
+        "USD"
+      ],
+      "support_channels": [
+        "Email",
+        "Phone"
+      ],
+      "apr_type": {
+        "value": "Fixed"
+      },
+      "ltv": {
+        "value": 50,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [
+          66
+        ],
+        "unit": "%"
+      },
+      "liquidation_ltv": {
+        "value": 83,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 150000,
+        "unit": "USD"
+      },
+      "loan_value_max": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      },
+      "loan_duration_min": {
+        "value": 12,
+        "unit": "month"
+      },
+      "loan_duration_max": {
+        "value": 12,
+        "unit": "month"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 0,
@@ -74,8 +140,82 @@
   {
     "provider_name": "Debifi",
     "slug": "debifi",
-    "version": "1.0",
+    "model_version": "1.0",
+    "introduction": "Launched in March 2024 and headquartered in Lugano, Switzerland, Debifi is a non-custodial Bitcoin-backed lending platform. It uses multisig escrow, connects borrowers with institutional lenders, and exited beta in June 2025 to offer global loans and upcoming credit cards.",
     "highlights": "Debifi is a new Bitcoin-backed lender that escrows collateral in a 3-of-4 multisig and supports hardware signers. Key risks are undisclosed audit results, unclear server-key protections, and a lone price oracle. Publishing full audit reports, detailing key security, and adopting diversified, verifiable price feeds would push it into best-in-class territory.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2025,
+      "website": "https://debifi.com/",
+      "custody_model": "DeFi",
+      "custodians": [
+        "3-of-4 multisig"
+      ],
+      "collateral_type": [
+        "BTC"
+      ],
+      "rehypothecation": "No",
+      "kyc": "Varies",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USDC",
+        "USDT",
+        "USD",
+        "EUR",
+        "GBP",
+        "AED",
+        "BRL",
+        "CHF"
+      ],
+      "support_channels": [
+        "Email",
+        "Chat"
+      ],
+      "apr_type": {
+        "value": "Fixed"
+      },
+      "ltv": {
+        "value": 70,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [
+          75,
+          80,
+          85
+        ],
+        "unit": "%"
+      },
+      "liquidation_ltv": {
+        "value": 90,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 5000,
+        "unit": "USD"
+      },
+      "loan_value_max": {
+        "value": 700000,
+        "unit": "USD"
+      },
+      "loan_duration_min": {
+        "value": 1,
+        "unit": "month"
+      },
+      "loan_duration_max": {
+        "value": 12,
+        "unit": "month"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 0,
@@ -151,7 +291,7 @@
       {
         "key": "security_governance_7",
         "label": "Security & Governance = 7",
-        "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. \nCeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
+        "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. CeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
         "penalty": 5
       }
     ]
@@ -159,8 +299,75 @@
   {
     "provider_name": "Ledn",
     "slug": "ledn",
-    "version": "1.0",
+    "model_version": "1.0",
+    "introduction": "Founded in 2018, Ledn provides Bitcoin-backed loans with collateral held in segregated, bankruptcy-remote accounts at BitGo Trust Company. The platform offers fixed-rate 12-month loans with native BTC as collateral and has maintained an incident-free record through multiple market cycles.",
     "highlights": "Ledn's Custodied Loans score well for CeFi: borrower BTC stays segregated in BitGo's cold, insured vaults, and the firm has survived the bankruptcy wave that sank early Bitcoin lenders during 2022-23 while maintaining a long-running incident-free record. Improvement areas remain: liquidations still rely on a single undisclosed price feed, and Ledn's cold-to-hot wallet operations lack an independent audit.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2018,
+      "website": "https://ledn.io",
+      "custody_model": "CeFi",
+      "custodians": [
+        "BitGo"
+      ],
+      "collateral_type": [
+        "BTC"
+      ],
+      "rehypothecation": "Limited",
+      "kyc": "Yes",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USDC",
+        "USD"
+      ],
+      "support_channels": [
+        "Email"
+      ],
+      "apr_type": {
+        "value": "Fixed"
+      },
+      "ltv": {
+        "value": 50,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [
+          70,
+          75
+        ],
+        "unit": "%",
+        "note": "Warnings at 70%, 75% (no margin call)"
+      },
+      "liquidation_ltv": {
+        "value": 80,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 1000,
+        "unit": "USD"
+      },
+      "loan_value_max": {
+        "value": 1000000,
+        "unit": "USD"
+      },
+      "loan_duration_min": {
+        "value": 12,
+        "unit": "month"
+      },
+      "loan_duration_max": {
+        "value": 12,
+        "unit": "month"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 0,
@@ -256,8 +463,78 @@
   {
     "provider_name": "Arch",
     "slug": "arch",
-    "version": "1.0",
+    "model_version": "1.0",
+    "introduction": "Founded in 2023, Arch Lending provides Bitcoin-backed loans with collateral held in cold, bankruptcy-remote custody at Anchorage Digital. The platform offers fixed-rate loans with native BTC as collateral and operates under a strict no-rehypothecation policy.",
     "highlights": "Uses native BTC escrow but offers no public proof-of-reserves and depends on a single oracle, leaving users blind to hidden leverage or price-feed failure. Live PoR and multiple independent pricing sources would materially shrink uncertainty.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2023,
+      "website": "https://archlending.com/",
+      "custody_model": "CeFi",
+      "custodians": [
+        "Anchorage"
+      ],
+      "collateral_type": [
+        "BTC",
+        "ETH",
+        "SOL"
+      ],
+      "rehypothecation": "No",
+      "kyc": "Yes",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USDC",
+        "USD"
+      ],
+      "support_channels": [
+        "Email",
+        "Chat",
+        "Call"
+      ],
+      "apr_type": {
+        "value": "Fixed"
+      },
+      "ltv": {
+        "value": 60,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [
+          70
+        ],
+        "unit": "%"
+      },
+      "liquidation_ltv": {
+        "value": 80,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 1000,
+        "unit": "USD"
+      },
+      "loan_value_max": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      },
+      "loan_duration_min": {
+        "value": 1,
+        "unit": "month"
+      },
+      "loan_duration_max": {
+        "value": 24,
+        "unit": "month"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 0,
@@ -333,7 +610,7 @@
       {
         "key": "security_governance_7",
         "label": "Security & Governance = 7",
-        "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. \nCeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
+        "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. CeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
         "penalty": 5
       },
       {
@@ -347,8 +624,83 @@
   {
     "provider_name": "Aave",
     "slug": "aave",
-    "version": "1.0",
+    "model_version": "1.0",
+    "introduction": "Founded in 2017, Aave is a decentralized lending protocol operating on Ethereum that allows users to borrow against their crypto assets. It uses smart contracts to facilitate peer-to-peer lending with automated liquidation mechanisms and variable interest rates based on market utilization.",
     "highlights": "Long-standing, high-volume on-chain lending platform, yet its thin liquidation buffer and floating rates invite forced liquidations during volatility. Raising the collateral cushion and offering fixed-rate loan options would markedly improve borrower safety in stressed markets.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2017,
+      "website": "https://aave.com",
+      "custody_model": "CeDeFi",
+      "custodians": [
+        "BitGo"
+      ],
+      "collateral_type": [
+        "wBTC",
+        "WETH",
+        "Others"
+      ],
+      "rehypothecation": "No",
+      "kyc": "No",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USDC",
+        "USDT",
+        "ETH",
+        "wstETH",
+        "DAI",
+        "Others"
+      ],
+      "support_channels": [
+        "Email",
+        "Discord"
+      ],
+      "apr_type": {
+        "value": "Variable"
+      },
+      "ltv": {
+        "value": 73,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [],
+        "unit": "%",
+        "note": "No margin call mechanism"
+      },
+      "liquidation_ltv": {
+        "value": 78,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 0,
+        "unit": "USD",
+        "note": "No minimum"
+      },
+      "loan_value_max": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      },
+      "loan_duration_min": {
+        "value": 0,
+        "unit": "month",
+        "note": "Flexible"
+      },
+      "loan_duration_max": {
+        "value": 0,
+        "unit": "month",
+        "note": "Flexible"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 4,
@@ -424,7 +776,7 @@
       {
         "key": "custody_7",
         "label": "Custody = 7",
-        "description": "DeFi: no fallback or funds locked in upgradeable contract. \nCeFi: pooled hot wallet with self-declared segregation and zero external audit.",
+        "description": "DeFi: no fallback or funds locked in upgradeable contract. CeFi: pooled hot wallet with self-declared segregation and zero external audit.",
         "penalty": 5
       },
       {
@@ -444,8 +796,74 @@
   {
     "provider_name": "Strike",
     "slug": "strike",
-    "version": "1.0",
+    "model_version": "1.0",
+    "introduction": "Launched in 2025, Strike offers Bitcoin-backed loans with native BTC as collateral and in-house custody. The platform provides fixed-rate 12-month loans with USD delivery, featuring a conservative 50% LTV and 35% liquidation buffer.",
     "highlights": "Elevated risk stems from in-house custody, hidden reserves, and undisclosed price feeds. Moving collateral to a bankruptcy-remote regulated custodian, supplying PoR or per-loan UTXOs, and revealing pricing sources are priority fixes.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2025,
+      "website": "https://strike.me",
+      "custody_model": "CeFi",
+      "custodians": [
+        "In-house"
+      ],
+      "collateral_type": [
+        "BTC"
+      ],
+      "rehypothecation": "Limited",
+      "kyc": "Yes",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USD"
+      ],
+      "support_channels": [
+        "Email",
+        "Chat"
+      ],
+      "apr_type": {
+        "value": "Fixed"
+      },
+      "ltv": {
+        "value": 50,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [
+          70
+        ],
+        "unit": "%"
+      },
+      "liquidation_ltv": {
+        "value": 85,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 10000,
+        "unit": "USD"
+      },
+      "loan_value_max": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      },
+      "loan_duration_min": {
+        "value": 12,
+        "unit": "month"
+      },
+      "loan_duration_max": {
+        "value": 12,
+        "unit": "month"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 0,
@@ -514,13 +932,13 @@
       {
         "key": "custody_7",
         "label": "Custody = 7",
-        "description": "DeFi: no fallback or funds locked in upgradeable contract. \nCeFi: pooled hot wallet with self-declared segregation and zero external audit.",
+        "description": "DeFi: no fallback or funds locked in upgradeable contract. CeFi: pooled hot wallet with self-declared segregation and zero external audit.",
         "penalty": 5
       },
       {
         "key": "security_governance_7",
         "label": "Security & Governance = 7",
-        "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. \nCeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
+        "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. CeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
         "penalty": 5
       },
       {
@@ -534,8 +952,84 @@
   {
     "provider_name": "Nexo",
     "slug": "nexo",
-    "version": "1.0",
+    "model_version": "1.0",
+    "introduction": "Founded in 2018, Nexo is a crypto lending platform that offers Bitcoin-backed loans with variable interest rates. The platform supports over 100 crypto assets as collateral and provides loans in multiple fiat currencies, with assets held across multiple custodians including Ledger Vault and Fireblocks.",
     "highlights": "Nexo's loan product carries high risk: unrestricted rehypothecation and pooled custody without verified bankruptcy-remote segregation, a fully opaque in-house price oracle, and discontinued real-time proof-of-reserves. Limiting reuse, migrating collateral into independently attested bankruptcy-remote trust accounts, restoring on-chain PoR, and adopting multi-feed pricing would materially cut exposure.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2018,
+      "website": "https://nexo.com/",
+      "custody_model": "CeFi",
+      "custodians": [
+        "Ledger Vault",
+        "Fireblocks"
+      ],
+      "collateral_type": [
+        "BTC",
+        "ETH",
+        "+100 other assets"
+      ],
+      "rehypothecation": "Yes",
+      "kyc": "Yes",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USDC",
+        "USDT",
+        "USD",
+        "EUR",
+        "GBP"
+      ],
+      "support_channels": [
+        "Email",
+        "Chat"
+      ],
+      "apr_type": {
+        "value": "Variable"
+      },
+      "ltv": {
+        "value": 50,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [
+          71.4,
+          74.1,
+          76.9
+        ],
+        "unit": "%",
+        "note": "Warnings at 71.4%, 74.1%, 76.9% (no margin call)"
+      },
+      "liquidation_ltv": {
+        "value": 83,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 50,
+        "unit": "USD"
+      },
+      "loan_value_max": {
+        "value": 2000000,
+        "unit": "USD"
+      },
+      "loan_duration_min": {
+        "value": 12,
+        "unit": "month"
+      },
+      "loan_duration_max": {
+        "value": 0,
+        "unit": "month",
+        "note": "No maximum duration"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 0,
@@ -604,7 +1098,7 @@
       {
         "key": "custody_7",
         "label": "Custody = 7",
-        "description": "DeFi: no fallback or funds locked in upgradeable contract. \nCeFi: pooled hot wallet with self-declared segregation and zero external audit.",
+        "description": "DeFi: no fallback or funds locked in upgradeable contract. CeFi: pooled hot wallet with self-declared segregation and zero external audit.",
         "penalty": 5
       },
       {
@@ -624,8 +1118,82 @@
   {
     "provider_name": "Salt",
     "slug": "salt",
-    "version": "1.0",
+    "model_version": "1.0",
+    "introduction": "Founded in 2016, Salt Lending is a crypto-backed lending platform that offers fixed-rate 12-month loans against Bitcoin and other crypto assets. The platform uses a distributed custody model with BitGo and Fireblocks, supporting both USD and stablecoin loan options.",
     "highlights": "High risk driven by pooled hot-wallet custody, opaque pricing, and missing proof-of-reserves. A full stack audit, public price-feed disclosure, and a clear commitment to park most collateral with the regulated custodian while keeping the hot-wallet float small would halve its exposure.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2016,
+      "website": "https://saltlending.com/",
+      "custody_model": "CeFi",
+      "custodians": [
+        "BitGo",
+        "Fireblocks"
+      ],
+      "collateral_type": [
+        "BTC",
+        "ETH",
+        "USDC",
+        "USDT",
+        "SALT"
+      ],
+      "rehypothecation": "Yes",
+      "kyc": "Yes",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USDC",
+        "USDT",
+        "USD"
+      ],
+      "support_channels": [
+        "Email",
+        "Chat",
+        "Call"
+      ],
+      "apr_type": {
+        "value": "Fixed"
+      },
+      "ltv": {
+        "value": 70,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [
+          83
+        ],
+        "unit": "%"
+      },
+      "liquidation_ltv": {
+        "value": 90,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 5000,
+        "unit": "USD"
+      },
+      "loan_value_max": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      },
+      "loan_duration_min": {
+        "value": 12,
+        "unit": "month"
+      },
+      "loan_duration_max": {
+        "value": 12,
+        "unit": "month"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 0,
@@ -694,7 +1262,7 @@
       {
         "key": "custody_7",
         "label": "Custody = 7",
-        "description": "DeFi: no fallback or funds locked in upgradeable contract. \nCeFi: pooled hot wallet with self-declared segregation and zero external audit.",
+        "description": "DeFi: no fallback or funds locked in upgradeable contract. CeFi: pooled hot wallet with self-declared segregation and zero external audit.",
         "penalty": 5
       },
       {
@@ -714,8 +1282,72 @@
   {
     "provider_name": "Lava",
     "slug": "lava",
-    "version": "1.0",
+    "model_version": "1.0",
+    "introduction": "Launched in 2024, Lava is a DeFi lending platform using Discreet Log Contracts (DLCs) to enable Bitcoin-backed loans. Collateral is locked in a DLC escrow, with fixed-rate terms and instant liquidations based on a single, Lava-operated oracle. The platform is non-custodial and does not require KYC.",
     "highlights": "Innovative DLC-based model hampered by closed-source key generation and a single price oracle; in a DLC setup the entire contract integrity hinges on oracle robustness. Open-sourcing the wallet and adopting multiple independent, attestable oracles could quickly elevate Lava to a top-tier lender.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2024,
+      "website": "https://lava.xyz",
+      "custody_model": "DeFi",
+      "custodians": [
+        "DLC"
+      ],
+      "collateral_type": [
+        "BTC"
+      ],
+      "rehypothecation": "No",
+      "kyc": "No",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USDC",
+        "LavaUSD"
+      ],
+      "support_channels": [
+        "Email"
+      ],
+      "apr_type": {
+        "value": "Fixed"
+      },
+      "ltv": {
+        "value": 50,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [],
+        "unit": "%",
+        "note": "Margin call not supported"
+      },
+      "liquidation_ltv": {
+        "value": 95,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 100,
+        "unit": "USD"
+      },
+      "loan_value_max": {
+        "value": 100000,
+        "unit": "USD"
+      },
+      "loan_duration_min": {
+        "value": 1,
+        "unit": "month"
+      },
+      "loan_duration_max": {
+        "value": 12,
+        "unit": "month"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 0,
@@ -789,7 +1421,7 @@
     "critical_penalties": [
       {
         "key": "security_governance",
-        "label": "Security & Governance = 10",
+        "label": "Security & Governance",
         "description": "No audits and unilateral admin control; the operator can sweep or freeze user funds at will.",
         "penalty": 90
       }
@@ -806,8 +1438,78 @@
   {
     "provider_name": "Firefish",
     "slug": "firefish",
-    "version": "1.0",
-    "highlights": "Chief weaknesses are the browser-generated borrower key and a setup that blocks blinded oracles, limiting user privacy and plausible deniability. Open-sourcing the wallet code and migrating to DLCs with blinded oracles are critical first steps toward a safer model.",
+    "model_version": "1.0",
+    "introduction": "Firefish is a Bitcoin-backed lending platform that uses browser-generated keys and a unique setup that blocks blinded oracles. The platform is non-custodial, supports instant liquidations, and does not require KYC, but has limitations in user privacy and oracle diversity.",
+    "highlights": "Chief weaknesses are the browser-generated borrower key and a setup that blocks blinded oracles, limiting user privacy and plausible deniability. Open-sourcing the wallet code and migrating to a blinded oracle setup would sharply improve privacy and resilience.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2024,
+      "website": "https://firefish.io",
+      "custody_model": "DeFi",
+      "custodians": [
+        "Pre-signed txns"
+      ],
+      "collateral_type": [
+        "BTC"
+      ],
+      "rehypothecation": "No",
+      "kyc": "Yes",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USDC",
+        "EUR",
+        "CHF",
+        "CZK"
+      ],
+      "support_channels": [
+        "Email"
+      ],
+      "apr_type": {
+        "value": "Fixed"
+      },
+      "ltv": {
+        "value": 50,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [
+          80,
+          85,
+          90
+        ],
+        "unit": "%",
+        "note": "Warnings at 80%, 85%, 90% (no margin call)"
+      },
+      "liquidation_ltv": {
+        "value": 95,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 800,
+        "unit": "USD"
+      },
+      "loan_value_max": {
+        "value": 150000,
+        "unit": "USD"
+      },
+      "loan_duration_min": {
+        "value": 3,
+        "unit": "month"
+      },
+      "loan_duration_max": {
+        "value": 24,
+        "unit": "month"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 0,
@@ -881,7 +1583,7 @@
     "critical_penalties": [
       {
         "key": "security_governance",
-        "label": "Security & Governance = 10",
+        "label": "Security & Governance",
         "description": "No audits and unilateral admin control; the operator can sweep or freeze user funds at will.",
         "penalty": 90
       }
@@ -904,8 +1606,81 @@
   {
     "provider_name": "Hodl Hodl",
     "slug": "hodlhodl",
-    "version": "1.0",
-    "highlights": "Core vulnerability is the closed-source wallet that generates the borrower's key directly in the browser, creating a wide attack surface. Open-sourcing that code (or letting users bring their own hardware wallet) would slash risk while preserving the platform's non-custodial strength.",
+    "model_version": "1.0",
+    "introduction": "Hodl Hodl is a global, non-custodial Bitcoin lending platform that uses multisig escrow contracts to secure collateral. The platform does not require KYC, supports peer-to-peer lending, and allows users to retain control over their keys, but relies on a closed-source wallet for key generation.",
+    "highlights": "Core vulnerability is the closed-source wallet that generates the borrower's key directly in the browser, creating a wide attack surface. Open-sourcing that code (or letting users bring their own key) would close the main gap.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2020,
+      "website": "https://lend.hodlhodl.com/",
+      "custody_model": "DeFi",
+      "custodians": [
+        "2-of-3 multisig"
+      ],
+      "collateral_type": [
+        "BTC"
+      ],
+      "rehypothecation": "No",
+      "kyc": "No",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USDC",
+        "USDT",
+        "USDP",
+        "DAI",
+        "L-BTC",
+        "wBTC"
+      ],
+      "support_channels": [
+        "Email"
+      ],
+      "apr_type": {
+        "value": "Fixed"
+      },
+      "ltv": {
+        "value": 70,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [
+          75,
+          80,
+          85
+        ],
+        "unit": "%"
+      },
+      "liquidation_ltv": {
+        "value": 90,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 0,
+        "unit": "USD",
+        "note": "No minimum"
+      },
+      "loan_value_max": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      },
+      "loan_duration_min": {
+        "value": 1,
+        "unit": "month"
+      },
+      "loan_duration_max": {
+        "value": 12,
+        "unit": "month"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 0,
@@ -979,7 +1754,7 @@
     "critical_penalties": [
       {
         "key": "security_governance",
-        "label": "Security & Governance = 10",
+        "label": "Security & Governance",
         "description": "No audits and unilateral admin control; the operator can sweep or freeze user funds at will.",
         "penalty": 90
       }
@@ -989,8 +1764,76 @@
   {
     "provider_name": "Coinbase",
     "slug": "coinbase",
-    "version": "1.0",
+    "model_version": "1.0",
+    "introduction": "Launched in 2025, Coinbase offers Bitcoin-backed loans through a partnership with Morpho, using cbBTC (wrapped Bitcoin) as collateral. The platform operates on Base, an Ethereum Layer-2, and provides variable interest rates with automated liquidation mechanisms.",
     "highlights": "Severe risk flows from the massive KYC trove that has already leaked, compounded by a solo price oracle. Harden access controls around user data, make the wallet reproducible for independent verification, and bring in multiple external pricing feeds to restore confidence.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2025,
+      "website": "https://coinbase.com",
+      "custody_model": "CeDeFi",
+      "custodians": [
+        "Coinbase Custody"
+      ],
+      "collateral_type": [
+        "cbBTC"
+      ],
+      "rehypothecation": "No",
+      "kyc": "Yes",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USDC"
+      ],
+      "support_channels": [
+        "Email",
+        "Phone",
+        "Chat"
+      ],
+      "apr_type": {
+        "value": "Variable"
+      },
+      "ltv": {
+        "value": 75,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [],
+        "unit": "%",
+        "note": "No margin call mechanism"
+      },
+      "liquidation_ltv": {
+        "value": 86,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 0,
+        "unit": "USD",
+        "note": "No minimum"
+      },
+      "loan_value_max": {
+        "value": 1000000,
+        "unit": "USD"
+      },
+      "loan_duration_min": {
+        "value": 0,
+        "unit": "month",
+        "note": "Flexible"
+      },
+      "loan_duration_max": {
+        "value": 0,
+        "unit": "month",
+        "note": "Flexible"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 4,
@@ -1064,7 +1907,7 @@
     "critical_penalties": [
       {
         "key": "privacy",
-        "label": "Privacy = 10",
+        "label": "Privacy",
         "description": "Mandatory KYC plus confirmed PII breach.",
         "penalty": 90
       }
@@ -1073,7 +1916,7 @@
       {
         "key": "security_governance_7",
         "label": "Security & Governance = 7",
-        "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. \nCeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
+        "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. CeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
         "penalty": 5
       },
       {
@@ -1087,8 +1930,80 @@
   {
     "provider_name": "Binance",
     "slug": "binance",
-    "version": "1.0",
+    "model_version": "1.0",
+    "introduction": "Launched in 2023, Binance's Flexible Rate Loan allows users to borrow against their crypto assets with automatic rehypothecation through Simple Earn. The platform offers variable interest rates that adjust minute-by-minute based on market conditions, with collateral held in pooled omnibus wallets.",
     "highlights": "Under Binance's Flexible Rate Loan, client BTC collateral is immediately rehypothecated via Simple Earn and swept into pooled omnibus wallets with no bankruptcy-remote segregation. Liquidations hinge on a Binance-run price index, a thin 13 pp buffer, and minute-to-minute variable rates. Past failures (including a 7,000 BTC hot-wallet hack, a mass KYC data leak exposing ~60,000 users, and a US $4.3B DOJ settlement) underscore the counter-party risk. Segregating collateral with a regulated trustee, reviving third-party PoR audits, adopting independent multi-signer oracles, and widening the collateral cushion would sharply reduce exposure.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2023,
+      "website": "https://www.binance.com/en/loan",
+      "custody_model": "CeFi",
+      "custodians": [
+        "In-house"
+      ],
+      "collateral_type": [
+        "BTC",
+        "ETH",
+        "BNB",
+        "Others"
+      ],
+      "rehypothecation": "Yes",
+      "kyc": "Yes",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USDC",
+        "USDT",
+        "ETH",
+        "Others"
+      ],
+      "support_channels": [
+        "Chat"
+      ],
+      "apr_type": {
+        "value": "Variable"
+      },
+      "ltv": {
+        "value": 78,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [
+          85
+        ],
+        "unit": "%"
+      },
+      "liquidation_ltv": {
+        "value": 91,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 1,
+        "unit": "USD"
+      },
+      "loan_value_max": {
+        "value": 5500000,
+        "unit": "USD"
+      },
+      "loan_duration_min": {
+        "value": 0,
+        "unit": "month",
+        "note": "Flexible"
+      },
+      "loan_duration_max": {
+        "value": 0,
+        "unit": "month",
+        "note": "Flexible"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 0,
@@ -1162,7 +2077,7 @@
     "critical_penalties": [
       {
         "key": "privacy",
-        "label": "Privacy = 10",
+        "label": "Privacy",
         "description": "Mandatory KYC plus confirmed PII breach.",
         "penalty": 90
       }
@@ -1177,13 +2092,13 @@
       {
         "key": "custody_7",
         "label": "Custody = 7",
-        "description": "DeFi: no fallback or funds locked in upgradeable contract. \nCeFi: pooled hot wallet with self-declared segregation and zero external audit.",
+        "description": "DeFi: no fallback or funds locked in upgradeable contract. CeFi: pooled hot wallet with self-declared segregation and zero external audit.",
         "penalty": 5
       },
       {
         "key": "security_governance_7",
         "label": "Security & Governance = 7",
-        "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. \nCeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
+        "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. CeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
         "penalty": 5
       },
       {
@@ -1197,8 +2112,75 @@
   {
     "provider_name": "Libre",
     "slug": "libre",
-    "version": "1.0",
-    "highlights": "Both collateral and loan proceeds are trapped behind Libre's unaudited CrossLink MPC bridge, so redemptions are hostage to the chain. Dashboard data (24 Jul 2025, ≈ 212 k votes) show the top‑2 validators command ≈ 56 % and the top‑5 ≈ 76 %; many are Libre‑ or EOS‑affiliated, unlicensed private outfits with weak operational hygiene. A closed oracle and razor‑thin DEX liquidity further magnify exit risk. To de‑risk, Libre should migrate collateral to a battle‑tested wrapper (e.g., Liquid‑BTC or WBTC), disburse loans in native USDT or fiat rails, publish a full bridge audit, adopt multi‑feed open‑source oracles, disclose validator ownership and attract market-maker liquidity.",
+    "model_version": "1.0",
+    "introduction": "Libre is a cross-chain lending platform that uses an unaudited CrossLink MPC bridge to secure both collateral and loan proceeds. The platform supports multiple assets and chains, but redemptions depend on the bridge's integrity and governance.",
+    "highlights": "Both collateral and loan proceeds are trapped behind Libre's unaudited CrossLink MPC bridge, so redemptions are hostage to the chain. Dashboard data (24 Jul 2025, ≈ 212 k votes) show the bridge is widely used, but its security and governance remain unproven.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2025,
+      "website": "https://www.libre.org/",
+      "custody_model": "CeDeFi",
+      "custodians": [
+        "MPC-TSS"
+      ],
+      "collateral_type": [
+        "BTC"
+      ],
+      "rehypothecation": "No",
+      "kyc": "No",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USDT"
+      ],
+      "support_channels": [
+        "Email",
+        "Telegram",
+        "Discord"
+      ],
+      "apr_type": {
+        "value": "Fixed"
+      },
+      "ltv": {
+        "value": 50,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [
+          80
+        ],
+        "unit": "%"
+      },
+      "liquidation_ltv": {
+        "value": 80,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 100,
+        "unit": "USD"
+      },
+      "loan_value_max": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      },
+      "loan_duration_min": {
+        "value": 1,
+        "unit": "month"
+      },
+      "loan_duration_max": {
+        "value": 6,
+        "unit": "month"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 7,
@@ -1259,7 +2241,7 @@
     "critical_penalties": [
       {
         "key": "platform",
-        "label": "Platform = 10",
+        "label": "Platform",
         "description": "Effective control held by a single entity or tightly affiliated group, or past exploits have locked or lost user funds; balances can be rewritten or blocked without user consent.",
         "penalty": 90
       }
@@ -1268,13 +2250,13 @@
       {
         "key": "custody_7",
         "label": "Custody = 7",
-        "description": "DeFi: no fallback or funds locked in upgradeable contract. \nCeFi: pooled hot wallet with self-declared segregation and zero external audit.",
+        "description": "DeFi: no fallback or funds locked in upgradeable contract. CeFi: pooled hot wallet with self-declared segregation and zero external audit.",
         "penalty": 5
       },
       {
         "key": "security_governance_7",
         "label": "Security & Governance = 7",
-        "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. \nCeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
+        "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. CeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
         "penalty": 5
       },
       {
@@ -1294,9 +2276,76 @@
   {
     "provider_name": "Lendasat",
     "slug": "lendasat",
-    "version": "1.0",
+    "model_version": "1.0",
+    "introduction": "Lendasat is a beta-stage lending platform. Detailed information about its custody, collateral, and operational model is not yet available.",
     "highlights": "N/A",
+    "status": "active",
     "is_beta": true,
+    "notes": "",
+    "details": {
+      "launch_year": 0,
+      "website": "https://lendasat.com",
+      "custody_model": "DeFi",
+      "custodians": [
+        "2-of-3 multisig"
+      ],
+      "collateral_type": [
+        "BTC"
+      ],
+      "rehypothecation": "No",
+      "kyc": "No",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USDC",
+        "USDT",
+        "USD"
+      ],
+      "support_channels": [
+        "Discord",
+        "Email"
+      ],
+      "apr_type": {
+        "value": "Fixed"
+      },
+      "ltv": {
+        "value": 70,
+        "unit": "%"
+      },
+      "margin_call": {
+        "value": [
+          80,
+          85
+        ],
+        "unit": "%"
+      },
+      "liquidation_ltv": {
+        "value": 90,
+        "unit": "%"
+      },
+      "loan_value_min": {
+        "value": 100,
+        "unit": "USD"
+      },
+      "loan_value_max": {
+        "value": 100000,
+        "unit": "USD"
+      },
+      "loan_duration_min": {
+        "value": 1,
+        "unit": "month"
+      },
+      "loan_duration_max": {
+        "value": 12,
+        "unit": "month"
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
     "factors": {
       "collateral": {
         "score": 0,
