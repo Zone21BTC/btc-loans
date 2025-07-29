@@ -1,34 +1,50 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Zone21 Provider Risk‑Score File",
-  "description": "Schema for a single Bitcoin‑backed loan product treated as an independent provider. Source files contain ONLY raw inputs: 13 factor scores, explanatory notes, optional *evidence*, and metadata (including a unique slug). Derived outputs—bonus/critical penalties, final_score, risk_band—are generated automatically by CI and therefore *must not* appear in provider JSON files.",
+  "title": "Zone21 Provider Risk-Score File",
+  "description": "Schema for a single Bitcoin-backed loan product treated as an independent provider. Source files contain ONLY raw inputs: 13 factor scores, explanatory notes, optional evidence, and metadata (including a unique slug). Derived outputs—bonus/critical penalties, final_score, risk_band—are generated automatically by CI and therefore must not appear in provider JSON files.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["provider_name", "slug", "version", "highlights", "factors"],
+
+  "required": [
+    "provider_name",
+    "slug",
+    "model_version",
+    "highlights",
+    "introduction",
+    "details",
+    "factors"
+  ],
+
   "properties": {
     "provider_name": {
       "type": "string",
       "minLength": 1,
-      "description": "Human‑readable name of the loan provider / product."
+      "description": "Human-readable name of the loan provider / product."
     },
 
     "slug": {
       "type": "string",
       "pattern": "^[a-z0-9-]+$",
       "minLength": 3,
-      "description": "URL‑safe, lowercase kebab‑case identifier used to distinguish this provider (e.g., 'unchained', 'ledn-rehypothecated'). Must be unique across the repository."
+      "description": "URL-safe, lowercase kebab-case identifier used to distinguish this provider (e.g. 'unchained', 'ledn-rehypothecated'). Must be unique across the repository."
     },
 
-    "version": {
+    "model_version": {
       "type": "string",
-      "pattern": "^\\d+\\.\\d+$",
-      "description": "Manual revision tag for this JSON file (e.g., '1.0', '2.1'). Increment whenever any factor score, note, or evidence changes so CI can flag outdated caches."
+      "pattern": "^\\d+\\.0$",
+      "description": "Version of the Zone21 risk‑scoring methodology this file conforms to. Major releases only (e.g. '1.0', '2.0', '3.0'). Increment when the underlying model rules change in a non‑backwards‑compatible way."
     },
 
     "highlights": {
       "type": "string",
       "minLength": 1,
-      "description": "Short narrative summary of key strengths / weaknesses (1‑3 sentences)."
+      "description": "Short narrative summary of key strengths / weaknesses."
+    },
+
+    "introduction": {
+      "type": "string",
+      "minLength": 1,
+      "description": "One‑sentence tagline or elevator pitch describing the provider."
     },
 
     "status": {
@@ -46,6 +62,74 @@
     "notes": {
       "type": "string",
       "description": "Optional free‑form remarks not covered by factor notes."
+    },
+
+    "details": {
+      "type": "object",
+      "description": "Structured product details surfaced in the UI tables. The object itself is required, but every sub‑field is optional so analysts can populate them gradually.",
+      "additionalProperties": false,
+      "properties": {
+        "launch_year": {
+          "type": "integer",
+          "minimum": 1900,
+          "maximum": 2100,
+          "description": "Calendar year the loan product went live (YYYY)."
+        },
+        "website": {
+          "type": "string",
+          "format": "uri",
+          "description": "Canonical marketing or docs homepage for the provider."
+        },
+        "custody_model": {
+          "type": "string",
+          "enum": ["DeFi", "CeFi", "CeDeFi"],
+          "description": "Custody classification. Choose one of 'DeFi', 'CeFi', or 'CeDeFi'."
+        },
+        "custodians": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Human‑readable list of keyholders or multisig thresholds (e.g. '3‑of‑4 multisig')."
+        },
+        "collateral_type": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Assets accepted as collateral (e.g. ['BTC'])."
+        },
+        "rehypothecation": {
+          "type": "string",
+          "enum": ["Yes", "No", "Limited"],
+          "description": "Indicates whether collateral can be rehypothecated."
+        },
+        "kyc": {
+          "type": "string",
+          "enum": ["Yes", "No", "Varies"],
+          "description": "KYC requirement for borrowers."
+        },
+        "loan_type": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["Consumer", "Business"] },
+          "description": "Loan purpose or audience (e.g. ['Consumer', 'Business'])."
+        },
+        "loan_currency": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Currencies a borrower can draw (e.g. ['USD', 'USDC'])."
+        },
+        "support_channels": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Customer support contact paths (e.g. ['Email', 'Chat'])."
+        },
+        "apr_type": { "$ref": "#/definitions/aprType" },
+        "ltv": { "$ref": "#/definitions/valueMetric" },
+        "margin_call": { "$ref": "#/definitions/valueArrayMetric" },
+        "liquidation_ltv": { "$ref": "#/definitions/valueMetric" },
+        "loan_value_min": { "$ref": "#/definitions/valueMetric" },
+        "loan_value_max": { "$ref": "#/definitions/valueMetric" },
+        "loan_duration_min": { "$ref": "#/definitions/valueMetric" },
+        "loan_duration_max": { "$ref": "#/definitions/valueMetric" },
+        "total_loan_issued": { "$ref": "#/definitions/valueMetric" }
+      }
     },
 
     "factors": {
@@ -93,19 +177,11 @@
 
     "evidenceItem": {
       "type": "object",
-      "required": ["link", "type"],
       "additionalProperties": false,
+      "required": ["link", "type"],
       "properties": {
-        "link": {
-          "type": "string",
-          "format": "uri",
-          "description": "Public URL to an image or PDF supporting the factor assessment."
-        },
-        "type": {
-          "type": "string",
-          "enum": ["image", "pdf"],
-          "description": "File type of the evidence asset."
-        }
+        "link": { "type": "string", "format": "uri", "description": "Public URL to an image or PDF supporting the factor assessment." },
+        "type": { "type": "string", "enum": ["image", "pdf"], "description": "File type of the evidence asset." }
       }
     },
 
@@ -115,16 +191,40 @@
       "required": ["score", "note"],
       "properties": {
         "score": { "$ref": "#/definitions/scoreEnum" },
-        "note": {
-          "type": "string",
-          "minLength": 3,
-          "description": "Short explanation for the assigned score (1‑2 sentences)."
-        },
-        "evidence": {
-          "type": "array",
-          "items": { "$ref": "#/definitions/evidenceItem" },
-          "description": "Optional list of evidence objects. May start empty; analysts can populate in later revisions."
-        }
+        "note": { "type": "string", "minLength": 3, "description": "Short explanation for the assigned score." },
+        "evidence": { "type": "array", "items": { "$ref": "#/definitions/evidenceItem" }, "description": "Optional list of evidence items supporting this score." }
+      }
+    },
+
+    "valueMetric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": { "type": "number" },
+        "unit": { "type": "string" },
+        "note": { "type": "string" }
+      }
+    },
+
+    "valueArrayMetric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": { "type": "array", "items": { "type": "number" } },
+        "unit": { "type": "string" },
+        "note": { "type": "string" }
+      }
+    },
+
+    "aprType": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": { "type": "string" },
+        "note": { "type": "string" }
       }
     }
   }
