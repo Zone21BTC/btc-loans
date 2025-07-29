@@ -2,7 +2,60 @@
   "provider_name": "Ledn",
   "slug": "ledn",
   "model_version": "1.0",
+  "introduction": "Founded in 2018, Ledn provides Bitcoin-backed loans with collateral held in segregated, bankruptcy-remote accounts at BitGo Trust Company. The platform offers fixed-rate 12-month loans with native BTC as collateral and has maintained an incident-free record through multiple market cycles.",
   "highlights": "Ledn's Custodied Loans score well for CeFi: borrower BTC stays segregated in BitGo's cold, insured vaults, and the firm has survived the bankruptcy wave that sank early Bitcoin lenders during 2022-23 while maintaining a long-running incident-free record. Improvement areas remain: liquidations still rely on a single undisclosed price feed, and Ledn's cold-to-hot wallet operations lack an independent audit.",
+  "status": "active",
+  "is_beta": false,
+  "notes": "",
+  "details": {
+    "launch_year": 2018,
+    "website": "https://ledn.io",
+    "custody_model": "CeFi",
+    "custodians": ["BitGo"],
+    "collateral_type": ["BTC"],
+    "rehypothecation": "Limited",
+    "kyc": "Yes",
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "USD"],
+    "support_channels": ["Email"],
+    "apr_type": {
+      "value": "Fixed"
+    },
+    "ltv": {
+      "value": 50,
+      "unit": "%"
+    },
+    "margin_call": {
+      "value": [70, 75],
+      "unit": "%",
+      "note": "Warnings at 70%, 75% (no margin call)"
+    },
+    "liquidation_ltv": {
+      "value": 80,
+      "unit": "%"
+    },
+    "loan_value_min": {
+      "value": 1000,
+      "unit": "USD"
+    },
+    "loan_value_max": {
+      "value": 1000000,
+      "unit": "USD"
+    },
+    "loan_duration_min": {
+      "value": 12,
+      "unit": "month"
+    },
+    "loan_duration_max": {
+      "value": 12,
+      "unit": "month"
+    },
+    "total_loan_issued": {
+      "value": 0,
+      "unit": "USD",
+      "note": "N/A"
+    }
+  },
   "factors": {
     "collateral": { 
       "score": 0, 

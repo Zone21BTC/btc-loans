@@ -2,7 +2,60 @@
   "provider_name": "Lava",
   "slug": "lava",
   "model_version": "1.0",
+  "introduction": "Launched in 2024, Lava is a DeFi lending platform using Discreet Log Contracts (DLCs) to enable Bitcoin-backed loans. Collateral is locked in a DLC escrow, with fixed-rate terms and instant liquidations based on a single, Lava-operated oracle. The platform is non-custodial and does not require KYC.",
   "highlights": "Innovative DLC-based model hampered by closed-source key generation and a single price oracle; in a DLC setup the entire contract integrity hinges on oracle robustness. Open-sourcing the wallet and adopting multiple independent, attestable oracles could quickly elevate Lava to a top-tier lender.",
+  "status": "active",
+  "is_beta": false,
+  "notes": "",
+  "details": {
+    "launch_year": 2024,
+    "website": "https://lava.xyz",
+    "custody_model": "DeFi",
+    "custodians": ["DLC"],
+    "collateral_type": ["BTC"],
+    "rehypothecation": "No",
+    "kyc": "No",
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "LavaUSD"],
+    "support_channels": ["Email"],
+    "apr_type": {
+      "value": "Fixed"
+    },
+    "ltv": {
+      "value": 50,
+      "unit": "%"
+    },
+    "margin_call": {
+      "value": [],
+      "unit": "%",
+      "note": "Margin call not supported"
+    },
+    "liquidation_ltv": {
+      "value": 95,
+      "unit": "%"
+    },
+    "loan_value_min": {
+      "value": 100,
+      "unit": "USD"
+    },
+    "loan_value_max": {
+      "value": 100000,
+      "unit": "USD"
+    },
+    "loan_duration_min": {
+      "value": 1,
+      "unit": "month"
+    },
+    "loan_duration_max": {
+      "value": 12,
+      "unit": "month"
+    },
+    "total_loan_issued": {
+      "value": 0,
+      "unit": "USD",
+      "note": "N/A"
+    }
+  },
   "factors": {
     "collateral": { 
       "score": 0, 

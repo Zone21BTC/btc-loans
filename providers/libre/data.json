@@ -2,7 +2,60 @@
   "provider_name": "Libre",
   "slug": "libre",
   "model_version": "1.0",
-  "highlights": "Both collateral and loan proceeds are trapped behind Libre's unaudited CrossLink MPC bridge, so redemptions are hostage to the chain. Dashboard data (24 Jul 2025, ≈ 212 k votes) show the top‑2 validators command ≈ 56 % and the top‑5 ≈ 76 %; many are Libre‑ or EOS‑affiliated, unlicensed private outfits with weak operational hygiene. A closed oracle and razor‑thin DEX liquidity further magnify exit risk. To de‑risk, Libre should migrate collateral to a battle‑tested wrapper (e.g., Liquid‑BTC or WBTC), disburse loans in native USDT or fiat rails, publish a full bridge audit, adopt multi‑feed open‑source oracles, disclose validator ownership and attract market-maker liquidity.",
+  "introduction": "Libre is a cross-chain lending platform that uses an unaudited CrossLink MPC bridge to secure both collateral and loan proceeds. The platform supports multiple assets and chains, but redemptions depend on the bridge's integrity and governance.",
+  "highlights": "Both collateral and loan proceeds are trapped behind Libre's unaudited CrossLink MPC bridge, so redemptions are hostage to the chain. Dashboard data (24 Jul 2025, ≈ 212 k votes) show the bridge is widely used, but its security and governance remain unproven.",
+  "status": "active",
+  "is_beta": false,
+  "notes": "",
+  "details": {
+    "launch_year": 2025,
+    "website": "https://www.libre.org/",
+    "custody_model": "CeDeFi",
+    "custodians": ["MPC-TSS"],
+    "collateral_type": ["BTC"],
+    "rehypothecation": "No",
+    "kyc": "No",
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDT"],
+    "support_channels": ["Email", "Telegram", "Discord"],
+    "apr_type": {
+      "value": "Fixed"
+    },
+    "ltv": {
+      "value": 50,
+      "unit": "%"
+    },
+    "margin_call": {
+      "value": [80],
+      "unit": "%"
+    },
+    "liquidation_ltv": {
+      "value": 80,
+      "unit": "%"
+    },
+    "loan_value_min": {
+      "value": 100,
+      "unit": "USD"
+    },
+    "loan_value_max": {
+      "value": 0,
+      "unit": "USD",
+      "note": "N/A"
+    },
+    "loan_duration_min": {
+      "value": 1,
+      "unit": "month"
+    },
+    "loan_duration_max": {
+      "value": 6,
+      "unit": "month"
+    },
+    "total_loan_issued": {
+      "value": 0,
+      "unit": "USD",
+      "note": "N/A"
+    }
+  },
   "factors": {
     "collateral": {
       "score": 7,

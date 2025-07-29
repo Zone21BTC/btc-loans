@@ -4,6 +4,57 @@
   "model_version": "1.0",
   "introduction": "Launched in March 2024 and headquartered in Lugano, Switzerland, Debifi is a non-custodial Bitcoin-backed lending platform. It uses multisig escrow, connects borrowers with institutional lenders, and exited beta in June 2025 to offer global loans and upcoming credit cards.",
   "highlights": "Debifi is a new Bitcoin-backed lender that escrows collateral in a 3-of-4 multisig and supports hardware signers. Key risks are undisclosed audit results, unclear server-key protections, and a lone price oracle. Publishing full audit reports, detailing key security, and adopting diversified, verifiable price feeds would push it into best-in-class territory.",
+  "status": "active",
+  "is_beta": false,
+  "notes": "",
+  "details": {
+    "launch_year": 2025,
+    "website": "https://debifi.com/",
+    "custody_model": "DeFi",
+    "custodians": ["3-of-4 multisig"],
+    "collateral_type": ["BTC"],
+    "rehypothecation": "No",
+    "kyc": "Varies",
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "USDT", "USD", "EUR", "GBP", "AED", "BRL", "CHF"],
+    "support_channels": ["Email", "Chat"],
+    "apr_type": {
+      "value": "Fixed"
+    },
+    "ltv": {
+      "value": 70,
+      "unit": "%"
+    },
+    "margin_call": {
+      "value": [75, 80, 85],
+      "unit": "%"
+    },
+    "liquidation_ltv": {
+      "value": 90,
+      "unit": "%"
+    },
+    "loan_value_min": {
+      "value": 5000,
+      "unit": "USD"
+    },
+    "loan_value_max": {
+      "value": 700000,
+      "unit": "USD"
+    },
+    "loan_duration_min": {
+      "value": 1,
+      "unit": "month"
+    },
+    "loan_duration_max": {
+      "value": 12,
+      "unit": "month"
+    },
+    "total_loan_issued": {
+      "value": 0,
+      "unit": "USD",
+      "note": "N/A"
+    }
+  },
   "factors": {
     "collateral": { 
       "score": 0, 

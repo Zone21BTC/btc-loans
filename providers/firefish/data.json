@@ -2,7 +2,60 @@
   "provider_name": "Firefish",
   "slug": "firefish",
   "model_version": "1.0",
-  "highlights": "Chief weaknesses are the browser-generated borrower key and a setup that blocks blinded oracles, limiting user privacy and plausible deniability. Open-sourcing the wallet code and migrating to DLCs with blinded oracles are critical first steps toward a safer model.",
+  "introduction": "Firefish is a Bitcoin-backed lending platform that uses browser-generated keys and a unique setup that blocks blinded oracles. The platform is non-custodial, supports instant liquidations, and does not require KYC, but has limitations in user privacy and oracle diversity.",
+  "highlights": "Chief weaknesses are the browser-generated borrower key and a setup that blocks blinded oracles, limiting user privacy and plausible deniability. Open-sourcing the wallet code and migrating to a blinded oracle setup would sharply improve privacy and resilience.",
+  "status": "active",
+  "is_beta": false,
+  "notes": "",
+  "details": {
+    "launch_year": 2024,
+    "website": "https://firefish.io",
+    "custody_model": "DeFi",
+    "custodians": ["Pre-signed txns"],
+    "collateral_type": ["BTC"],
+    "rehypothecation": "No",
+    "kyc": "Yes",
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "EUR", "CHF", "CZK"],
+    "support_channels": ["Email"],
+    "apr_type": {
+      "value": "Fixed"
+    },
+    "ltv": {
+      "value": 50,
+      "unit": "%"
+    },
+    "margin_call": {
+      "value": [80, 85, 90],
+      "unit": "%",
+      "note": "Warnings at 80%, 85%, 90% (no margin call)"
+    },
+    "liquidation_ltv": {
+      "value": 95,
+      "unit": "%"
+    },
+    "loan_value_min": {
+      "value": 800,
+      "unit": "USD"
+    },
+    "loan_value_max": {
+      "value": 150000,
+      "unit": "USD"
+    },
+    "loan_duration_min": {
+      "value": 3,
+      "unit": "month"
+    },
+    "loan_duration_max": {
+      "value": 24,
+      "unit": "month"
+    },
+    "total_loan_issued": {
+      "value": 0,
+      "unit": "USD",
+      "note": "N/A"
+    }
+  },
   "factors": {
     "collateral": { 
       "score": 0, 

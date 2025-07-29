@@ -3,6 +3,59 @@
   "slug": "unchained",
   "model_version": "1.0",
   "highlights": "Well-run, ultra-conservative lender with user-controlled multisig and zero rehypo. The lone gap is the missing external audit of Kingdom Trust (its sole custody partner) together with reliance on a single in-house price feed. Independent custody attestation and multiple oracles would close the last material risks.",
+  "introduction": "Founded in 2016 in Austin, TX, Unchained Capital provides Bitcoin-native financial services, offering multisig vaults, trading, inheritance planning, IRAs, and Bitcoin-backed loans with collaborative custody—ensuring no rehypothecation of assets.",
+  "status": "active",
+  "is_beta": false,
+  "notes": "",
+  "details": {
+    "launch_year": 2017,
+    "website": "https://unchained.com",
+    "custody_model": "DeFi",
+    "custodians": ["2-of-3 multisig"],
+    "collateral_type": ["BTC"],
+    "rehypothecation": "No",
+    "kyc": "Yes",
+    "loan_type": ["Business"],
+    "loan_currency": ["USD"],
+    "support_channels": ["Email", "Phone"],
+    "apr_type": {
+      "value": "Fixed"
+    },
+    "ltv": {
+      "value": 50,
+      "unit": "%"
+    },
+    "margin_call": {
+      "value": [66],
+      "unit": "%"
+    },
+    "liquidation_ltv": {
+      "value": 83,
+      "unit": "%"
+    },
+    "loan_value_min": {
+      "value": 150000,
+      "unit": "USD"
+    },
+    "loan_value_max": {
+      "value": 0,
+      "unit": "USD",
+      "note": "N/A"
+    },
+    "loan_duration_min": {
+      "value": 12,
+      "unit": "month"
+    },
+    "loan_duration_max": {
+      "value": 12,
+      "unit": "month"
+    },
+    "total_loan_issued": {
+      "value": 0,
+      "unit": "USD",
+      "note": "N/A"
+    }
+  },
   "factors": {
     "collateral": { "score": 0, "note": "Native BTC (on-chain UTXO)." },
     "rehypothecation": { "score": 0, "note": "Non-rehypothecable collateral." },

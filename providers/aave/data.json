@@ -2,7 +2,64 @@
   "provider_name": "Aave",
   "slug": "aave",
   "model_version": "1.0",
+  "introduction": "Founded in 2017, Aave is a decentralized lending protocol operating on Ethereum that allows users to borrow against their crypto assets. It uses smart contracts to facilitate peer-to-peer lending with automated liquidation mechanisms and variable interest rates based on market utilization.",
   "highlights": "Long-standing, high-volume on-chain lending platform, yet its thin liquidation buffer and floating rates invite forced liquidations during volatility. Raising the collateral cushion and offering fixed-rate loan options would markedly improve borrower safety in stressed markets.",
+  "status": "active",
+  "is_beta": false,
+  "notes": "",
+  "details": {
+    "launch_year": 2017,
+    "website": "https://aave.com",
+    "custody_model": "CeDeFi",
+    "custodians": ["BitGo"],
+    "collateral_type": ["wBTC", "WETH", "Others"],
+    "rehypothecation": "No",
+    "kyc": "No",
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "USDT", "ETH", "wstETH", "DAI", "Others"],
+    "support_channels": ["Email", "Discord"],
+    "apr_type": {
+      "value": "Variable"
+    },
+    "ltv": {
+      "value": 73,
+      "unit": "%"
+    },
+    "margin_call": {
+      "value": [],
+      "unit": "%",
+      "note": "No margin call mechanism"
+    },
+    "liquidation_ltv": {
+      "value": 78,
+      "unit": "%"
+    },
+    "loan_value_min": {
+      "value": 0,
+      "unit": "USD",
+      "note": "No minimum"
+    },
+    "loan_value_max": {
+      "value": 0,
+      "unit": "USD",
+      "note": "N/A"
+    },
+    "loan_duration_min": {
+      "value": 0,
+      "unit": "month",
+      "note": "Flexible"
+    },
+    "loan_duration_max": {
+      "value": 0,
+      "unit": "month",
+      "note": "Flexible"
+    },
+    "total_loan_issued": {
+      "value": 0,
+      "unit": "USD",
+      "note": "N/A"
+    }
+  },
   "factors": {
     "collateral": {
       "score": 4,

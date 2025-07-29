@@ -71,8 +71,6 @@
       "properties": {
         "launch_year": {
           "type": "integer",
-          "minimum": 1900,
-          "maximum": 2100,
           "description": "Calendar year the loan product went live (YYYY)."
         },
         "website": {
