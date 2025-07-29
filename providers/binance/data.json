@@ -1,7 +1,7 @@
 {
   "provider_name": "Binance",
   "slug": "binance",
-  "version": "1.0",
+  "model_version": "1.0",
   "highlights": "Under Binance's Flexible Rate Loan, client BTC collateral is immediately rehypothecated via Simple Earn and swept into pooled omnibus wallets with no bankruptcy-remote segregation. Liquidations hinge on a Binance-run price index, a thin 13 pp buffer, and minute-to-minute variable rates. Past failures (including a 7,000 BTC hot-wallet hack, a mass KYC data leak exposing ~60,000 users, and a US $4.3B DOJ settlement) underscore the counter-party risk. Segregating collateral with a regulated trustee, reviving third-party PoR audits, adopting independent multi-signer oracles, and widening the collateral cushion would sharply reduce exposure.",
   "factors": {
     "collateral": { 

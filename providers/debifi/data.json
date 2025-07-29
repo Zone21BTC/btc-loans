@@ -1,7 +1,8 @@
 {
   "provider_name": "Debifi",
   "slug": "debifi",
-  "version": "1.0",
+  "model_version": "1.0",
+  "introduction": "Launched in March 2024 and headquartered in Lugano, Switzerland, Debifi is a non-custodial Bitcoin-backed lending platform. It uses multisig escrow, connects borrowers with institutional lenders, and exited beta in June 2025 to offer global loans and upcoming credit cards.",
   "highlights": "Debifi is a new Bitcoin-backed lender that escrows collateral in a 3-of-4 multisig and supports hardware signers. Key risks are undisclosed audit results, unclear server-key protections, and a lone price oracle. Publishing full audit reports, detailing key security, and adopting diversified, verifiable price feeds would push it into best-in-class territory.",
   "factors": {
     "collateral": { 

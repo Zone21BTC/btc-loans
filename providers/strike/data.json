@@ -1,7 +1,7 @@
 {
   "provider_name": "Strike",
   "slug": "strike",
-  "version": "1.0",
+  "model_version": "1.0",
   "highlights": "Elevated risk stems from in-house custody, hidden reserves, and undisclosed price feeds. Moving collateral to a bankruptcy-remote regulated custodian, supplying PoR or per-loan UTXOs, and revealing pricing sources are priority fixes.",
   "factors": {
     "collateral": { "score": 0, "note": "Native BTC (on-chain UTXO)." },

@@ -1,7 +1,7 @@
 {
   "provider_name": "Arch",
   "slug": "arch",
-  "version": "1.0",
+  "model_version": "1.0",
   "highlights": "Uses native BTC escrow but offers no public proof-of-reserves and depends on a single oracle, leaving users blind to hidden leverage or price-feed failure. Live PoR and multiple independent pricing sources would materially shrink uncertainty.",
   "factors": {
     "collateral": { 

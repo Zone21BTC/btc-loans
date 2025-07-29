@@ -1,7 +1,7 @@
 {
   "provider_name": "Lendasat",
   "slug": "lendasat",
-  "version": "1.0",
+  "model_version": "1.0",
   "highlights": "N/A",
   "is_beta": true,
   "factors": {

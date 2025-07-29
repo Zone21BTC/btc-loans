@@ -1,7 +1,7 @@
 {
   "provider_name": "Lava",
   "slug": "lava",
-  "version": "1.0",
+  "model_version": "1.0",
   "highlights": "Innovative DLC-based model hampered by closed-source key generation and a single price oracle; in a DLC setup the entire contract integrity hinges on oracle robustness. Open-sourcing the wallet and adopting multiple independent, attestable oracles could quickly elevate Lava to a top-tier lender.",
   "factors": {
     "collateral": { 

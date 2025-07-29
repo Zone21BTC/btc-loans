@@ -1,7 +1,7 @@
 {
   "provider_name": "Aave",
   "slug": "aave",
-  "version": "1.0",
+  "model_version": "1.0",
   "highlights": "Long-standing, high-volume on-chain lending platform, yet its thin liquidation buffer and floating rates invite forced liquidations during volatility. Raising the collateral cushion and offering fixed-rate loan options would markedly improve borrower safety in stressed markets.",
   "factors": {
     "collateral": {

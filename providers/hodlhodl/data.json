@@ -1,7 +1,7 @@
 {
   "provider_name": "Hodl Hodl",
   "slug": "hodlhodl",
-  "version": "1.0",
+  "model_version": "1.0",
   "highlights": "Core vulnerability is the closed-source wallet that generates the borrower's key directly in the browser, creating a wide attack surface. Open-sourcing that code (or letting users bring their own hardware wallet) would slash risk while preserving the platform's non-custodial strength.",
   "factors": {
     "collateral": { 

@@ -1,7 +1,7 @@
 {
   "provider_name": "Libre",
   "slug": "libre",
-  "version": "1.0",
+  "model_version": "1.0",
   "highlights": "Both collateral and loan proceeds are trapped behind Libre's unaudited CrossLink MPC bridge, so redemptions are hostage to the chain. Dashboard data (24 Jul 2025, ≈ 212 k votes) show the top‑2 validators command ≈ 56 % and the top‑5 ≈ 76 %; many are Libre‑ or EOS‑affiliated, unlicensed private outfits with weak operational hygiene. A closed oracle and razor‑thin DEX liquidity further magnify exit risk. To de‑risk, Libre should migrate collateral to a battle‑tested wrapper (e.g., Liquid‑BTC or WBTC), disburse loans in native USDT or fiat rails, publish a full bridge audit, adopt multi‑feed open‑source oracles, disclose validator ownership and attract market-maker liquidity.",
   "factors": {
     "collateral": {

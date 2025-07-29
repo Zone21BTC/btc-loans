@@ -1,7 +1,7 @@
 {
   "provider_name": "Salt",
   "slug": "salt",
-  "version": "1.0",
+  "model_version": "1.0",
   "highlights": "High risk driven by pooled hot-wallet custody, opaque pricing, and missing proof-of-reserves. A full stack audit, public price-feed disclosure, and a clear commitment to park most collateral with the regulated custodian while keeping the hot-wallet float small would halve its exposure.",
   "factors": {
     "collateral": { "score": 0, "note": "Native BTC (on-chain UTXO)." },

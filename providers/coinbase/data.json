@@ -1,7 +1,7 @@
 {
   "provider_name": "Coinbase",
   "slug": "coinbase",
-  "version": "1.0",
+  "model_version": "1.0",
   "highlights": "Severe risk flows from the massive KYC trove that has already leaked, compounded by a solo price oracle. Harden access controls around user data, make the wallet reproducible for independent verification, and bring in multiple external pricing feeds to restore confidence.",
   "factors": {
     "collateral": {

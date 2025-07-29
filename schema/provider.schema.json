@@ -4,7 +4,6 @@
   "description": "Schema for a single Bitcoin-backed loan product treated as an independent provider. Source files contain ONLY raw inputs: 13 factor scores, explanatory notes, optional evidence, and metadata (including a unique slug). Derived outputs—bonus/critical penalties, final_score, risk_band—are generated automatically by CI and therefore must not appear in provider JSON files.",
   "type": "object",
   "additionalProperties": false,
-
   "required": [
     "provider_name",
     "slug",
@@ -12,7 +11,8 @@
     "highlights",
     "introduction",
     "details",
-    "factors"
+    "factors",
+    "status"
   ],
 
   "properties": {
@@ -44,14 +44,14 @@
     "introduction": {
       "type": "string",
       "minLength": 1,
-      "description": "One‑sentence tagline or elevator pitch describing the provider."
+      "description": "Elevator pitch describing the provider."
     },
 
     "status": {
       "type": "string",
       "enum": ["active", "inactive", "withdrawn"],
       "default": "active",
-      "description": "Operational status of this loan product. Optional; defaults to 'active'."
+      "description": "Operational status of this loan product."
     },
 
     "is_beta": {
@@ -178,10 +178,28 @@
     "evidenceItem": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["link", "type"],
+      "required": ["link", "type", "source_url", "created_at"],
       "properties": {
-        "link": { "type": "string", "format": "uri", "description": "Public URL to an image or PDF supporting the factor assessment." },
-        "type": { "type": "string", "enum": ["image", "pdf"], "description": "File type of the evidence asset." }
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "description": "Public S3 URL to the image or PDF file uploaded as evidence."
+        },
+        "type": {
+          "type": "string",
+          "enum": ["image", "pdf"],
+          "description": "File type of the evidence asset."
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Original web page where the evidence was captured."
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "UTC timestamp when the evidence was captured (ISO-8601)."
+        }
       }
     },
 

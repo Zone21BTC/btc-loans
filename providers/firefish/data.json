@@ -1,7 +1,7 @@
 {
   "provider_name": "Firefish",
   "slug": "firefish",
-  "version": "1.0",
+  "model_version": "1.0",
   "highlights": "Chief weaknesses are the browser-generated borrower key and a setup that blocks blinded oracles, limiting user privacy and plausible deniability. Open-sourcing the wallet code and migrating to DLCs with blinded oracles are critical first steps toward a safer model.",
   "factors": {
     "collateral": { 

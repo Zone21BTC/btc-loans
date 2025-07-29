@@ -1,6 +1,6 @@
 # Zone21 Risk Scores
 
-A public repository of the **raw 13‑factor risk scores** that Zone21 assigns to Bitcoin‑collateralized loan products. Each provider’s file lives in `providers/<slug>/data.json`, and CI bundles them into aggregate datasets at `dist/all-providers.json` (pretty) **and** `dist/all-providers.min.json` (compact) for easy download.
+A public repository of the **raw 13‑factor risk scores** that Zone21 assigns to Bitcoin‑backed loan products. Each provider’s file lives in `providers/<slug>/data.json`, and CI bundles them into aggregate datasets at `dist/all-providers.json` (pretty) **and** `dist/all-providers.min.json` (compact) for easy download.
 
 → **Full methodology:** see [`docs/risk-model.md`](docs/risk-model.md)
 
@@ -65,30 +65,32 @@ Humans **must not** commit directly to `dist/`; branch protection will reject su
 
 ---
 
-## Data Model
+## Data Model
 
-Each `data.json` is validated by [`schema/provider.schema.json`](./schema/provider.schema.json). Key required fields:
+Each `data.json` is validated by [`schema/provider.schema.json`](./schema/provider.schema.json). Here are the key level-1 fields:
 
-| Field        | Type                | Notes                                                                  |
-| ------------ | ------------------- | ---------------------------------------------------------------------- |
-| `slug`       | `string`            | Kebab‑case unique ID (matches folder name)                             |
-| `version`    | `string`            | Manual revision stamp (e.g., `"1.0"`, `"2.0"`)                         |
-| `highlights` | `string`            | 1–3 sentence summary for humans                                        |
-| `status`     | `string` (optional) | `"active"`, `"inactive"`, `"withdrawn"`                                |
-| `factors`    | `object`            | 13 sub‑objects → `score` (0/2/4/7/10), `note`, optional `evidence` \[] |
+| Field           | Type                 | Description                                                                     |
+| --------------- | -------------------- | ------------------------------------------------------------------------------- |
+| `provider_name` | `string`             | Human-readable name of the loan provider or product.                            |
+| `slug`          | `string`             | Unique, URL-safe, lowercase kebab-case identifier (e.g., 'ledn').               |
+| `model_version` | `string`             | Version of the Zone21 risk-scoring methodology (e.g., '1.0').                   |
+| `highlights`    | `string`             | Short narrative summary highlighting key strengths or weaknesses.               |
+| `introduction`  | `string`             | Elevator pitch describing the provider.                                         |
+| `status`        | `string`             | Operational status: 'active', 'inactive', or 'withdrawn'.                       |
+| `is_beta`       | `boolean` (optional) | Flag indicating if the provider is a beta product.                              |
+| `notes`         | `string` (optional)  | Additional remarks not covered by specific factor notes.                        |
+| `details`       | `object`             | Structured product details displayed in UI tables.                              |
+| `factors`       | `object`             | Contains 13 sub-objects each with a `score`, `note`, and optionally `evidence`. |
 
-`evidence` items look like:
+The `evidence` sub-object includes:
 
-```json
-{
-  "link": "https://example.com/audit.pdf",
-  "type": "pdf"
-}
-```
+* `link`: URL to the supporting document (image or PDF).
+* `type`: Type of evidence ('image' or 'pdf').
+* `source_url`: URL to the original source of evidence.
+* `created_at`: UTC datetime indicating when the evidence was retrieved (e.g., '2025-07-29T05:04:11Z').
 
-Allowed `type`: `image` | `pdf`.
+> **Note:** Fields like `final_score`, `risk_band`, and penalty-related fields are calculated automatically and do not appear in source files.
 
-> **No `final_score`, `risk_band`, or penalty fields appear in source files** — these are computed downstream.
 
 ---
 

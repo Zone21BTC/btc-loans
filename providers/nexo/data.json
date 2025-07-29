@@ -1,7 +1,7 @@
 {
   "provider_name": "Nexo",
   "slug": "nexo",
-  "version": "1.0",
+  "model_version": "1.0",
   "highlights": "Nexo's loan product carries high risk: unrestricted rehypothecation and pooled custody without verified bankruptcy-remote segregation, a fully opaque in-house price oracle, and discontinued real-time proof-of-reserves. Limiting reuse, migrating collateral into independently attested bankruptcy-remote trust accounts, restoring on-chain PoR, and adopting multi-feed pricing would materially cut exposure.",
   "factors": {
     "collateral": { "score": 0, "note": "Native BTC (on-chain UTXO)." },

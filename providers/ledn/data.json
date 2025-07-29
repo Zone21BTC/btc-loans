@@ -1,7 +1,7 @@
 {
   "provider_name": "Ledn",
   "slug": "ledn",
-  "version": "1.0",
+  "model_version": "1.0",
   "highlights": "Ledn's Custodied Loans score well for CeFi: borrower BTC stays segregated in BitGo's cold, insured vaults, and the firm has survived the bankruptcy wave that sank early Bitcoin lenders during 2022-23 while maintaining a long-running incident-free record. Improvement areas remain: liquidations still rely on a single undisclosed price feed, and Ledn's cold-to-hot wallet operations lack an independent audit.",
   "factors": {
     "collateral": { 
