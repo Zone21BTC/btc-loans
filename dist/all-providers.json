@@ -1284,7 +1284,7 @@
     "slug": "coinrabbit",
     "model_version": "1.0",
     "introduction": "Founded in 2020, CoinRabbit is a CeFi lender operated by Rabbit Finance LLC, registered in St. Vincent and the Grenadines. The platform offers loans in USDT or USDC against Bitcoin and more than 300 other crypto assets. Borrowers can choose a 30-day fixed-rate term or keep the loan open-ended. Collateral is held in-house, without a qualified custodian.",
-    "highlights": "Collateral is held in provider-controlled pooled wallets, priced via a closed, undisclosed \"liquidity-partner\" feed, and is vulnerable to liquidation from a thin LTV buffer. Rates can be retroactively changed at the firm’s discretion. There is no proof-of-reserves, wallet address disclosure, or independent attestation; no public audits or bug bounty; and governance is fully internal. Publishing proof-of-reserves and conducting security audits, moving BTC to bankruptcy-remote cold storage, adopting transparent multi-feed oracles, widening the LTV buffer, and capping or locking rates would reduce risk.",
+    "highlights": "Collateral is held in provider-controlled pooled wallets, priced via a closed, undisclosed \"liquidity-partner\" feed, and is vulnerable to liquidation from a thin LTV buffer. Rates can be changed at the firm’s sole discretion. There is no proof-of-reserves, wallet address disclosure, or independent attestation; no public audits or bug bounty; and governance is fully internal. Publishing proof-of-reserves and conducting security audits, moving BTC to bankruptcy-remote cold storage, adopting transparent multi-feed oracles, widening the LTV buffer, and capping or locking rates would reduce risk.",
     "status": "active",
     "is_beta": false,
     "notes": "",
@@ -1393,8 +1393,8 @@
         "note": "CoinRabbit fixes the liquidation trigger at \"initial LTV + 5%\", anchored to the BTC price when the loan begins. No grace period. Liquidation can occur the moment the threshold is crossed. Example: start at 90% LTV → liquidation at 95%, so even a 5-6% BTC price drop can wipe you out."
       },
       "rate_and_term": {
-        "score": 10,
-        "note": "For unlimited duration loans (open-ended loans), CoinRabbit publishes a fixed rate at the time the loan is created. However, the terms of use state that \"The Interest shall be subject to revision from time to time, at our sole and absolute discretion.\" CoinRabbit's support also confirmed that when the interest rate changes, both new loans and existing loans are affected."
+        "score": 7,
+        "note": "CoinRabbit terms state: \"Interest shall be subject to revision from time to time, at our sole and absolute discretion.\" Coinrabbit support also confirmed that when the interest rate changes, both new and existing open-ended loans are affected."
       },
       "transparency": {
         "score": 10,
@@ -1417,9 +1417,9 @@
         "note": "St. Vincent and the Grenadines"
       }
     },
-    "risk_band": "Critical",
-    "linear_score": 57,
-    "final_score": 82,
+    "risk_band": "High",
+    "linear_score": 54,
+    "final_score": 76,
     "critical_penalties": [],
     "bonus_penalties": [
       {
@@ -1447,10 +1447,10 @@
         "penalty": 5
       },
       {
-        "key": "rate_and_term_10",
-        "label": "Rate & Term = 10",
-        "description": "Retroactive APR hikes possible.",
-        "penalty": 5
+        "key": "rate_and_term_7",
+        "label": "Rate & Term = 7",
+        "description": "Uncapped variable APR.",
+        "penalty": 2
       }
     ]
   },
