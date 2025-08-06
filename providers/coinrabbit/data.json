@@ -1,0 +1,118 @@
+{
+  "provider_name": "CoinRabbit",
+  "slug": "coinrabbit",
+  "model_version": "1.0",
+  "introduction": "Founded in 2020, CoinRabbit is a CeFi lender operated by Rabbit Finance LLC, registered in St. Vincent and the Grenadines. The platform offers loans in USDT or USDC against Bitcoin and more than 300 other crypto assets. Borrowers can choose a 30-day fixed-rate term or keep the loan open-ended. Collateral is held in-house, without a qualified custodian.",
+  "highlights": "Collateral is held in provider-controlled pooled wallets, priced via a closed, undisclosed \"liquidity-partner\" feed, and is vulnerable to liquidation from a thin LTV buffer. Rates can be retroactively changed at the firm’s discretion. There is no proof-of-reserves, wallet address disclosure, or independent attestation; no public audits or bug bounty; and governance is fully internal. Publishing proof-of-reserves and conducting security audits, moving BTC to bankruptcy-remote cold storage, adopting transparent multi-feed oracles, widening the LTV buffer, and capping or locking rates would reduce risk.",
+  "status": "active",
+  "is_beta": false,
+  "notes": "",
+  "details": {
+    "launch_year": 2020,
+    "website": "https://coinrabbit.io/",
+    "custody_model": "CeFi",
+    "custodians": ["In-house"],
+    "collateral_type": ["BTC", "wBTC", "ETH", "XRP", "SOL", "and 300+"],
+    "rehypothecation": "No",
+    "kyc": "Varies",
+    "loan_type": ["Consumer", "Business"],
+    "loan_currency": ["USDC", "USDT", "BTC", "ETH"],
+    "support_channels": ["Email", "Telegram", "Chat"],
+    "apr_type": {
+      "value": "Variable",
+      "note": ""
+    },
+    "ltv": {
+      "value": 90,
+      "unit": "%"
+    },
+    "margin_call": {
+      "value": [],
+      "unit": "%",
+      "note": "LTV + 5%"
+    },
+    "liquidation_ltv": {
+      "value": 0,
+      "unit": "%",
+      "note": "LTV + 5%"
+    },
+    "loan_value_min": {
+      "value": 20,
+      "unit": "USD"
+    },
+    "loan_value_max": {
+      "value": 0,
+      "unit": "USD",
+      "note": "Unlimited"
+    },
+    "loan_duration_min": {
+      "value": 0,
+      "unit": "month",
+      "note": "Flexible"
+    },
+    "loan_duration_max": {
+      "value": 0,
+      "unit": "month",
+      "note": "Flexible"
+    },
+    "total_loan_issued": {
+      "value": 0,
+      "unit": "USD",
+      "note": "N/A"
+    }
+  },
+  "factors": {
+    "collateral": {
+      "score": 0,
+      "note": "Native BTC (on-chain UTXO)."
+    },
+    "rehypothecation": {
+      "score": 2,
+      "note": "Policy states \"user collateral is never lent out, reused, or reinvested\" but funds sit in pooled lender wallets, not true on-chain escrow."
+    },
+    "custody": {
+      "score": 7,
+      "note": "Multisig cold storage is controlled solely by the provider; users hold no keys. There is no independent public custodian, and the collateral is not held in a bankruptcy-remote structure."
+    },
+    "security_governance": {
+      "score": 7,
+      "note": "No public smart-contract or infrastructure audits, no bug-bounty, governance entirely internal; T&Cs only promise \"industry-standard security\" and internal audits."
+    },
+    "platform": {
+      "score": 0,
+      "note": "Native Bitcoin script."
+    },
+    "oracle": {
+      "score": 10,
+      "note": "Liquidation price is calculated against a CoinRabbit-chosen \"liquidity partner\" feed checked every second; the feed, methodology and signers are undisclosed."
+    },
+    "liquidation_buffer": {
+      "score": 10,
+      "note": "CoinRabbit fixes the liquidation trigger at \"initial LTV + 5%\", anchored to the BTC price when the loan begins. No grace period. Liquidation can occur the moment the threshold is crossed. Example: start at 90% LTV → liquidation at 95%, so even a 5-6% BTC price drop can wipe you out."
+    },
+    "rate_and_term": {
+      "score": 10,
+      "note": "For unlimited duration loans (open-ended loans), CoinRabbit publishes a fixed rate at the time the loan is created. However, the terms of use state that \"The Interest shall be subject to revision from time to time, at our sole and absolute discretion.\" CoinRabbit's support also confirmed that when the interest rate changes, both new loans and existing loans are affected."
+    },
+    "transparency": {
+      "score": 10,
+      "note": "No proof-of-reserves, no wallet addresses, no independent attestations; all balances and risk metrics are opaque."
+    },
+    "loan_currency": {
+      "score": 4,
+      "note": "Payout available only in fiat-backed stable-coins (USDT, USDC, etc.)."
+    },
+    "privacy": {
+      "score": 4,
+      "note": "Optional-KYC tier. CoinRabbit markets \"no KYC\" for ordinary loans, but mandatory for \"extended loan limits\" > USD $1 million."
+    },
+    "history": {
+      "score": 4,
+      "note": "Operating since end of 2020 (> 3 yrs) with no public hacks, but lacks any external audits or significant open-source."
+    },
+    "jurisdiction": {
+      "score": 7,
+      "note": "St. Vincent and the Grenadines"
+    }
+  }
+} 
