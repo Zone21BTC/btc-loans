@@ -59,6 +59,32 @@
       "type": "object",
       "description": "Structured product details surfaced in the UI tables. The object itself is required, but every sub-field is optional so analysts can populate them gradually.",
       "additionalProperties": false,
+      "required": [
+        "launch_year",
+        "website",
+        "custody_model",
+        "custodians",
+        "collateral_type",
+        "rehypothecation",
+        "kyc",
+        "loan_type",
+        "loan_currency",
+        "support_channels",
+        "apr_type",
+        "apr_min",
+        "apr_max",
+        "origination_fee",
+        "interest_rate_min",
+        "interest_rate_max",
+        "ltv",
+        "margin_call",
+        "liquidation_ltv",
+        "loan_value_min",
+        "loan_value_max",
+        "loan_duration_min",
+        "loan_duration_max",
+        "total_loan_issued"
+      ],
       "properties": {
         "launch_year": {
           "type": "integer",
@@ -123,6 +149,26 @@
         "apr_type": {
           "$ref": "#/definitions/aprType",
           "description": "Type of APR (e.g. 'Fixed', 'Variable')."
+        },
+        "apr_min": {
+          "$ref": "#/definitions/valueMetric",
+          "description": "Minimum APR (e.g. '10%')."
+        },
+        "apr_max": {
+          "$ref": "#/definitions/valueMetric",
+          "description": "Maximum APR (e.g. '15%')."
+        },
+        "origination_fee": {
+          "$ref": "#/definitions/valueMetric",
+          "description": "Origination fee (e.g. '1%')."
+        },
+        "interest_rate_min": {
+          "$ref": "#/definitions/valueMetric",
+          "description": "Minimum interest rate (e.g. '1%')."
+        },
+        "interest_rate_max": {
+          "$ref": "#/definitions/valueMetric",
+          "description": "Maximum interest rate (e.g. '15%')."
         },
         "ltv": {
           "$ref": "#/definitions/valueMetric",
@@ -228,7 +274,7 @@
     "evidenceItem": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["link", "type", "source_url", "created_at"],
+      "required": ["link", "type", "source_url", "captured_at", "label"],
       "properties": {
         "link": {
           "type": "string",
@@ -240,12 +286,16 @@
           "enum": ["image", "pdf"],
           "description": "File type of the evidence asset."
         },
+        "label": {
+          "type": "string",
+          "description": "Label for the evidence item."
+        },
         "source_url": {
           "type": "string",
           "format": "uri",
           "description": "Original web page where the evidence was captured."
         },
-        "created_at": {
+        "captured_at": {
           "type": "string",
           "format": "date-time",
           "description": "UTC timestamp when the evidence was captured (ISO-8601)."
