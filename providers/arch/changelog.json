@@ -1,0 +1,12 @@
+{
+  "provider": "arch",
+  "logs": [
+    {
+      "action": "bootstrap",
+      "changedAt": "2025-08-07T00:00:00Z",
+      "changedBy": "migration-script",
+      "changes": {},
+      "note": "Changelog system initialized. Historical changes before this date are not tracked."
+    }
+  ]
+}

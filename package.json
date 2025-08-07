@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "validate": "node scripts/validate.js",
     "build": "npm run validate && node scripts/build-aggregate.js",
+    "changelog": "node scripts/update-changelog.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",

@@ -40,6 +40,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write # <-- gives this job push rights
+    env:
+      BASE_SHA: ${{ github.event_name == 'push' && github.event.before || github.event.pull_request.base.sha }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -57,10 +59,22 @@ jobs:
             ${{ runner.os }}-node-
       - run: npm ci
       - run: npm run build # rebuild against up-to-date main
-      - name: Commit and push dist/
+      - name: Detect changed provider files
+        id: files
+        run: |
+          git diff --name-only $BASE_SHA $GITHUB_SHA -- providers/**/data.json \
+            | tr '\n' ' ' | sed 's/ $//' | tee files.txt
+          echo "FILES=$(cat files.txt)" >> $GITHUB_OUTPUT
+      - name: Update changelogs
+        if: steps.files.outputs.FILES != ''
+        run: |
+          for f in ${{ steps.files.outputs.FILES }}; do
+            npm run changelog "$f"
+          done
+      - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dist/
-          git commit -m "chore: update aggregate data" --no-verify || echo "No changes to commit"
+          git add dist/ providers/*/changelog.json providers/*/CHANGELOG.md
+          git commit -m "chore: update build artifacts and changelogs" --no-verify || echo "No changes to commit"
           git push
