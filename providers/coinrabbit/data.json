@@ -112,55 +112,68 @@
   "factors": {
     "collateral": {
       "score": 0,
-      "note": "Native BTC (on-chain UTXO)."
+      "note": "Native BTC (on-chain UTXO).",
+      "evidence": []
     },
     "rehypothecation": {
       "score": 2,
-      "note": "Policy states \"user collateral is never lent out, reused, or reinvested\" but funds sit in pooled lender wallets, not true on-chain escrow."
+      "note": "Policy states \"user collateral is never lent out, reused, or reinvested\" but funds sit in pooled lender wallets, not true on-chain escrow.",
+      "evidence": []
     },
     "custody": {
       "score": 7,
-      "note": "Multisig cold storage is controlled solely by the provider; users hold no keys. There is no independent public custodian, and the collateral is not held in a bankruptcy-remote structure."
+      "note": "Multisig cold storage is controlled solely by the provider; users hold no keys. There is no independent public custodian, and the collateral is not held in a bankruptcy-remote structure.",
+      "evidence": []
     },
     "security_governance": {
       "score": 7,
-      "note": "No public smart-contract or infrastructure audits, no bug-bounty, governance entirely internal; T&Cs only promise \"industry-standard security\" and internal audits."
+      "note": "No public smart-contract or infrastructure audits, no bug-bounty, governance entirely internal; T&Cs only promise \"industry-standard security\" and internal audits.",
+      "evidence": []
     },
     "platform": {
       "score": 0,
-      "note": "Native Bitcoin script."
+      "note": "Native Bitcoin script.",
+      "evidence": []
     },
     "oracle": {
       "score": 10,
-      "note": "Liquidation price is calculated against a CoinRabbit-chosen \"liquidity partner\" feed checked every second; the feed, methodology and signers are undisclosed."
+      "note": "Liquidation price is calculated against a CoinRabbit-chosen \"liquidity partner\" feed checked every second; the feed, methodology and signers are undisclosed.",
+      "evidence": []
     },
     "liquidation_buffer": {
       "score": 10,
-      "note": "CoinRabbit fixes the liquidation trigger at \"initial LTV + 5%\", anchored to the BTC price when the loan begins. No grace period. Liquidation can occur the moment the threshold is crossed. Example: start at 90% LTV → liquidation at 95%, so even a 5-6% BTC price drop can wipe you out."
+      "note": "CoinRabbit fixes the liquidation trigger at \"initial LTV + 5%\", anchored to the BTC price when the loan begins. No grace period. Liquidation can occur the moment the threshold is crossed. Example: start at 90% LTV → liquidation at 95%, so even a 5-6% BTC price drop can wipe you out.",
+      "evidence": []
     },
     "rate_and_term": {
       "score": 7,
-      "note": "CoinRabbit terms state: \"Interest shall be subject to revision from time to time, at our sole and absolute discretion.\" Coinrabbit support also confirmed that when the interest rate changes, both new and existing open-ended loans are affected."
+      "note": "CoinRabbit terms state: \"Interest shall be subject to revision from time to time, at our sole and absolute discretion.\" Coinrabbit support also confirmed that when the interest rate changes, both new and existing open-ended loans are affected.",
+      "evidence": []
     },
     "transparency": {
       "score": 10,
-      "note": "No proof-of-reserves, no wallet addresses, no independent attestations; all balances and risk metrics are opaque."
+      "note": "No proof-of-reserves, no wallet addresses, no independent attestations; all balances and risk metrics are opaque.",
+      "evidence": []
     },
     "loan_currency": {
       "score": 4,
-      "note": "Payout available only in fiat-backed stable-coins (USDT, USDC, etc.)."
+      "note": "Payout available only in fiat-backed stable-coins (USDT, USDC, etc.).",
+      "evidence": []
     },
     "privacy": {
       "score": 4,
-      "note": "Optional-KYC tier. CoinRabbit markets \"no KYC\" for ordinary loans, but mandatory for \"extended loan limits\" > USD $1 million."
+      "note": "Optional-KYC tier. CoinRabbit markets \"no KYC\" for ordinary loans, but mandatory for \"extended loan limits\" > USD $1 million.",
+      "evidence": []
     },
     "history": {
       "score": 4,
-      "note": "Operating since end of 2020 (> 3 yrs) with no public hacks, but lacks any external audits or significant open-source."
+      "note": "Operating since end of 2020 (> 3 yrs) with no public hacks, but lacks any external audits or significant open-source.",
+      "evidence": []
     },
     "jurisdiction": {
       "score": 7,
-      "note": "St. Vincent and the Grenadines"
+      "note": "St. Vincent and the Grenadines",
+      "evidence": []
     }
   }
 }

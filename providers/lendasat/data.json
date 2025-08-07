@@ -107,55 +107,68 @@
   "factors": {
     "collateral": {
       "score": 0,
-      "note": "N/A"
+      "note": "N/A",
+      "evidence": []
     },
     "rehypothecation": {
       "score": 0,
-      "note": "N/A"
+      "note": "N/A",
+      "evidence": []
     },
     "custody": {
       "score": 0,
-      "note": "N/A"
+      "note": "N/A",
+      "evidence": []
     },
     "security_governance": {
       "score": 0,
-      "note": "N/A"
+      "note": "N/A",
+      "evidence": []
     },
     "platform": {
       "score": 0,
-      "note": "N/A"
+      "note": "N/A",
+      "evidence": []
     },
     "oracle": {
       "score": 0,
-      "note": "N/A"
+      "note": "N/A",
+      "evidence": []
     },
     "liquidation_buffer": {
       "score": 0,
-      "note": "N/A"
+      "note": "N/A",
+      "evidence": []
     },
     "rate_and_term": {
       "score": 0,
-      "note": "N/A"
+      "note": "N/A",
+      "evidence": []
     },
     "transparency": {
       "score": 0,
-      "note": "N/A"
+      "note": "N/A",
+      "evidence": []
     },
     "loan_currency": {
       "score": 0,
-      "note": "N/A"
+      "note": "N/A",
+      "evidence": []
     },
     "privacy": {
       "score": 0,
-      "note": "N/A"
+      "note": "N/A",
+      "evidence": []
     },
     "history": {
       "score": 0,
-      "note": "N/A"
+      "note": "N/A",
+      "evidence": []
     },
     "jurisdiction": {
       "score": 0,
-      "note": "N/A"
+      "note": "N/A",
+      "evidence": []
     }
   }
 }

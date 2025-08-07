@@ -105,55 +105,68 @@
   "factors": {
     "collateral": {
       "score": 7,
-      "note": "BTC must cross the proprietary CrossLink MPC bridge before it can be pledged, meaning the borrower no longer holds L1 UTXOs; custody rests with an unproven cross‑chain system."
+      "note": "BTC must cross the proprietary CrossLink MPC bridge before it can be pledged, meaning the borrower no longer holds L1 UTXOs; custody rests with an unproven cross‑chain system.",
+      "evidence": []
     },
     "rehypothecation": {
       "score": 0,
-      "note": "Platform explicitly forbids any reuse of collateral; each vault is segregated and not rehypothecated."
+      "note": "Platform explicitly forbids any reuse of collateral; each vault is segregated and not rehypothecated.",
+      "evidence": []
     },
     "custody": {
       "score": 7,
-      "note": "Libre's Bitcoin-backed loans inherit two custody layers: (i) bridge layer—BTC locked in the CrossLink MPC-TSS quorum (captured in Collateral = 7); (ii) vault layer—the wrapped BTC that borrowers actually pledge sits in a dedicated address controlled by the same 21-validator MPC quorum. Borrowers have no unilateral exit, and no independent audit of the wallet tech or key-management stack has been published, so the DeFi ladder assigns Custody = 7, signalling a medium-to-high custody risk."
+      "note": "Libre's Bitcoin-backed loans inherit two custody layers: (i) bridge layer—BTC locked in the CrossLink MPC-TSS quorum (captured in Collateral = 7); (ii) vault layer—the wrapped BTC that borrowers actually pledge sits in a dedicated address controlled by the same 21-validator MPC quorum. Borrowers have no unilateral exit, and no independent audit of the wallet tech or key-management stack has been published, so the DeFi ladder assigns Custody = 7, signalling a medium-to-high custody risk.",
+      "evidence": []
     },
     "security_governance": {
       "score": 7,
-      "note": "Although the documentation references advanced cryptography, the roadmap still includes \"Enhanced Security Measures: additional auditing,\" which have yet to be released. Governance remains concentrated among 21 DPoS validators.\nTransparency is limited — multiple development resources are inaccessible or broken. Key repositories and documentation links such as github.com/libre-chain, contract examples, GitLab API docs, and GitHub issues return either 404 errors or are entirely unavailable, suggesting a lack of public developer access and poor disclosure."
+      "note": "Although the documentation references advanced cryptography, the roadmap still includes \"Enhanced Security Measures: additional auditing,\" which have yet to be released. Governance remains concentrated among 21 DPoS validators.\nTransparency is limited — multiple development resources are inaccessible or broken. Key repositories and documentation links such as github.com/libre-chain, contract examples, GitLab API docs, and GitHub issues return either 404 errors or are entirely unavailable, suggesting a lack of public developer access and poor disclosure.",
+      "evidence": []
     },
     "platform": {
       "score": 10,
-      "note": "Borrowers are locked to the Libre Delegated‑PoS chain for the life of the loan—a chain whose LIBRE token has fallen ~90 % since 2023. The network relies on a 21‑validator quorum that can upgrade contracts and consensus rules. Vote data from the Libre block‑producer dashboard (libre.antelope.tools snapshot on 24 Jul 2025, ≈ 212 k total votes) show the top‑2 validators control ≈ 56 % and the top‑5 control ≈ 76 % of stake. Most validators are unlicensed private entities with no publicly known founders. Many are affiliated with Libre or EOS. Operational red flags are common: the website of Hotstart (second largest validator) serves a blank, non‑HTTPS page, EOS Sweden (#5) has publicly declared shutdown, and Quantum‑Blok (#6) has dead social‑media links, calling validator availability and governance resilience into question.\nGiven this concentration, affiliation overlap, and lack of independent attestations, we conservatively treat the validator set as a tightly affiliated group and assign Platform = 10 until Libre publishes verifiable ownership proofs and operational audits."
+      "note": "Borrowers are locked to the Libre Delegated‑PoS chain for the life of the loan—a chain whose LIBRE token has fallen ~90 % since 2023. The network relies on a 21‑validator quorum that can upgrade contracts and consensus rules. Vote data from the Libre block‑producer dashboard (libre.antelope.tools snapshot on 24 Jul 2025, ≈ 212 k total votes) show the top‑2 validators control ≈ 56 % and the top‑5 control ≈ 76 % of stake. Most validators are unlicensed private entities with no publicly known founders. Many are affiliated with Libre or EOS. Operational red flags are common: the website of Hotstart (second largest validator) serves a blank, non‑HTTPS page, EOS Sweden (#5) has publicly declared shutdown, and Quantum‑Blok (#6) has dead social‑media links, calling validator availability and governance resilience into question.\nGiven this concentration, affiliation overlap, and lack of independent attestations, we conservatively treat the validator set as a tightly affiliated group and assign Platform = 10 until Libre publishes verifiable ownership proofs and operational audits.",
+      "evidence": []
     },
     "oracle": {
       "score": 10,
-      "note": "Closed, provider-controlled oracle with no public methodology; can embed hidden spreads when converting BTC ↔ USDT."
+      "note": "Closed, provider-controlled oracle with no public methodology; can embed hidden spreads when converting BTC ↔ USDT.",
+      "evidence": []
     },
     "liquidation_buffer": {
       "score": 2,
-      "note": "30 pp buffer (50% → 80%). Liquidation threshold is 80% LTV, but enforcement occurs only after a 72-hour grace period. Borrower receives warnings if LTV exceeds 70%."
+      "note": "30 pp buffer (50% → 80%). Liquidation threshold is 80% LTV, but enforcement occurs only after a 72-hour grace period. Borrower receives warnings if LTV exceeds 70%.",
+      "evidence": []
     },
     "rate_and_term": {
       "score": 2,
-      "note": "Borrowers choose from fixed-term pools; lenders lock USDT at the same fixed rates."
+      "note": "Borrowers choose from fixed-term pools; lenders lock USDT at the same fixed rates.",
+      "evidence": []
     },
     "transparency": {
       "score": 4,
-      "note": "Libre offers verifiable on‑chain vault addresses and an open reserve‑audit script, but still withholds its MPC bridge code and provides no proof of liabilities."
+      "note": "Libre offers verifiable on‑chain vault addresses and an open reserve‑audit script, but still withholds its MPC bridge code and provides no proof of liabilities.",
+      "evidence": []
     },
     "loan_currency": {
       "score": 7,
-      "note": "Libre loans pay out in a wrapped version of Tether's USDT minted on Libre. Redemption requires the CrossLink MPC bridge; if the validator set halts or censures peg‑outs, the token becomes illiquid despite Tether's backing. On-chain trading depth is minimal: Libre's only AMM pools hold a very small TVL and daily volume is negligible, with no professional market-makers. This bridge-dependent, thin-liquidity wrapper fits the rubric's 'mid-tier or thin-liquidity stable-coin' tier, so we assign Loan-Currency = 7."
+      "note": "Libre loans pay out in a wrapped version of Tether's USDT minted on Libre. Redemption requires the CrossLink MPC bridge; if the validator set halts or censures peg‑outs, the token becomes illiquid despite Tether's backing. On-chain trading depth is minimal: Libre's only AMM pools hold a very small TVL and daily volume is negligible, with no professional market-makers. This bridge-dependent, thin-liquidity wrapper fits the rubric's 'mid-tier or thin-liquidity stable-coin' tier, so we assign Loan-Currency = 7.",
+      "evidence": []
     },
     "privacy": {
       "score": 2,
-      "note": "Minimal personal data collected."
+      "note": "Minimal personal data collected.",
+      "evidence": []
     },
     "history": {
       "score": 4,
-      "note": "Bitcoin-backed lending launched April 19, 2025."
+      "note": "Bitcoin-backed lending launched April 19, 2025.",
+      "evidence": []
     },
     "jurisdiction": {
       "score": 7,
-      "note": "Legal pages reference \"Satoshi LLC / Bizan Bizz\" but give no lending license or clear regulatory domicile."
+      "note": "Legal pages reference \"Satoshi LLC / Bizan Bizz\" but give no lending license or clear regulatory domicile.",
+      "evidence": []
     }
   }
 }

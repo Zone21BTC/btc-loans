@@ -104,55 +104,68 @@
   "factors": {
     "collateral": {
       "score": 0,
-      "note": "Native BTC (on-chain UTXO)."
+      "note": "Native BTC (on-chain UTXO).",
+      "evidence": []
     },
     "rehypothecation": {
       "score": 0,
-      "note": "Non-rehypothecable collateral."
+      "note": "Non-rehypothecable collateral.",
+      "evidence": []
     },
     "custody": {
       "score": 2,
-      "note": "Cold 2-of-3 multisig; borrower minority key plus Unchained and an independent qualified custodian (e.g., Kingdom Trust) as co-signers."
+      "note": "Cold 2-of-3 multisig; borrower minority key plus Unchained and an independent qualified custodian (e.g., Kingdom Trust) as co-signers.",
+      "evidence": []
     },
     "security_governance": {
       "score": 4,
-      "note": "Unchained announced completion of SOC 1 & 2 Type 2 audits in late 2022. Kingdom Trust (Unchained's partner and one of the keyholders in the escrow multisig) is regulated by South Dakota’s banking authority but has not published any independent audit of its Bitcoin key management."
+      "note": "Unchained announced completion of SOC 1 & 2 Type 2 audits in late 2022. Kingdom Trust (Unchained's partner and one of the keyholders in the escrow multisig) is regulated by South Dakota’s banking authority but has not published any independent audit of its Bitcoin key management.",
+      "evidence": []
     },
     "platform": {
       "score": 0,
-      "note": "Native Bitcoin script."
+      "note": "Native Bitcoin script.",
+      "evidence": []
     },
     "oracle": {
       "score": 7,
-      "note": "Single-source price feed (Bitstamp API) refreshed every 2-3 min; no second oracle, on-chain anchor, or circuit-breaker."
+      "note": "Single-source price feed (Bitstamp API) refreshed every 2-3 min; no second oracle, on-chain anchor, or circuit-breaker.",
+      "evidence": []
     },
     "liquidation_buffer": {
       "score": 2,
-      "note": "33pp cushion (~50–83% LTV) with 24h grace, no auto-pause."
+      "note": "33pp cushion (~50–83% LTV) with 24h grace, no auto-pause.",
+      "evidence": []
     },
     "rate_and_term": {
       "score": 2,
-      "note": "Fixed APR (~13 – 15 %) for 6- or 12-month terms; funding stack undisclosed, but rate cannot change mid-loan."
+      "note": "Fixed APR (~13 – 15 %) for 6- or 12-month terms; funding stack undisclosed, but rate cannot change mid-loan.",
+      "evidence": []
     },
     "transparency": {
       "score": 4,
-      "note": "Borrowers can view their collateral UTXOs on-chain and signer code is open-source, but no firm-wide proof-of-reserves or liabilities. Unchained is built on the browser and cannot be reproduced."
+      "note": "Borrowers can view their collateral UTXOs on-chain and signer code is open-source, but no firm-wide proof-of-reserves or liabilities. Unchained is built on the browser and cannot be reproduced.",
+      "evidence": []
     },
     "loan_currency": {
       "score": 2,
-      "note": "US dollars."
+      "note": "US dollars.",
+      "evidence": []
     },
     "privacy": {
       "score": 7,
-      "note": "Mandatory photo-ID KYC; client data stored with third-party providers."
+      "note": "Mandatory photo-ID KYC; client data stored with third-party providers.",
+      "evidence": []
     },
     "history": {
       "score": 4,
-      "note": "Unchained Capital – 2022 email-marketing data leak (no keys/funds lost); multiple SOC 1 & 2 audits and OSS Caravan, but the leak breaks the \"zero-incident\" bar."
+      "note": "Unchained Capital – 2022 email-marketing data leak (no keys/funds lost); multiple SOC 1 & 2 audits and OSS Caravan, but the leak breaks the \"zero-incident\" bar.",
+      "evidence": []
     },
     "jurisdiction": {
       "score": 2,
-      "note": "U.S. MSB plus state lending licences (NMLS IDs published)."
+      "note": "U.S. MSB plus state lending licences (NMLS IDs published).",
+      "evidence": []
     }
   }
 }

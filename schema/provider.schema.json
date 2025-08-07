@@ -305,7 +305,7 @@
     "factor": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["score", "note"],
+      "required": ["score", "note", "evidence"],
       "properties": {
         "score": {
           "$ref": "#/definitions/scoreEnum"
