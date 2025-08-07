@@ -105,55 +105,68 @@
     "factors": {
       "collateral": {
         "score": 0,
-        "note": "Native BTC (on-chain UTXO)."
+        "note": "Native BTC (on-chain UTXO).",
+        "evidence": []
       },
       "rehypothecation": {
         "score": 0,
-        "note": "Non-rehypothecable collateral."
+        "note": "Non-rehypothecable collateral.",
+        "evidence": []
       },
       "custody": {
         "score": 2,
-        "note": "Cold 2-of-3 multisig; borrower minority key plus Unchained and an independent qualified custodian (e.g., Kingdom Trust) as co-signers."
+        "note": "Cold 2-of-3 multisig; borrower minority key plus Unchained and an independent qualified custodian (e.g., Kingdom Trust) as co-signers.",
+        "evidence": []
       },
       "security_governance": {
         "score": 4,
-        "note": "Unchained announced completion of SOC 1 & 2 Type 2 audits in late 2022. Kingdom Trust (Unchained's partner and one of the keyholders in the escrow multisig) is regulated by South Dakota’s banking authority but has not published any independent audit of its Bitcoin key management."
+        "note": "Unchained announced completion of SOC 1 & 2 Type 2 audits in late 2022. Kingdom Trust (Unchained's partner and one of the keyholders in the escrow multisig) is regulated by South Dakota’s banking authority but has not published any independent audit of its Bitcoin key management.",
+        "evidence": []
       },
       "platform": {
         "score": 0,
-        "note": "Native Bitcoin script."
+        "note": "Native Bitcoin script.",
+        "evidence": []
       },
       "oracle": {
         "score": 7,
-        "note": "Single-source price feed (Bitstamp API) refreshed every 2-3 min; no second oracle, on-chain anchor, or circuit-breaker."
+        "note": "Single-source price feed (Bitstamp API) refreshed every 2-3 min; no second oracle, on-chain anchor, or circuit-breaker.",
+        "evidence": []
       },
       "liquidation_buffer": {
         "score": 2,
-        "note": "33pp cushion (~50–83% LTV) with 24h grace, no auto-pause."
+        "note": "33pp cushion (~50–83% LTV) with 24h grace, no auto-pause.",
+        "evidence": []
       },
       "rate_and_term": {
         "score": 2,
-        "note": "Fixed APR (~13 – 15 %) for 6- or 12-month terms; funding stack undisclosed, but rate cannot change mid-loan."
+        "note": "Fixed APR (~13 – 15 %) for 6- or 12-month terms; funding stack undisclosed, but rate cannot change mid-loan.",
+        "evidence": []
       },
       "transparency": {
         "score": 4,
-        "note": "Borrowers can view their collateral UTXOs on-chain and signer code is open-source, but no firm-wide proof-of-reserves or liabilities. Unchained is built on the browser and cannot be reproduced."
+        "note": "Borrowers can view their collateral UTXOs on-chain and signer code is open-source, but no firm-wide proof-of-reserves or liabilities. Unchained is built on the browser and cannot be reproduced.",
+        "evidence": []
       },
       "loan_currency": {
         "score": 2,
-        "note": "US dollars."
+        "note": "US dollars.",
+        "evidence": []
       },
       "privacy": {
         "score": 7,
-        "note": "Mandatory photo-ID KYC; client data stored with third-party providers."
+        "note": "Mandatory photo-ID KYC; client data stored with third-party providers.",
+        "evidence": []
       },
       "history": {
         "score": 4,
-        "note": "Unchained Capital – 2022 email-marketing data leak (no keys/funds lost); multiple SOC 1 & 2 audits and OSS Caravan, but the leak breaks the \"zero-incident\" bar."
+        "note": "Unchained Capital – 2022 email-marketing data leak (no keys/funds lost); multiple SOC 1 & 2 audits and OSS Caravan, but the leak breaks the \"zero-incident\" bar.",
+        "evidence": []
       },
       "jurisdiction": {
         "score": 2,
-        "note": "U.S. MSB plus state lending licences (NMLS IDs published)."
+        "note": "U.S. MSB plus state lending licences (NMLS IDs published).",
+        "evidence": []
       }
     },
     "risk_band": "Low",
@@ -1056,55 +1069,68 @@
     "factors": {
       "collateral": {
         "score": 0,
-        "note": "Native BTC (on-chain UTXO)."
+        "note": "Native BTC (on-chain UTXO).",
+        "evidence": []
       },
       "rehypothecation": {
         "score": 4,
-        "note": "Collateral may be pledged once to a single outside funding partner under a 'no further rehypothecation' clause; enforceability of that clause against Strike's partner is unverified, so the borrower still bears partner-failure risk."
+        "note": "Collateral may be pledged once to a single outside funding partner under a 'no further rehypothecation' clause; enforceability of that clause against Strike's partner is unverified, so the borrower still bears partner-failure risk.",
+        "evidence": []
       },
       "custody": {
         "score": 7,
-        "note": "Omnibus custody with self-declared segregation (no external audit). Strike's bitcoin-backed loan collateral is not held by a regulated third-party custodian with formal bankruptcy-remote arrangements. Instead, collateral BTC is either kept in Strike's own custody or transferred to \"trusted\" third-party capital partners who fund the loans. Strike confirms that these coins are held in segregated wallets and never re-hypothecated (i.e. not lent out or mixed elsewhere). However, this segregation is an internal policy – Strike remains legally responsible for the collateral during the loan, so client BTC is not explicitly ring-fenced from Strike's corporate estate via any independent trust or custodian. No public audit or proof-of-reserves is in place yet."
+        "note": "Omnibus custody with self-declared segregation (no external audit). Strike's bitcoin-backed loan collateral is not held by a regulated third-party custodian with formal bankruptcy-remote arrangements. Instead, collateral BTC is either kept in Strike's own custody or transferred to \"trusted\" third-party capital partners who fund the loans. Strike confirms that these coins are held in segregated wallets and never re-hypothecated (i.e. not lent out or mixed elsewhere). However, this segregation is an internal policy – Strike remains legally responsible for the collateral during the loan, so client BTC is not explicitly ring-fenced from Strike's corporate estate via any independent trust or custodian. No public audit or proof-of-reserves is in place yet.",
+        "evidence": []
       },
       "security_governance": {
         "score": 7,
-        "note": "Strike lists a SOC 2 logo in its Trust Center, but the report is gated behind an NDA and the firm discloses no scope or summary covering wallet tech, key-management or oracles. All critical signing code remains closed-source."
+        "note": "Strike lists a SOC 2 logo in its Trust Center, but the report is gated behind an NDA and the firm discloses no scope or summary covering wallet tech, key-management or oracles. All critical signing code remains closed-source.",
+        "evidence": []
       },
       "platform": {
         "score": 0,
-        "note": "Native Bitcoin script."
+        "note": "Native Bitcoin script.",
+        "evidence": []
       },
       "oracle": {
         "score": 10,
-        "note": "No information at all about where the BTC price comes from or how it is validated, the only safe assumption is that the feed is an internal, centralized endpoint fully controlled by Strike (or its unnamed capital-provider partner)."
+        "note": "No information at all about where the BTC price comes from or how it is validated, the only safe assumption is that the feed is an internal, centralized endpoint fully controlled by Strike (or its unnamed capital-provider partner).",
+        "evidence": []
       },
       "liquidation_buffer": {
         "score": 2,
-        "note": "Max LTV 50%, margin call at 70%, auto-liquidation at 85%. ~35pp buffer, 24h grace, no circuit breaker."
+        "note": "Max LTV 50%, margin call at 70%, auto-liquidation at 85%. ~35pp buffer, 24h grace, no circuit breaker.",
+        "evidence": []
       },
       "rate_and_term": {
         "score": 2,
-        "note": "Borrowers can choose monthly interest or pay-at-maturity, but once the loan is issued the rate is locked-in."
+        "note": "Borrowers can choose monthly interest or pay-at-maturity, but once the loan is issued the rate is locked-in.",
+        "evidence": []
       },
       "transparency": {
         "score": 10,
-        "note": "Fully closed-source. In Strike's 29 May 2025 upgrade post the team lists \"Proof-of-reserves–backed lending\" under What's next?—i.e., planned, not live. Strike has also promised that each loan will show its own on-chain BTC address, but those features are still absent. Until PoR is published or borrowers can actually view their collateral UTXOs, Strike remains a black box."
+        "note": "Fully closed-source. In Strike's 29 May 2025 upgrade post the team lists \"Proof-of-reserves–backed lending\" under What's next?—i.e., planned, not live. Strike has also promised that each loan will show its own on-chain BTC address, but those features are still absent. Until PoR is published or borrowers can actually view their collateral UTXOs, Strike remains a black box.",
+        "evidence": []
       },
       "loan_currency": {
         "score": 2,
-        "note": "Funds are delivered in USD fiat, not a crypto-pegged token."
+        "note": "Funds are delivered in USD fiat, not a crypto-pegged token.",
+        "evidence": []
       },
       "privacy": {
         "score": 7,
-        "note": "Strike's lending product requires strict KYC verification (government ID, personal info) as part of account onboarding."
+        "note": "Strike's lending product requires strict KYC verification (government ID, personal info) as part of account onboarding.",
+        "evidence": []
       },
       "history": {
         "score": 4,
-        "note": "New platform (< 12 mo) with no incidents yet."
+        "note": "New platform (< 12 mo) with no incidents yet.",
+        "evidence": []
       },
       "jurisdiction": {
         "score": 2,
-        "note": "Strike is registered in the United States."
+        "note": "Strike is registered in the United States.",
+        "evidence": []
       }
     },
     "risk_band": "High",
@@ -1253,55 +1279,68 @@
     "factors": {
       "collateral": {
         "score": 0,
-        "note": "Native BTC (on-chain UTXO)."
+        "note": "Native BTC (on-chain UTXO).",
+        "evidence": []
       },
       "rehypothecation": {
         "score": 7,
-        "note": "Terms grant Nexo the right to rehypothecate customer assets; extent and counterparties undisclosed."
+        "note": "Terms grant Nexo the right to rehypothecate customer assets; extent and counterparties undisclosed.",
+        "evidence": []
       },
       "custody": {
         "score": 7,
-        "note": "Coins are pooled across third-party custodians (Ledger Vault, Fireblocks, BitGo, Bakkt, etc.) in a mix of hot + cold storage.\nNexo claims those partners \"maintain segregated wallets for each of their clients,\" but there is no independent, wallet-level attestation and no statement that assets are bankruptcy-remote; in fact, the loan T&Cs say Nexo \"acquires the ownership of the Collateral\" while a credit line is open."
+        "note": "Coins are pooled across third-party custodians (Ledger Vault, Fireblocks, BitGo, Bakkt, etc.) in a mix of hot + cold storage.\nNexo claims those partners \"maintain segregated wallets for each of their clients,\" but there is no independent, wallet-level attestation and no statement that assets are bankruptcy-remote; in fact, the loan T&Cs say Nexo \"acquires the ownership of the Collateral\" while a credit line is open.",
+        "evidence": []
       },
       "security_governance": {
         "score": 4,
-        "note": "Nexo itself holds SOC 2 Type 2 and ISO 27001/27017/27018 certifications, and stores client assets with custodians who also carry independent SOC 2 Type 2 attestations. These audits cover the custody tech, yet Nexo never discloses an externally-verified cold-vs-hot split or publishes controls over its cold-to-hot workflow; those aspects remain self-declared."
+        "note": "Nexo itself holds SOC 2 Type 2 and ISO 27001/27017/27018 certifications, and stores client assets with custodians who also carry independent SOC 2 Type 2 attestations. These audits cover the custody tech, yet Nexo never discloses an externally-verified cold-vs-hot split or publishes controls over its cold-to-hot workflow; those aspects remain self-declared.",
+        "evidence": []
       },
       "platform": {
         "score": 0,
-        "note": "Native Bitcoin script."
+        "note": "Native Bitcoin script.",
+        "evidence": []
       },
       "oracle": {
         "score": 10,
-        "note": "All collateral pricing, LTV changes, margin-calls and liquidations are controlled by the in-house \"Nexo Oracle,\" a proprietary algorithm whose code, data feeds and governance are completely opaque. Clients receive warnings or forced repayments triggered by this closed system, but they cannot audit its logic or price sources."
+        "note": "All collateral pricing, LTV changes, margin-calls and liquidations are controlled by the in-house \"Nexo Oracle,\" a proprietary algorithm whose code, data feeds and governance are completely opaque. Clients receive warnings or forced repayments triggered by this closed system, but they cannot audit its logic or price sources.",
+        "evidence": []
       },
       "liquidation_buffer": {
         "score": 2,
-        "note": "Nexo provides a 33pp liquidation buffer (50% → 83%), with multiple warnings at 71.4%, 74.1%, and 76.9%; auto liquidation at 83%."
+        "note": "Nexo provides a 33pp liquidation buffer (50% → 83%), with multiple warnings at 71.4%, 74.1%, and 76.9%; auto liquidation at 83%.",
+        "evidence": []
       },
       "rate_and_term": {
         "score": 4,
-        "note": "Variable APR, presently 18.9 %. A BTC borrower who holds zero NEXO tokens pays the base 18.9 % rate. Nexo reviews and may revise borrowing rates each year or during \"extreme market conditions,\" so the 18.9 % figure is not contractually capped."
+        "note": "Variable APR, presently 18.9 %. A BTC borrower who holds zero NEXO tokens pays the base 18.9 % rate. Nexo reviews and may revise borrowing rates each year or during \"extreme market conditions,\" so the 18.9 % figure is not contractually capped.",
+        "evidence": []
       },
       "transparency": {
         "score": 7,
-        "note": "Nexo previously provided real-time on-chain attestations through Armanino (via TrustExplorer) and later through Moore (via TrustReserve); however, both services have since been discontinued. \nAs of July 2023, Nexo no longer offers active real-time proof of reserves, does not disclose on-chain wallet addresses, and uses a closed-source attestation mechanism."
+        "note": "Nexo previously provided real-time on-chain attestations through Armanino (via TrustExplorer) and later through Moore (via TrustReserve); however, both services have since been discontinued. \nAs of July 2023, Nexo no longer offers active real-time proof of reserves, does not disclose on-chain wallet addresses, and uses a closed-source attestation mechanism.",
+        "evidence": []
       },
       "loan_currency": {
         "score": 4,
-        "note": "USDC, USDT, USD, EUR, GBP."
+        "note": "USDC, USDT, USD, EUR, GBP.",
+        "evidence": []
       },
       "privacy": {
         "score": 7,
-        "note": "Full KYC/AML mandatory; large trove of personal data held with third-party vendors."
+        "note": "Full KYC/AML mandatory; large trove of personal data held with third-party vendors.",
+        "evidence": []
       },
       "history": {
         "score": 7,
-        "note": "Paid $45 M SEC settlement (Jan 2023) for unregistered securities offering; no insolvencies, but regulatory breach recorded."
+        "note": "Paid $45 M SEC settlement (Jan 2023) for unregistered securities offering; no insolvencies, but regulatory breach recorded.",
+        "evidence": []
       },
       "jurisdiction": {
         "score": 2,
-        "note": "The lending entity is Nexo AG, incorporated in Zug, Switzerland (Commercial-Register No. CH-170.3.042.338-1)"
+        "note": "The lending entity is Nexo AG, incorporated in Zug, Switzerland (Commercial-Register No. CH-170.3.042.338-1)",
+        "evidence": []
       }
     },
     "risk_band": "High",
@@ -1449,55 +1488,68 @@
     "factors": {
       "collateral": {
         "score": 0,
-        "note": "Native BTC (on-chain UTXO)."
+        "note": "Native BTC (on-chain UTXO).",
+        "evidence": []
       },
       "rehypothecation": {
         "score": 7,
-        "note": "Salt's terms explicitly state the lender may \"repledge, sell or otherwise transfer or use Stored Coins\" under the applicable loan agreement."
+        "note": "Salt's terms explicitly state the lender may \"repledge, sell or otherwise transfer or use Stored Coins\" under the applicable loan agreement.",
+        "evidence": []
       },
       "custody": {
         "score": 7,
-        "note": "Salt touts BitGo Trust cold storage but still pushes a \"distributed, custody-agnostic\" model using Fireblocks MPC, never disclosing how much BTC sits with each custodian. Fireblocks is wallet-tech, not a qualified trust; coins in its omnibus MPC vaults remain under Salt's ultimate control. The Terms of Use let Salt's in-house custodian name sub-custodians and provide no wallet-level proofs or audits. Lacking evidence that all collateral is ring-fenced in a bankruptcy-remote trust, the model conservatively assigns Custody = 7."
+        "note": "Salt touts BitGo Trust cold storage but still pushes a \"distributed, custody-agnostic\" model using Fireblocks MPC, never disclosing how much BTC sits with each custodian. Fireblocks is wallet-tech, not a qualified trust; coins in its omnibus MPC vaults remain under Salt's ultimate control. The Terms of Use let Salt's in-house custodian name sub-custodians and provide no wallet-level proofs or audits. Lacking evidence that all collateral is ring-fenced in a bankruptcy-remote trust, the model conservatively assigns Custody = 7.",
+        "evidence": []
       },
       "security_governance": {
         "score": 4,
-        "note": "Custodians BitGo & Fireblocks both carry SOC 2 Type 2, yet Salt discloses no independent audit of its own application layer, only recurring pen-tests."
+        "note": "Custodians BitGo & Fireblocks both carry SOC 2 Type 2, yet Salt discloses no independent audit of its own application layer, only recurring pen-tests.",
+        "evidence": []
       },
       "platform": {
         "score": 0,
-        "note": "Native Bitcoin script."
+        "note": "Native Bitcoin script.",
+        "evidence": []
       },
       "oracle": {
         "score": 10,
-        "note": "SALT uses a volume-weighted algorithm for BTC/ETH–USD rates but doesn't disclose source exchanges."
+        "note": "SALT uses a volume-weighted algorithm for BTC/ETH–USD rates but doesn't disclose source exchanges.",
+        "evidence": []
       },
       "liquidation_buffer": {
         "score": 2,
-        "note": "Margin calls at 75%, 83.33%, and 88%; liquidation at 90.91% LTV. Max LTV is 70%, with a 48-hour grace window before forced liquidation."
+        "note": "Margin calls at 75%, 83.33%, and 88%; liquidation at 90.91% LTV. Max LTV is 70%, with a 48-hour grace window before forced liquidation.",
+        "evidence": []
       },
       "rate_and_term": {
         "score": 2,
-        "note": "Fixed-term 12-month loans; APR 8.95-14.45 % with 0-1 % origination; no variable-rate surprises."
+        "note": "Fixed-term 12-month loans; APR 8.95-14.45 % with 0-1 % origination; no variable-rate surprises.",
+        "evidence": []
       },
       "transparency": {
         "score": 10,
-        "note": "Salt talks about PoR and transparency but publishes no on‑chain addresses, no live or scheduled PoR, and no liability data. Custody and software remain proprietary. With zero publicly verifiable proof and a Terms-of-Use clause that disclaims any accuracy, Salt remains a total black box."
+        "note": "Salt talks about PoR and transparency but publishes no on‑chain addresses, no live or scheduled PoR, and no liability data. Custody and software remain proprietary. With zero publicly verifiable proof and a Terms-of-Use clause that disclaims any accuracy, Salt remains a total black box.",
+        "evidence": []
       },
       "loan_currency": {
         "score": 4,
-        "note": "US dollars or stablecoin (USDC / USDT)."
+        "note": "US dollars or stablecoin (USDC / USDT).",
+        "evidence": []
       },
       "privacy": {
         "score": 7,
-        "note": "Full KYC; Large Data Trove."
+        "note": "Full KYC; Large Data Trove.",
+        "evidence": []
       },
       "history": {
         "score": 7,
-        "note": "Salt was fined by the SEC in 2020 for an unregistered ICO and by California's DFPI in 2024 for misleading lending practices. No fund losses, but repeated violations signal high compliance risk."
+        "note": "Salt was fined by the SEC in 2020 for an unregistered ICO and by California's DFPI in 2024 for misleading lending practices. No fund losses, but repeated violations signal high compliance risk.",
+        "evidence": []
       },
       "jurisdiction": {
         "score": 2,
-        "note": "U.S. Licensed Lender."
+        "note": "U.S. Licensed Lender.",
+        "evidence": []
       }
     },
     "risk_band": "High",
@@ -1645,55 +1697,68 @@
     "factors": {
       "collateral": {
         "score": 0,
-        "note": "Native BTC (on-chain UTXO)."
+        "note": "Native BTC (on-chain UTXO).",
+        "evidence": []
       },
       "rehypothecation": {
         "score": 2,
-        "note": "Policy states \"user collateral is never lent out, reused, or reinvested\" but funds sit in pooled lender wallets, not true on-chain escrow."
+        "note": "Policy states \"user collateral is never lent out, reused, or reinvested\" but funds sit in pooled lender wallets, not true on-chain escrow.",
+        "evidence": []
       },
       "custody": {
         "score": 7,
-        "note": "Multisig cold storage is controlled solely by the provider; users hold no keys. There is no independent public custodian, and the collateral is not held in a bankruptcy-remote structure."
+        "note": "Multisig cold storage is controlled solely by the provider; users hold no keys. There is no independent public custodian, and the collateral is not held in a bankruptcy-remote structure.",
+        "evidence": []
       },
       "security_governance": {
         "score": 7,
-        "note": "No public smart-contract or infrastructure audits, no bug-bounty, governance entirely internal; T&Cs only promise \"industry-standard security\" and internal audits."
+        "note": "No public smart-contract or infrastructure audits, no bug-bounty, governance entirely internal; T&Cs only promise \"industry-standard security\" and internal audits.",
+        "evidence": []
       },
       "platform": {
         "score": 0,
-        "note": "Native Bitcoin script."
+        "note": "Native Bitcoin script.",
+        "evidence": []
       },
       "oracle": {
         "score": 10,
-        "note": "Liquidation price is calculated against a CoinRabbit-chosen \"liquidity partner\" feed checked every second; the feed, methodology and signers are undisclosed."
+        "note": "Liquidation price is calculated against a CoinRabbit-chosen \"liquidity partner\" feed checked every second; the feed, methodology and signers are undisclosed.",
+        "evidence": []
       },
       "liquidation_buffer": {
         "score": 10,
-        "note": "CoinRabbit fixes the liquidation trigger at \"initial LTV + 5%\", anchored to the BTC price when the loan begins. No grace period. Liquidation can occur the moment the threshold is crossed. Example: start at 90% LTV → liquidation at 95%, so even a 5-6% BTC price drop can wipe you out."
+        "note": "CoinRabbit fixes the liquidation trigger at \"initial LTV + 5%\", anchored to the BTC price when the loan begins. No grace period. Liquidation can occur the moment the threshold is crossed. Example: start at 90% LTV → liquidation at 95%, so even a 5-6% BTC price drop can wipe you out.",
+        "evidence": []
       },
       "rate_and_term": {
         "score": 7,
-        "note": "CoinRabbit terms state: \"Interest shall be subject to revision from time to time, at our sole and absolute discretion.\" Coinrabbit support also confirmed that when the interest rate changes, both new and existing open-ended loans are affected."
+        "note": "CoinRabbit terms state: \"Interest shall be subject to revision from time to time, at our sole and absolute discretion.\" Coinrabbit support also confirmed that when the interest rate changes, both new and existing open-ended loans are affected.",
+        "evidence": []
       },
       "transparency": {
         "score": 10,
-        "note": "No proof-of-reserves, no wallet addresses, no independent attestations; all balances and risk metrics are opaque."
+        "note": "No proof-of-reserves, no wallet addresses, no independent attestations; all balances and risk metrics are opaque.",
+        "evidence": []
       },
       "loan_currency": {
         "score": 4,
-        "note": "Payout available only in fiat-backed stable-coins (USDT, USDC, etc.)."
+        "note": "Payout available only in fiat-backed stable-coins (USDT, USDC, etc.).",
+        "evidence": []
       },
       "privacy": {
         "score": 4,
-        "note": "Optional-KYC tier. CoinRabbit markets \"no KYC\" for ordinary loans, but mandatory for \"extended loan limits\" > USD $1 million."
+        "note": "Optional-KYC tier. CoinRabbit markets \"no KYC\" for ordinary loans, but mandatory for \"extended loan limits\" > USD $1 million.",
+        "evidence": []
       },
       "history": {
         "score": 4,
-        "note": "Operating since end of 2020 (> 3 yrs) with no public hacks, but lacks any external audits or significant open-source."
+        "note": "Operating since end of 2020 (> 3 yrs) with no public hacks, but lacks any external audits or significant open-source.",
+        "evidence": []
       },
       "jurisdiction": {
         "score": 7,
-        "note": "St. Vincent and the Grenadines"
+        "note": "St. Vincent and the Grenadines",
+        "evidence": []
       }
     },
     "risk_band": "High",
@@ -2825,55 +2890,68 @@
     "factors": {
       "collateral": {
         "score": 7,
-        "note": "BTC must cross the proprietary CrossLink MPC bridge before it can be pledged, meaning the borrower no longer holds L1 UTXOs; custody rests with an unproven cross‑chain system."
+        "note": "BTC must cross the proprietary CrossLink MPC bridge before it can be pledged, meaning the borrower no longer holds L1 UTXOs; custody rests with an unproven cross‑chain system.",
+        "evidence": []
       },
       "rehypothecation": {
         "score": 0,
-        "note": "Platform explicitly forbids any reuse of collateral; each vault is segregated and not rehypothecated."
+        "note": "Platform explicitly forbids any reuse of collateral; each vault is segregated and not rehypothecated.",
+        "evidence": []
       },
       "custody": {
         "score": 7,
-        "note": "Libre's Bitcoin-backed loans inherit two custody layers: (i) bridge layer—BTC locked in the CrossLink MPC-TSS quorum (captured in Collateral = 7); (ii) vault layer—the wrapped BTC that borrowers actually pledge sits in a dedicated address controlled by the same 21-validator MPC quorum. Borrowers have no unilateral exit, and no independent audit of the wallet tech or key-management stack has been published, so the DeFi ladder assigns Custody = 7, signalling a medium-to-high custody risk."
+        "note": "Libre's Bitcoin-backed loans inherit two custody layers: (i) bridge layer—BTC locked in the CrossLink MPC-TSS quorum (captured in Collateral = 7); (ii) vault layer—the wrapped BTC that borrowers actually pledge sits in a dedicated address controlled by the same 21-validator MPC quorum. Borrowers have no unilateral exit, and no independent audit of the wallet tech or key-management stack has been published, so the DeFi ladder assigns Custody = 7, signalling a medium-to-high custody risk.",
+        "evidence": []
       },
       "security_governance": {
         "score": 7,
-        "note": "Although the documentation references advanced cryptography, the roadmap still includes \"Enhanced Security Measures: additional auditing,\" which have yet to be released. Governance remains concentrated among 21 DPoS validators.\nTransparency is limited — multiple development resources are inaccessible or broken. Key repositories and documentation links such as github.com/libre-chain, contract examples, GitLab API docs, and GitHub issues return either 404 errors or are entirely unavailable, suggesting a lack of public developer access and poor disclosure."
+        "note": "Although the documentation references advanced cryptography, the roadmap still includes \"Enhanced Security Measures: additional auditing,\" which have yet to be released. Governance remains concentrated among 21 DPoS validators.\nTransparency is limited — multiple development resources are inaccessible or broken. Key repositories and documentation links such as github.com/libre-chain, contract examples, GitLab API docs, and GitHub issues return either 404 errors or are entirely unavailable, suggesting a lack of public developer access and poor disclosure.",
+        "evidence": []
       },
       "platform": {
         "score": 10,
-        "note": "Borrowers are locked to the Libre Delegated‑PoS chain for the life of the loan—a chain whose LIBRE token has fallen ~90 % since 2023. The network relies on a 21‑validator quorum that can upgrade contracts and consensus rules. Vote data from the Libre block‑producer dashboard (libre.antelope.tools snapshot on 24 Jul 2025, ≈ 212 k total votes) show the top‑2 validators control ≈ 56 % and the top‑5 control ≈ 76 % of stake. Most validators are unlicensed private entities with no publicly known founders. Many are affiliated with Libre or EOS. Operational red flags are common: the website of Hotstart (second largest validator) serves a blank, non‑HTTPS page, EOS Sweden (#5) has publicly declared shutdown, and Quantum‑Blok (#6) has dead social‑media links, calling validator availability and governance resilience into question.\nGiven this concentration, affiliation overlap, and lack of independent attestations, we conservatively treat the validator set as a tightly affiliated group and assign Platform = 10 until Libre publishes verifiable ownership proofs and operational audits."
+        "note": "Borrowers are locked to the Libre Delegated‑PoS chain for the life of the loan—a chain whose LIBRE token has fallen ~90 % since 2023. The network relies on a 21‑validator quorum that can upgrade contracts and consensus rules. Vote data from the Libre block‑producer dashboard (libre.antelope.tools snapshot on 24 Jul 2025, ≈ 212 k total votes) show the top‑2 validators control ≈ 56 % and the top‑5 control ≈ 76 % of stake. Most validators are unlicensed private entities with no publicly known founders. Many are affiliated with Libre or EOS. Operational red flags are common: the website of Hotstart (second largest validator) serves a blank, non‑HTTPS page, EOS Sweden (#5) has publicly declared shutdown, and Quantum‑Blok (#6) has dead social‑media links, calling validator availability and governance resilience into question.\nGiven this concentration, affiliation overlap, and lack of independent attestations, we conservatively treat the validator set as a tightly affiliated group and assign Platform = 10 until Libre publishes verifiable ownership proofs and operational audits.",
+        "evidence": []
       },
       "oracle": {
         "score": 10,
-        "note": "Closed, provider-controlled oracle with no public methodology; can embed hidden spreads when converting BTC ↔ USDT."
+        "note": "Closed, provider-controlled oracle with no public methodology; can embed hidden spreads when converting BTC ↔ USDT.",
+        "evidence": []
       },
       "liquidation_buffer": {
         "score": 2,
-        "note": "30 pp buffer (50% → 80%). Liquidation threshold is 80% LTV, but enforcement occurs only after a 72-hour grace period. Borrower receives warnings if LTV exceeds 70%."
+        "note": "30 pp buffer (50% → 80%). Liquidation threshold is 80% LTV, but enforcement occurs only after a 72-hour grace period. Borrower receives warnings if LTV exceeds 70%.",
+        "evidence": []
       },
       "rate_and_term": {
         "score": 2,
-        "note": "Borrowers choose from fixed-term pools; lenders lock USDT at the same fixed rates."
+        "note": "Borrowers choose from fixed-term pools; lenders lock USDT at the same fixed rates.",
+        "evidence": []
       },
       "transparency": {
         "score": 4,
-        "note": "Libre offers verifiable on‑chain vault addresses and an open reserve‑audit script, but still withholds its MPC bridge code and provides no proof of liabilities."
+        "note": "Libre offers verifiable on‑chain vault addresses and an open reserve‑audit script, but still withholds its MPC bridge code and provides no proof of liabilities.",
+        "evidence": []
       },
       "loan_currency": {
         "score": 7,
-        "note": "Libre loans pay out in a wrapped version of Tether's USDT minted on Libre. Redemption requires the CrossLink MPC bridge; if the validator set halts or censures peg‑outs, the token becomes illiquid despite Tether's backing. On-chain trading depth is minimal: Libre's only AMM pools hold a very small TVL and daily volume is negligible, with no professional market-makers. This bridge-dependent, thin-liquidity wrapper fits the rubric's 'mid-tier or thin-liquidity stable-coin' tier, so we assign Loan-Currency = 7."
+        "note": "Libre loans pay out in a wrapped version of Tether's USDT minted on Libre. Redemption requires the CrossLink MPC bridge; if the validator set halts or censures peg‑outs, the token becomes illiquid despite Tether's backing. On-chain trading depth is minimal: Libre's only AMM pools hold a very small TVL and daily volume is negligible, with no professional market-makers. This bridge-dependent, thin-liquidity wrapper fits the rubric's 'mid-tier or thin-liquidity stable-coin' tier, so we assign Loan-Currency = 7.",
+        "evidence": []
       },
       "privacy": {
         "score": 2,
-        "note": "Minimal personal data collected."
+        "note": "Minimal personal data collected.",
+        "evidence": []
       },
       "history": {
         "score": 4,
-        "note": "Bitcoin-backed lending launched April 19, 2025."
+        "note": "Bitcoin-backed lending launched April 19, 2025.",
+        "evidence": []
       },
       "jurisdiction": {
         "score": 7,
-        "note": "Legal pages reference \"Satoshi LLC / Bizan Bizz\" but give no lending license or clear regulatory domicile."
+        "note": "Legal pages reference \"Satoshi LLC / Bizan Bizz\" but give no lending license or clear regulatory domicile.",
+        "evidence": []
       }
     },
     "risk_band": "Critical",
@@ -3023,55 +3101,68 @@
     "factors": {
       "collateral": {
         "score": 0,
-        "note": "N/A"
+        "note": "N/A",
+        "evidence": []
       },
       "rehypothecation": {
         "score": 0,
-        "note": "N/A"
+        "note": "N/A",
+        "evidence": []
       },
       "custody": {
         "score": 0,
-        "note": "N/A"
+        "note": "N/A",
+        "evidence": []
       },
       "security_governance": {
         "score": 0,
-        "note": "N/A"
+        "note": "N/A",
+        "evidence": []
       },
       "platform": {
         "score": 0,
-        "note": "N/A"
+        "note": "N/A",
+        "evidence": []
       },
       "oracle": {
         "score": 0,
-        "note": "N/A"
+        "note": "N/A",
+        "evidence": []
       },
       "liquidation_buffer": {
         "score": 0,
-        "note": "N/A"
+        "note": "N/A",
+        "evidence": []
       },
       "rate_and_term": {
         "score": 0,
-        "note": "N/A"
+        "note": "N/A",
+        "evidence": []
       },
       "transparency": {
         "score": 0,
-        "note": "N/A"
+        "note": "N/A",
+        "evidence": []
       },
       "loan_currency": {
         "score": 0,
-        "note": "N/A"
+        "note": "N/A",
+        "evidence": []
       },
       "privacy": {
         "score": 0,
-        "note": "N/A"
+        "note": "N/A",
+        "evidence": []
       },
       "history": {
         "score": 0,
-        "note": "N/A"
+        "note": "N/A",
+        "evidence": []
       },
       "jurisdiction": {
         "score": 0,
-        "note": "N/A"
+        "note": "N/A",
+        "evidence": []
       }
     },
     "risk_band": "Low",
