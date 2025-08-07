@@ -31,25 +31,55 @@
         "Phone"
       ],
       "apr_type": {
-        "value": "Fixed"
+        "value": "Fixed",
+        "note": ""
+      },
+      "apr_min": {
+        "value": 15.2,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 15.2,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 2,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 13,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 13,
+        "unit": "%",
+        "note": ""
       },
       "ltv": {
         "value": 50,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [
           66
         ],
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "liquidation_ltv": {
         "value": 83,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 150000,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_value_max": {
         "value": 0,
@@ -58,11 +88,13 @@
       },
       "loan_duration_min": {
         "value": 12,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "loan_duration_max": {
         "value": 12,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "total_loan_issued": {
         "value": 0,
@@ -176,11 +208,38 @@
         "Chat"
       ],
       "apr_type": {
-        "value": "Fixed"
+        "value": "Fixed",
+        "note": ""
+      },
+      "apr_min": {
+        "value": 14.1,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 21.5,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 1.5,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 12.6,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 20,
+        "unit": "%",
+        "note": ""
       },
       "ltv": {
         "value": 70,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [
@@ -188,27 +247,33 @@
           80,
           85
         ],
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "liquidation_ltv": {
         "value": 90,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 5000,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_value_max": {
         "value": 700000,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_duration_min": {
         "value": 1,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "loan_duration_max": {
         "value": 12,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "total_loan_issued": {
         "value": 0,
@@ -328,11 +393,38 @@
         "Email"
       ],
       "apr_type": {
-        "value": "Fixed"
+        "value": "Fixed",
+        "note": ""
+      },
+      "apr_min": {
+        "value": 12.4,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 12.4,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 2,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 10.4,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 10.4,
+        "unit": "%",
+        "note": ""
       },
       "ltv": {
         "value": 50,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [
@@ -344,23 +436,28 @@
       },
       "liquidation_ltv": {
         "value": 80,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 1000,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_value_max": {
         "value": 1000000,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_duration_min": {
         "value": 12,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "loan_duration_max": {
         "value": 12,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "total_loan_issued": {
         "value": 0,
@@ -496,25 +593,55 @@
         "Call"
       ],
       "apr_type": {
-        "value": "Fixed"
+        "value": "Fixed",
+        "note": ""
+      },
+      "apr_min": {
+        "value": 14,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 14,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 1.5,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 12.5,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 12.5,
+        "unit": "%",
+        "note": ""
       },
       "ltv": {
         "value": 60,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [
           70
         ],
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "liquidation_ltv": {
         "value": 80,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 1000,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_value_max": {
         "value": 0,
@@ -523,11 +650,13 @@
       },
       "loan_duration_min": {
         "value": 1,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "loan_duration_max": {
         "value": 24,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "total_loan_issued": {
         "value": 0,
@@ -660,11 +789,38 @@
         "Discord"
       ],
       "apr_type": {
-        "value": "Variable"
+        "value": "Variable",
+        "note": ""
+      },
+      "apr_min": {
+        "value": 5.4,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 5.4,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 0,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 5.4,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 5.4,
+        "unit": "%",
+        "note": ""
       },
       "ltv": {
         "value": 73,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [],
@@ -673,7 +829,8 @@
       },
       "liquidation_ltv": {
         "value": 78,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 0,
@@ -825,25 +982,30 @@
         "Chat"
       ],
       "apr_type": {
-        "value": "Fixed"
+        "value": "Fixed",
+        "note": ""
       },
       "ltv": {
         "value": 50,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [
           70
         ],
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "liquidation_ltv": {
         "value": 85,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 10000,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_value_max": {
         "value": 0,
@@ -852,16 +1014,43 @@
       },
       "loan_duration_min": {
         "value": 12,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "loan_duration_max": {
         "value": 12,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "total_loan_issued": {
         "value": 0,
         "unit": "USD",
         "note": "N/A"
+      },
+      "apr_min": {
+        "value": 10.5,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 14,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 0,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 10.5,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 14,
+        "unit": "%",
+        "note": ""
       }
     },
     "factors": {
@@ -988,11 +1177,13 @@
         "Chat"
       ],
       "apr_type": {
-        "value": "Variable"
+        "value": "Variable",
+        "note": ""
       },
       "ltv": {
         "value": 50,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [
@@ -1005,19 +1196,23 @@
       },
       "liquidation_ltv": {
         "value": 83,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 50,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_value_max": {
         "value": 2000000,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_duration_min": {
         "value": 12,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "loan_duration_max": {
         "value": 0,
@@ -1028,6 +1223,31 @@
         "value": 0,
         "unit": "USD",
         "note": "N/A"
+      },
+      "apr_min": {
+        "value": 18.9,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 18.9,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 0,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 18.9,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 18.9,
+        "unit": "%",
+        "note": ""
       }
     },
     "factors": {
@@ -1155,25 +1375,30 @@
         "Call"
       ],
       "apr_type": {
-        "value": "Fixed"
+        "value": "Fixed",
+        "note": ""
       },
       "ltv": {
         "value": 70,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [
           83
         ],
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "liquidation_ltv": {
         "value": 90,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 5000,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_value_max": {
         "value": 0,
@@ -1182,16 +1407,43 @@
       },
       "loan_duration_min": {
         "value": 12,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "loan_duration_max": {
         "value": 12,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "total_loan_issued": {
         "value": 0,
         "unit": "USD",
         "note": "N/A"
+      },
+      "apr_min": {
+        "value": 8.95,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 14.45,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 1,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 7.95,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 13.45,
+        "unit": "%",
+        "note": ""
       }
     },
     "factors": {
@@ -1326,7 +1578,8 @@
       },
       "ltv": {
         "value": 90,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [],
@@ -1340,7 +1593,8 @@
       },
       "loan_value_min": {
         "value": 20,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_value_max": {
         "value": 0,
@@ -1361,6 +1615,31 @@
         "value": 0,
         "unit": "USD",
         "note": "N/A"
+      },
+      "apr_min": {
+        "value": 17.4,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 19.4,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 0.4,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 17,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 19,
+        "unit": "%",
+        "note": ""
       }
     },
     "factors": {
@@ -1486,11 +1765,13 @@
         "Email"
       ],
       "apr_type": {
-        "value": "Fixed"
+        "value": "Fixed",
+        "note": ""
       },
       "ltv": {
         "value": 50,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [],
@@ -1499,28 +1780,58 @@
       },
       "liquidation_ltv": {
         "value": 95,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 100,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_value_max": {
         "value": 100000,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_duration_min": {
         "value": 1,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "loan_duration_max": {
         "value": 12,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "total_loan_issued": {
         "value": 0,
         "unit": "USD",
         "note": "N/A"
+      },
+      "apr_min": {
+        "value": 11.99,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 11.99,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 2,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 9.99,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 9.99,
+        "unit": "%",
+        "note": ""
       }
     },
     "factors": {
@@ -1644,11 +1955,13 @@
         "Email"
       ],
       "apr_type": {
-        "value": "Fixed"
+        "value": "Fixed",
+        "note": ""
       },
       "ltv": {
         "value": 50,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [
@@ -1661,28 +1974,58 @@
       },
       "liquidation_ltv": {
         "value": 95,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 800,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_value_max": {
         "value": 150000,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_duration_min": {
         "value": 3,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "loan_duration_max": {
         "value": 24,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "total_loan_issued": {
         "value": 0,
         "unit": "USD",
         "note": "N/A"
+      },
+      "apr_min": {
+        "value": 6.5,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 16.5,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 1.5,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 5,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 15,
+        "unit": "%",
+        "note": ""
       }
     },
     "factors": {
@@ -1814,11 +2157,13 @@
         "Email"
       ],
       "apr_type": {
-        "value": "Fixed"
+        "value": "Fixed",
+        "note": ""
       },
       "ltv": {
         "value": 70,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [
@@ -1826,11 +2171,13 @@
           80,
           85
         ],
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "liquidation_ltv": {
         "value": 90,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 0,
@@ -1844,16 +2191,43 @@
       },
       "loan_duration_min": {
         "value": 1,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "loan_duration_max": {
         "value": 12,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "total_loan_issued": {
         "value": 0,
         "unit": "USD",
         "note": "N/A"
+      },
+      "apr_min": {
+        "value": 12,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 29.1,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 1.5,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 11,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 27.6,
+        "unit": "%",
+        "note": ""
       }
     },
     "factors": {
@@ -1969,11 +2343,13 @@
         "Chat"
       ],
       "apr_type": {
-        "value": "Variable"
+        "value": "Variable",
+        "note": ""
       },
       "ltv": {
         "value": 75,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [],
@@ -1982,7 +2358,8 @@
       },
       "liquidation_ltv": {
         "value": 86,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 0,
@@ -1991,7 +2368,8 @@
       },
       "loan_value_max": {
         "value": 1000000,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_duration_min": {
         "value": 0,
@@ -2007,6 +2385,31 @@
         "value": 0,
         "unit": "USD",
         "note": "N/A"
+      },
+      "apr_min": {
+        "value": 8.1,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 8.1,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 0,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 8.1,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 8.1,
+        "unit": "%",
+        "note": ""
       }
     },
     "factors": {
@@ -2139,29 +2542,35 @@
         "Chat"
       ],
       "apr_type": {
-        "value": "Variable"
+        "value": "Variable",
+        "note": ""
       },
       "ltv": {
         "value": 78,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [
           85
         ],
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "liquidation_ltv": {
         "value": 91,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 1,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_value_max": {
         "value": 5500000,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_duration_min": {
         "value": 0,
@@ -2177,6 +2586,31 @@
         "value": 0,
         "unit": "USD",
         "note": "N/A"
+      },
+      "apr_min": {
+        "value": 6.5,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 6.5,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 0,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 6.5,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 6.5,
+        "unit": "%",
+        "note": ""
       }
     },
     "factors": {
@@ -2317,25 +2751,30 @@
         "Discord"
       ],
       "apr_type": {
-        "value": "Fixed"
+        "value": "Fixed",
+        "note": ""
       },
       "ltv": {
         "value": 50,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [
           80
         ],
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "liquidation_ltv": {
         "value": 80,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 100,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_value_max": {
         "value": 0,
@@ -2344,16 +2783,43 @@
       },
       "loan_duration_min": {
         "value": 1,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "loan_duration_max": {
         "value": 6,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "total_loan_issued": {
         "value": 0,
         "unit": "USD",
         "note": "N/A"
+      },
+      "apr_min": {
+        "value": 3,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 20,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 0,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 3,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 20,
+        "unit": "%",
+        "note": ""
       }
     },
     "factors": {
@@ -2482,43 +2948,76 @@
         "Email"
       ],
       "apr_type": {
-        "value": "Fixed"
+        "value": "Fixed",
+        "note": ""
       },
       "ltv": {
         "value": 70,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "margin_call": {
         "value": [
           80,
           85
         ],
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "liquidation_ltv": {
         "value": 90,
-        "unit": "%"
+        "unit": "%",
+        "note": ""
       },
       "loan_value_min": {
         "value": 100,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_value_max": {
         "value": 100000,
-        "unit": "USD"
+        "unit": "USD",
+        "note": ""
       },
       "loan_duration_min": {
         "value": 1,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "loan_duration_max": {
         "value": 12,
-        "unit": "month"
+        "unit": "month",
+        "note": ""
       },
       "total_loan_issued": {
         "value": 0,
         "unit": "USD",
         "note": "N/A"
+      },
+      "apr_min": {
+        "value": 9,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 26.5,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 1.5,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 7.5,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 25,
+        "unit": "%",
+        "note": ""
       }
     },
     "factors": {
