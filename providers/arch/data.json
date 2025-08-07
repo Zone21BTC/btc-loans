@@ -11,31 +11,78 @@
     "launch_year": 2023,
     "website": "https://archlending.com/",
     "custody_model": "CeFi",
-    "custodians": ["Anchorage"],
-    "collateral_type": ["BTC", "ETH", "SOL"],
+    "custodians": [
+      "Anchorage"
+    ],
+    "collateral_type": [
+      "BTC",
+      "ETH",
+      "SOL"
+    ],
     "rehypothecation": "No",
     "kyc": "Yes",
-    "loan_type": ["Consumer"],
-    "loan_currency": ["USDC", "USD"],
-    "support_channels": ["Email", "Chat", "Call"],
+    "loan_type": [
+      "Consumer"
+    ],
+    "loan_currency": [
+      "USDC",
+      "USD"
+    ],
+    "support_channels": [
+      "Email",
+      "Chat",
+      "Call"
+    ],
     "apr_type": {
-      "value": "Fixed"
+      "value": "Fixed",
+      "note": ""
+    },
+    "apr_min": {
+      "value": 14,
+      "unit": "%",
+      "note": ""
+    },
+    "apr_max": {
+      "value": 14,
+      "unit": "%",
+      "note": ""
+    },
+    "origination_fee": {
+      "value": 1.5,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_min": {
+      "value": 12.5,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_max": {
+      "value": 12.5,
+      "unit": "%",
+      "note": ""
     },
     "ltv": {
       "value": 60,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "margin_call": {
-      "value": [70],
-      "unit": "%"
+      "value": [
+        70
+      ],
+      "unit": "%",
+      "note": ""
     },
     "liquidation_ltv": {
       "value": 80,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "loan_value_min": {
       "value": 1000,
-      "unit": "USD"
+      "unit": "USD",
+      "note": ""
     },
     "loan_value_max": {
       "value": 0,
@@ -44,11 +91,13 @@
     },
     "loan_duration_min": {
       "value": 1,
-      "unit": "month"
+      "unit": "month",
+      "note": ""
     },
     "loan_duration_max": {
       "value": 24,
-      "unit": "month"
+      "unit": "month",
+      "note": ""
     },
     "total_loan_issued": {
       "value": 0,
@@ -57,8 +106,8 @@
     }
   },
   "factors": {
-    "collateral": { 
-      "score": 0, 
+    "collateral": {
+      "score": 0,
       "note": "Native BTC (on-chain UTXO).",
       "evidence": []
     },
@@ -77,8 +126,8 @@
       "note": "Collateral sits at Anchorage, a SOC 1/SOC 2-certified, federally-chartered custodian, in cold, bankruptcy-remote trusts. Arch cites penetration testing & a bug-bounty program but discloses no independent security audit or SOC-2 for its own key-management / wallet software.",
       "evidence": []
     },
-    "platform": { 
-      "score": 0, 
+    "platform": {
+      "score": 0,
       "note": "Native Bitcoin script.",
       "evidence": []
     },
@@ -92,8 +141,8 @@
       "note": "Arch sets LTV at 60%, issues margin calls at 70%, and triggers partial liquidation at 80% with a 24h grace window.",
       "evidence": []
     },
-    "rate_and_term": { 
-      "score": 2, 
+    "rate_and_term": {
+      "score": 2,
       "note": "Fixed APR; no uncapped variability.",
       "evidence": []
     },
@@ -112,8 +161,8 @@
       "note": "Arch requires full KYC with government ID, handled via Persona. Personal data is encrypted and stored in the cloud.",
       "evidence": []
     },
-    "history": { 
-      "score": 4, 
+    "history": {
+      "score": 4,
       "note": "Official Launch Jan 2023.",
       "evidence": []
     },
@@ -123,4 +172,4 @@
       "evidence": []
     }
   }
-} 
+}

@@ -11,31 +11,50 @@
     "launch_year": 2025,
     "website": "https://www.libre.org/",
     "custody_model": "CeDeFi",
-    "custodians": ["MPC-TSS"],
-    "collateral_type": ["BTC"],
+    "custodians": [
+      "MPC-TSS"
+    ],
+    "collateral_type": [
+      "BTC"
+    ],
     "rehypothecation": "No",
     "kyc": "No",
-    "loan_type": ["Consumer"],
-    "loan_currency": ["USDT"],
-    "support_channels": ["Email", "Telegram", "Discord"],
+    "loan_type": [
+      "Consumer"
+    ],
+    "loan_currency": [
+      "USDT"
+    ],
+    "support_channels": [
+      "Email",
+      "Telegram",
+      "Discord"
+    ],
     "apr_type": {
-      "value": "Fixed"
+      "value": "Fixed",
+      "note": ""
     },
     "ltv": {
       "value": 50,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "margin_call": {
-      "value": [80],
-      "unit": "%"
+      "value": [
+        80
+      ],
+      "unit": "%",
+      "note": ""
     },
     "liquidation_ltv": {
       "value": 80,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "loan_value_min": {
       "value": 100,
-      "unit": "USD"
+      "unit": "USD",
+      "note": ""
     },
     "loan_value_max": {
       "value": 0,
@@ -44,16 +63,43 @@
     },
     "loan_duration_min": {
       "value": 1,
-      "unit": "month"
+      "unit": "month",
+      "note": ""
     },
     "loan_duration_max": {
       "value": 6,
-      "unit": "month"
+      "unit": "month",
+      "note": ""
     },
     "total_loan_issued": {
       "value": 0,
       "unit": "USD",
       "note": "N/A"
+    },
+    "apr_min": {
+      "value": 3,
+      "unit": "%",
+      "note": ""
+    },
+    "apr_max": {
+      "value": 20,
+      "unit": "%",
+      "note": ""
+    },
+    "origination_fee": {
+      "value": 0,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_min": {
+      "value": 3,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_max": {
+      "value": 20,
+      "unit": "%",
+      "note": ""
     }
   },
   "factors": {
@@ -110,4 +156,4 @@
       "note": "Legal pages reference \"Satoshi LLC / Bizan Bizz\" but give no lending license or clear regulatory domicile."
     }
   }
-} 
+}

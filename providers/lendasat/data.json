@@ -11,63 +11,151 @@
     "launch_year": 0,
     "website": "https://lendasat.com",
     "custody_model": "DeFi",
-    "custodians": ["2-of-3 multisig"],
-    "collateral_type": ["BTC"],
+    "custodians": [
+      "2-of-3 multisig"
+    ],
+    "collateral_type": [
+      "BTC"
+    ],
     "rehypothecation": "No",
     "kyc": "No",
-    "loan_type": ["Consumer"],
-    "loan_currency": ["USDC", "USDT", "USD"],
-    "support_channels": ["Discord", "Email"],
+    "loan_type": [
+      "Consumer"
+    ],
+    "loan_currency": [
+      "USDC",
+      "USDT",
+      "USD"
+    ],
+    "support_channels": [
+      "Discord",
+      "Email"
+    ],
     "apr_type": {
-      "value": "Fixed"
+      "value": "Fixed",
+      "note": ""
     },
     "ltv": {
       "value": 70,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "margin_call": {
-      "value": [80, 85],
-      "unit": "%"
+      "value": [
+        80,
+        85
+      ],
+      "unit": "%",
+      "note": ""
     },
     "liquidation_ltv": {
       "value": 90,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "loan_value_min": {
       "value": 100,
-      "unit": "USD"
+      "unit": "USD",
+      "note": ""
     },
     "loan_value_max": {
       "value": 100000,
-      "unit": "USD"
+      "unit": "USD",
+      "note": ""
     },
     "loan_duration_min": {
       "value": 1,
-      "unit": "month"
+      "unit": "month",
+      "note": ""
     },
     "loan_duration_max": {
       "value": 12,
-      "unit": "month"
+      "unit": "month",
+      "note": ""
     },
     "total_loan_issued": {
       "value": 0,
       "unit": "USD",
       "note": "N/A"
+    },
+    "apr_min": {
+      "value": 9,
+      "unit": "%",
+      "note": ""
+    },
+    "apr_max": {
+      "value": 26.5,
+      "unit": "%",
+      "note": ""
+    },
+    "origination_fee": {
+      "value": 1.5,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_min": {
+      "value": 7.5,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_max": {
+      "value": 25,
+      "unit": "%",
+      "note": ""
     }
   },
   "factors": {
-    "collateral": { "score": 0, "note": "N/A" },
-    "rehypothecation": { "score": 0, "note": "N/A" },
-    "custody": { "score": 0, "note": "N/A" },
-    "security_governance": { "score": 0, "note": "N/A" },
-    "platform": { "score": 0, "note": "N/A" },
-    "oracle": { "score": 0, "note": "N/A" },
-    "liquidation_buffer": { "score": 0, "note": "N/A" },
-    "rate_and_term": { "score": 0, "note": "N/A" },
-    "transparency": { "score": 0, "note": "N/A" },
-    "loan_currency": { "score": 0, "note": "N/A" },
-    "privacy": { "score": 0, "note": "N/A" },
-    "history": { "score": 0, "note": "N/A" },
-    "jurisdiction": { "score": 0, "note": "N/A" }
+    "collateral": {
+      "score": 0,
+      "note": "N/A"
+    },
+    "rehypothecation": {
+      "score": 0,
+      "note": "N/A"
+    },
+    "custody": {
+      "score": 0,
+      "note": "N/A"
+    },
+    "security_governance": {
+      "score": 0,
+      "note": "N/A"
+    },
+    "platform": {
+      "score": 0,
+      "note": "N/A"
+    },
+    "oracle": {
+      "score": 0,
+      "note": "N/A"
+    },
+    "liquidation_buffer": {
+      "score": 0,
+      "note": "N/A"
+    },
+    "rate_and_term": {
+      "score": 0,
+      "note": "N/A"
+    },
+    "transparency": {
+      "score": 0,
+      "note": "N/A"
+    },
+    "loan_currency": {
+      "score": 0,
+      "note": "N/A"
+    },
+    "privacy": {
+      "score": 0,
+      "note": "N/A"
+    },
+    "history": {
+      "score": 0,
+      "note": "N/A"
+    },
+    "jurisdiction": {
+      "score": 0,
+      "note": "N/A"
+    }
   }
 }

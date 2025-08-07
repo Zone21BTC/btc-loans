@@ -7,13 +7,13 @@ e.g.  provider/debifi: add rehypothecation evidence
 
 ## ✨ What’s new?
 
-_Describe the change in one or two sentences.  Explain the “why”, not just the “what”._
+_Describe the change in one or two sentences. Explain the “why”, not just the “what”._
 
 ---
 
 ## 📄 Context / Motivation
 
-_Why does this matter?  Link to discussions, issues, or external sources if helpful._
+_Why does this matter? Link to discussions, issues, or external sources if helpful._
 
 ---
 

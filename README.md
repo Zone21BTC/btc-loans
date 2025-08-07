@@ -10,15 +10,15 @@ These data are used on the [Zone21 website](https://www.zone21.com/).
 
 ## 📑 Contents
 
-| Section                                      | Description                                                      |
-| -------------------------------------------- | ---------------------------------------------------------------- |
-| [Motivation](#motivation)                    | Why this dataset exists and what it solves.                      |
-| [Folder Layout](#folder-layout)              | File structure and editing responsibilities.                     |
-| [Data Model](#data-model)                    | Explanation of each field in a provider’s JSON file.             |
-| [Build & Validation](#build--validation)     | How CI generates aggregate data and ensures data integrity.      |
-| [Quick Start](#quick-start)                  | Quick guide for cloning, validating, and building locally.       |
-| [Contributing](#contributing)                | Guidelines for submitting updates and improvements.              |
-| [License & Attribution](#license--attribution)| Licensing details and citation format.                           |
+| Section                                        | Description                                                 |
+| ---------------------------------------------- | ----------------------------------------------------------- |
+| [Motivation](#motivation)                      | Why this dataset exists and what it solves.                 |
+| [Folder Layout](#folder-layout)                | File structure and editing responsibilities.                |
+| [Data Model](#data-model)                      | Explanation of each field in a provider’s JSON file.        |
+| [Build & Validation](#build--validation)       | How CI generates aggregate data and ensures data integrity. |
+| [Quick Start](#quick-start)                    | Quick guide for cloning, validating, and building locally.  |
+| [Contributing](#contributing)                  | Guidelines for submitting updates and improvements.         |
+| [License & Attribution](#license--attribution) | Licensing details and citation format.                      |
 
 ---
 
@@ -55,11 +55,11 @@ For detailed information on the scoring methodology, please refer to the [**Zone
 
 ### Source-of-truth vs Generated Artefacts
 
-| Directory               | Edited by                    | Contents                                          |
-| ----------------------- | ---------------------------- | ------------------------------------------------- |
-| `providers/*/data.json` | Zone21 team & contributors   | Raw scores, notes, evidence URLs, and metadata.  |
-| `docs/`                 | Zone21 team & contributors   | Documentation and methodology explanations.      |
-| `dist/*`                | CI bot                       | Computed aggregate JSON files.                   |
+| Directory               | Edited by                  | Contents                                        |
+| ----------------------- | -------------------------- | ----------------------------------------------- |
+| `providers/*/data.json` | Zone21 team & contributors | Raw scores, notes, evidence URLs, and metadata. |
+| `docs/`                 | Zone21 team & contributors | Documentation and methodology explanations.     |
+| `dist/*`                | CI bot                     | Computed aggregate JSON files.                  |
 
 ⚠️ **Please don't commit directly to the `dist/` folder; automated checks will gently reject such PRs.**
 
@@ -75,7 +75,7 @@ Each `data.json` is validated by [`schema/provider.schema.json`](./schema/provid
 | `slug`          | `string`             | Unique, URL-safe, lowercase kebab-case identifier (e.g., 'ledn').               |
 | `model_version` | `string`             | Version of the Zone21 risk-scoring methodology (e.g., '1.0').                   |
 | `highlights`    | `string`             | Short narrative summary highlighting key strengths or weaknesses.               |
-| `introduction`  | `string`             | Background information about the provider.                                         |
+| `introduction`  | `string`             | Background information about the provider.                                      |
 | `status`        | `string`             | Operational status: 'active', 'inactive', or 'withdrawn'.                       |
 | `is_beta`       | `boolean` (optional) | Flag indicating if the provider is a beta product.                              |
 | `notes`         | `string` (optional)  | Additional remarks not covered by specific factor notes.                        |
@@ -97,10 +97,10 @@ The `evidence` sub-object includes:
 
 The repository uses [AJV](https://ajv.js.org/) for schema validation, ensuring data accuracy and consistency.
 
-| Stage         | Trigger                      | What Happens                                                         |
-| ------------- | ---------------------------- | -------------------------------------------------------------------- |
-| **Validate**  | Pull request                 | Validates modified provider data files against schema using AJV.      |
-| **Aggregate** | Merge to `main`              | Aggregates validated files, calculates scores, applies penalties, and outputs final JSON files to `dist/`. |
+| Stage         | Trigger         | What Happens                                                                                               |
+| ------------- | --------------- | ---------------------------------------------------------------------------------------------------------- |
+| **Validate**  | Pull request    | Validates modified provider data files against schema using AJV.                                           |
+| **Aggregate** | Merge to `main` | Aggregates validated files, calculates scores, applies penalties, and outputs final JSON files to `dist/`. |
 
 ### Dependencies
 

@@ -11,19 +11,33 @@
     "launch_year": 2025,
     "website": "https://coinbase.com",
     "custody_model": "CeDeFi",
-    "custodians": ["Coinbase Custody"],
-    "collateral_type": ["cbBTC"],
+    "custodians": [
+      "Coinbase Custody"
+    ],
+    "collateral_type": [
+      "cbBTC"
+    ],
     "rehypothecation": "No",
     "kyc": "Yes",
-    "loan_type": ["Consumer"],
-    "loan_currency": ["USDC"],
-    "support_channels": ["Email", "Phone", "Chat"],
+    "loan_type": [
+      "Consumer"
+    ],
+    "loan_currency": [
+      "USDC"
+    ],
+    "support_channels": [
+      "Email",
+      "Phone",
+      "Chat"
+    ],
     "apr_type": {
-      "value": "Variable"
+      "value": "Variable",
+      "note": ""
     },
     "ltv": {
       "value": 75,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "margin_call": {
       "value": [],
@@ -32,7 +46,8 @@
     },
     "liquidation_ltv": {
       "value": 86,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "loan_value_min": {
       "value": 0,
@@ -41,7 +56,8 @@
     },
     "loan_value_max": {
       "value": 1000000,
-      "unit": "USD"
+      "unit": "USD",
+      "note": ""
     },
     "loan_duration_min": {
       "value": 0,
@@ -57,6 +73,31 @@
       "value": 0,
       "unit": "USD",
       "note": "N/A"
+    },
+    "apr_min": {
+      "value": 8.1,
+      "unit": "%",
+      "note": ""
+    },
+    "apr_max": {
+      "value": 8.1,
+      "unit": "%",
+      "note": ""
+    },
+    "origination_fee": {
+      "value": 0,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_min": {
+      "value": 8.1,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_max": {
+      "value": 8.1,
+      "unit": "%",
+      "note": ""
     }
   },
   "factors": {
@@ -105,8 +146,8 @@
       "note": "Coinbase gives continuous, on-chain asset proof for cbBTC, but no comparable proof of liabilities and only partial, non-reproducible source-code openness.",
       "evidence": []
     },
-    "loan_currency": { 
-      "score": 4, 
+    "loan_currency": {
+      "score": 4,
       "note": "Loans are disbursed in USDC.",
       "evidence": []
     },
@@ -126,4 +167,4 @@
       "evidence": []
     }
   }
-} 
+}

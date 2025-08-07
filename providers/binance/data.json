@@ -11,35 +11,59 @@
     "launch_year": 2023,
     "website": "https://www.binance.com/en/loan",
     "custody_model": "CeFi",
-    "custodians": ["In-house"],
-    "collateral_type": ["BTC", "ETH", "BNB", "Others"],
+    "custodians": [
+      "In-house"
+    ],
+    "collateral_type": [
+      "BTC",
+      "ETH",
+      "BNB",
+      "Others"
+    ],
     "rehypothecation": "Yes",
     "kyc": "Yes",
-    "loan_type": ["Consumer"],
-    "loan_currency": ["USDC", "USDT", "ETH", "Others"],
-    "support_channels": ["Chat"],
+    "loan_type": [
+      "Consumer"
+    ],
+    "loan_currency": [
+      "USDC",
+      "USDT",
+      "ETH",
+      "Others"
+    ],
+    "support_channels": [
+      "Chat"
+    ],
     "apr_type": {
-      "value": "Variable"
+      "value": "Variable",
+      "note": ""
     },
     "ltv": {
       "value": 78,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "margin_call": {
-      "value": [85],
-      "unit": "%"
+      "value": [
+        85
+      ],
+      "unit": "%",
+      "note": ""
     },
     "liquidation_ltv": {
       "value": 91,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "loan_value_min": {
       "value": 1,
-      "unit": "USD"
+      "unit": "USD",
+      "note": ""
     },
     "loan_value_max": {
       "value": 5500000,
-      "unit": "USD"
+      "unit": "USD",
+      "note": ""
     },
     "loan_duration_min": {
       "value": 0,
@@ -55,11 +79,36 @@
       "value": 0,
       "unit": "USD",
       "note": "N/A"
+    },
+    "apr_min": {
+      "value": 6.5,
+      "unit": "%",
+      "note": ""
+    },
+    "apr_max": {
+      "value": 6.5,
+      "unit": "%",
+      "note": ""
+    },
+    "origination_fee": {
+      "value": 0,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_min": {
+      "value": 6.5,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_max": {
+      "value": 6.5,
+      "unit": "%",
+      "note": ""
     }
   },
   "factors": {
-    "collateral": { 
-      "score": 0, 
+    "collateral": {
+      "score": 0,
       "note": "Native BTC (on-chain UTXO).",
       "evidence": []
     },
@@ -78,8 +127,8 @@
       "note": "Retail assets are swept from user deposit addresses into Binance-controlled omnibus hot wallets, so balances remain pooled without on-chain segregation. Its Merkle-tree proof-of-reserves is produced internally and has lacked an external auditor since Mazars halted PoR work in Dec 2022, leaving custody controls unaudited. Binance also suffered a 7,000 BTC hot-wallet breach in May 2019, and the segregated MPC cold-storage offered via Ceffu is marketed solely to institutional clients, not to retail funds.",
       "evidence": []
     },
-    "platform": { 
-      "score": 0, 
+    "platform": {
+      "score": 0,
       "note": "Native Bitcoin script.",
       "evidence": []
     },
@@ -124,4 +173,4 @@
       "evidence": []
     }
   }
-} 
+}

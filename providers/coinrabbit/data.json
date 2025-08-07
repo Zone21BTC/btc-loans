@@ -11,20 +11,42 @@
     "launch_year": 2020,
     "website": "https://coinrabbit.io/",
     "custody_model": "CeFi",
-    "custodians": ["In-house"],
-    "collateral_type": ["BTC", "wBTC", "ETH", "XRP", "SOL", "and 300+"],
+    "custodians": [
+      "In-house"
+    ],
+    "collateral_type": [
+      "BTC",
+      "wBTC",
+      "ETH",
+      "XRP",
+      "SOL",
+      "and 300+"
+    ],
     "rehypothecation": "No",
     "kyc": "Varies",
-    "loan_type": ["Consumer", "Business"],
-    "loan_currency": ["USDC", "USDT", "BTC", "ETH"],
-    "support_channels": ["Email", "Telegram", "Chat"],
+    "loan_type": [
+      "Consumer",
+      "Business"
+    ],
+    "loan_currency": [
+      "USDC",
+      "USDT",
+      "BTC",
+      "ETH"
+    ],
+    "support_channels": [
+      "Email",
+      "Telegram",
+      "Chat"
+    ],
     "apr_type": {
       "value": "Variable",
       "note": ""
     },
     "ltv": {
       "value": 90,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "margin_call": {
       "value": [],
@@ -38,7 +60,8 @@
     },
     "loan_value_min": {
       "value": 20,
-      "unit": "USD"
+      "unit": "USD",
+      "note": ""
     },
     "loan_value_max": {
       "value": 0,
@@ -59,6 +82,31 @@
       "value": 0,
       "unit": "USD",
       "note": "N/A"
+    },
+    "apr_min": {
+      "value": 17.4,
+      "unit": "%",
+      "note": ""
+    },
+    "apr_max": {
+      "value": 19.4,
+      "unit": "%",
+      "note": ""
+    },
+    "origination_fee": {
+      "value": 0.4,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_min": {
+      "value": 17,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_max": {
+      "value": 19,
+      "unit": "%",
+      "note": ""
     }
   },
   "factors": {
@@ -115,4 +163,4 @@
       "note": "St. Vincent and the Grenadines"
     }
   }
-} 
+}

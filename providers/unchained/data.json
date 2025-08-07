@@ -11,31 +11,74 @@
     "launch_year": 2017,
     "website": "https://unchained.com",
     "custody_model": "DeFi",
-    "custodians": ["2-of-3 multisig"],
-    "collateral_type": ["BTC"],
+    "custodians": [
+      "2-of-3 multisig"
+    ],
+    "collateral_type": [
+      "BTC"
+    ],
     "rehypothecation": "No",
     "kyc": "Yes",
-    "loan_type": ["Business"],
-    "loan_currency": ["USD"],
-    "support_channels": ["Email", "Phone"],
+    "loan_type": [
+      "Business"
+    ],
+    "loan_currency": [
+      "USD"
+    ],
+    "support_channels": [
+      "Email",
+      "Phone"
+    ],
     "apr_type": {
-      "value": "Fixed"
+      "value": "Fixed",
+      "note": ""
+    },
+    "apr_min": {
+      "value": 15.2,
+      "unit": "%",
+      "note": ""
+    },
+    "apr_max": {
+      "value": 15.2,
+      "unit": "%",
+      "note": ""
+    },
+    "origination_fee": {
+      "value": 2,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_min": {
+      "value": 13,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_max": {
+      "value": 13,
+      "unit": "%",
+      "note": ""
     },
     "ltv": {
       "value": 50,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "margin_call": {
-      "value": [66],
-      "unit": "%"
+      "value": [
+        66
+      ],
+      "unit": "%",
+      "note": ""
     },
     "liquidation_ltv": {
       "value": 83,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "loan_value_min": {
       "value": 150000,
-      "unit": "USD"
+      "unit": "USD",
+      "note": ""
     },
     "loan_value_max": {
       "value": 0,
@@ -44,11 +87,13 @@
     },
     "loan_duration_min": {
       "value": 12,
-      "unit": "month"
+      "unit": "month",
+      "note": ""
     },
     "loan_duration_max": {
       "value": 12,
-      "unit": "month"
+      "unit": "month",
+      "note": ""
     },
     "total_loan_issued": {
       "value": 0,
@@ -57,8 +102,14 @@
     }
   },
   "factors": {
-    "collateral": { "score": 0, "note": "Native BTC (on-chain UTXO)." },
-    "rehypothecation": { "score": 0, "note": "Non-rehypothecable collateral." },
+    "collateral": {
+      "score": 0,
+      "note": "Native BTC (on-chain UTXO)."
+    },
+    "rehypothecation": {
+      "score": 0,
+      "note": "Non-rehypothecable collateral."
+    },
     "custody": {
       "score": 2,
       "note": "Cold 2-of-3 multisig; borrower minority key plus Unchained and an independent qualified custodian (e.g., Kingdom Trust) as co-signers."
@@ -67,7 +118,10 @@
       "score": 4,
       "note": "Unchained announced completion of SOC 1 & 2 Type 2 audits in late 2022. Kingdom Trust (Unchained's partner and one of the keyholders in the escrow multisig) is regulated by South Dakota’s banking authority but has not published any independent audit of its Bitcoin key management."
     },
-    "platform": { "score": 0, "note": "Native Bitcoin script." },
+    "platform": {
+      "score": 0,
+      "note": "Native Bitcoin script."
+    },
     "oracle": {
       "score": 7,
       "note": "Single-source price feed (Bitstamp API) refreshed every 2-3 min; no second oracle, on-chain anchor, or circuit-breaker."
@@ -84,7 +138,10 @@
       "score": 4,
       "note": "Borrowers can view their collateral UTXOs on-chain and signer code is open-source, but no firm-wide proof-of-reserves or liabilities. Unchained is built on the browser and cannot be reproduced."
     },
-    "loan_currency": { "score": 2, "note": "US dollars." },
+    "loan_currency": {
+      "score": 2,
+      "note": "US dollars."
+    },
     "privacy": {
       "score": 7,
       "note": "Mandatory photo-ID KYC; client data stored with third-party providers."

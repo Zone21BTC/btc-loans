@@ -11,19 +11,64 @@
     "launch_year": 2017,
     "website": "https://aave.com",
     "custody_model": "CeDeFi",
-    "custodians": ["BitGo"],
-    "collateral_type": ["wBTC", "WETH", "Others"],
+    "custodians": [
+      "BitGo"
+    ],
+    "collateral_type": [
+      "wBTC",
+      "WETH",
+      "Others"
+    ],
     "rehypothecation": "No",
     "kyc": "No",
-    "loan_type": ["Consumer"],
-    "loan_currency": ["USDC", "USDT", "ETH", "wstETH", "DAI", "Others"],
-    "support_channels": ["Email", "Discord"],
+    "loan_type": [
+      "Consumer"
+    ],
+    "loan_currency": [
+      "USDC",
+      "USDT",
+      "ETH",
+      "wstETH",
+      "DAI",
+      "Others"
+    ],
+    "support_channels": [
+      "Email",
+      "Discord"
+    ],
     "apr_type": {
-      "value": "Variable"
+      "value": "Variable",
+      "note": ""
+    },
+    "apr_min": {
+      "value": 5.4,
+      "unit": "%",
+      "note": ""
+    },
+    "apr_max": {
+      "value": 5.4,
+      "unit": "%",
+      "note": ""
+    },
+    "origination_fee": {
+      "value": 0,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_min": {
+      "value": 5.4,
+      "unit": "%",
+      "note": ""
+    },
+    "interest_rate_max": {
+      "value": 5.4,
+      "unit": "%",
+      "note": ""
     },
     "ltv": {
       "value": 73,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "margin_call": {
       "value": [],
@@ -32,7 +77,8 @@
     },
     "liquidation_ltv": {
       "value": 78,
-      "unit": "%"
+      "unit": "%",
+      "note": ""
     },
     "loan_value_min": {
       "value": 0,
