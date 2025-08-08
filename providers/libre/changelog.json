@@ -7,6 +7,250 @@
       "changedBy": "migration-script",
       "changes": {},
       "note": "Changelog system initialized. Historical changes before this date are not tracked."
+    },
+    {
+      "action": "update",
+      "changedAt": "2025-08-08T00:32:13.764Z",
+      "changedBy": "tocomax",
+      "commit": "1bd8d748",
+      "commitMessage": "feat(provider/libre): enrich provider data with evidence fields",
+      "changes": {
+        "factors.collateral.evidence": {
+          "from": [],
+          "to": [
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Cross_Link_MPC_Bridge_202507240815_0b9a6d9656.png",
+              "source_url": "https://docs.libre.org/libre-docs/advanced-features/cross-chain-interoperability/crosslink-mpc-tss-bridge#key-features",
+              "label": "CrossLink MPC Bridge",
+              "captured_at": "2025-07-24T08:15:00.000Z"
+            }
+          ]
+        },
+        "factors.rehypothecation.evidence": {
+          "from": [],
+          "to": [
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Borrowing_With_BTC_202507240829_97335136a4.png",
+              "source_url": "https://docs.libre.org/libre-docs/#borrowing-with-btc",
+              "label": "No pooled collateral, no rehypothecation",
+              "captured_at": "2025-07-24T08:29:00.000Z"
+            }
+          ]
+        },
+        "factors.custody.evidence": {
+          "from": [],
+          "to": [
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Cross_Link_MPC_Bridge_202507240815_0b9a6d9656.png",
+              "source_url": "https://docs.libre.org/libre-docs/advanced-features/cross-chain-interoperability/crosslink-mpc-tss-bridge#overview",
+              "label": "CrossLink MPC bridge",
+              "captured_at": "2025-07-24T08:15:00.000Z"
+            },
+            {
+              "type": "pdf",
+              "link": "https://files.zone21.com/uploads/Custody_And_Security_202507240853_fe358fba3d.pdf",
+              "source_url": "https://docs.libre.org/libre-docs/core-features/overview-2",
+              "label": "Custody & Security",
+              "captured_at": "2025-07-24T08:53:00.000Z"
+            },
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Validator_listing_202507240932_8fd27979c2.png",
+              "source_url": "https://libre.antelope.tools/block-producers",
+              "label": "21 Validators",
+              "captured_at": "2025-07-24T09:36:00.000Z"
+            }
+          ]
+        },
+        "factors.security_governance.evidence": {
+          "from": [],
+          "to": [
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Roadmap_and_Future_Work_202507241019_e5b1cad379.png",
+              "source_url": "https://docs.libre.org/libre-docs/advanced-features/cross-chain-interoperability/crosslink-mpc-tss-bridge#roadmap-and-future-work",
+              "label": "Roadmap and Future Work",
+              "captured_at": "2025-07-24T10:19:00.000Z"
+            },
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Developer_page_202507241830_85424b2074.png",
+              "source_url": "https://docs.libre.org/libre-docs/for-developers/overview",
+              "label": "Developer Page",
+              "captured_at": "2025-07-24T11:30:00.000Z"
+            },
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Technical_Guides_202507241130_583abd80f9.png",
+              "source_url": "https://gitlab.com/libre-chain/libre-chain-gitbook/-/blob/main/developers/legacy-docs/the-libre-platform/building-on-libre/README.md",
+              "label": "Technical Guides",
+              "captured_at": "2025-07-24T11:30:00.000Z"
+            },
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Libre_Chain_Github_202507241130_e06849cacb.png",
+              "source_url": "https://github.com/libre-chain",
+              "label": "Libre Chain Github",
+              "captured_at": "2025-07-24T11:30:00.000Z"
+            },
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Libre_Smart_Contract_Examples_202507241130_2da20e7e52.png",
+              "source_url": "https://github.com/libre-chain/contract-examples",
+              "label": "Libre Smart Contract Examples",
+              "captured_at": "2025-07-24T11:30:00.000Z"
+            },
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/API_Documentation_202507241130_d542e290a4.png",
+              "source_url": "https://gitlab.com/libre-chain/libre-chain-gitbook/-/blob/main/developers/legacy-docs/the-libre-platform/building-on-libre/api-docs.md",
+              "label": "API Documentation",
+              "captured_at": "2025-07-24T11:30:00.000Z"
+            }
+          ]
+        },
+        "factors.platform.evidence": {
+          "from": [],
+          "to": [
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Become_A_Validator_202507241053_bab30a1e27.png",
+              "source_url": "https://docs.libre.org/libre-docs/old-earn-docs/become-a-validator",
+              "label": "Become a Validator",
+              "captured_at": "2025-07-24T10:53:00.000Z"
+            },
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Validators_votes_202507241029_575fe048eb.png",
+              "source_url": "https://defi.libre.org/validators",
+              "label": "Validators",
+              "captured_at": "2025-07-24T10:29:00.000Z"
+            },
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Validator_Election_202507241051_0743546cd9.png",
+              "source_url": "https://docs.libre.org/libre-docs/advanced-features/governance/validator-election",
+              "label": "Validator Election",
+              "captured_at": "2025-07-24T10:51:00.000Z"
+            },
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Validator_Hotstart_202507241244_ecebdf1afc.png",
+              "source_url": "http://hotstart.one/",
+              "label": "Validator: Hotstart",
+              "captured_at": "2025-07-24T11:03:00.000Z"
+            },
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/TOP_5_Sweden_202507241059_aadfc46d32.png",
+              "source_url": "https://eossweden.org/",
+              "label": "TOP 5 Sweden",
+              "captured_at": "2025-07-24T10:59:00.000Z"
+            },
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Validators_Antelope_202507241130_5872d8334b.png",
+              "source_url": "https://libre.antelope.tools/block-producers",
+              "label": "Validators on Antelope",
+              "captured_at": "2025-07-24T11:30:00.000Z"
+            }
+          ]
+        },
+        "factors.liquidation_buffer.evidence": {
+          "from": [],
+          "to": [
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Liquidation_buffer_202507241117_f437a66dc0.png",
+              "source_url": "https://docs.libre.org/libre-docs/#how-it-works",
+              "label": "Liquidation buffer",
+              "captured_at": "2025-07-24T11:17:00.000Z"
+            },
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Liquidation_Protection_202507241130_1d0b8d105f.png",
+              "source_url": "https://docs.libre.org/libre-docs/core-features/overview#liquidation-protection",
+              "label": "Liquidation Protection",
+              "captured_at": "2025-07-24T11:30:00.000Z"
+            }
+          ]
+        },
+        "factors.rate_and_term.evidence": {
+          "from": [],
+          "to": [
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Rate_And_Term_202507241117_656c4834d9.png",
+              "source_url": "https://docs.libre.org/libre-docs/core-features/overview#step-1-choose-your-pool",
+              "label": "Rate & Term",
+              "captured_at": "2025-07-24T11:17:00.000Z"
+            }
+          ]
+        },
+        "factors.transparency.evidence": {
+          "from": [],
+          "to": [
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/Cross_Link_Validator_Guide_202507241130_193a284a68.png",
+              "source_url": "https://gitlab.com/libre-chain/libre-chain-gitbook/-/blob/main/cross-chain-interoperability/validators/README.md",
+              "label": "The CrossLink Validator Guide link does not exist",
+              "captured_at": "2025-07-24T11:30:00.000Z"
+            }
+          ]
+        },
+        "factors.loan_currency.evidence": {
+          "from": [],
+          "to": [
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/USDT_peg_in_and_peg_out_202507241130_7c9434afa9.png",
+              "source_url": "https://docs.libre.org/libre-docs/advanced-features/cross-chain-interoperability/usdt-ethereum",
+              "label": "USDT peg-in and peg-out",
+              "captured_at": "2025-07-24T11:30:00.000Z"
+            }
+          ]
+        },
+        "factors.privacy.evidence": {
+          "from": [],
+          "to": [
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/No_KYC_202507241130_7ee90f7012.png",
+              "source_url": "https://www.libre.org/",
+              "label": "No KYC",
+              "captured_at": "2025-07-24T11:30:00.000Z"
+            }
+          ]
+        },
+        "factors.history.evidence": {
+          "from": [],
+          "to": [
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/X_Announcement_202507241130_bda52d5fda.png",
+              "source_url": "https://x.com/bensig/status/1913460920959090789",
+              "label": "Announcement on X",
+              "captured_at": "2025-07-24T11:30:00.000Z"
+            }
+          ]
+        },
+        "factors.jurisdiction.evidence": {
+          "from": [],
+          "to": [
+            {
+              "type": "image",
+              "link": "https://files.zone21.com/uploads/No_lending_licence_or_clear_regulatory_domicile_202507241130_ebe5b4e69a.png",
+              "source_url": "https://legal.bitcoinlibre.io/privacy",
+              "label": "No lending licence or clear regulatory domicile",
+              "captured_at": "2025-07-24T11:30:00.000Z"
+            }
+          ]
+        }
+      }
     }
   ]
 }
