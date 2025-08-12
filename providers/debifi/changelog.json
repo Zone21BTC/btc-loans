@@ -7,6 +7,23 @@
       "changedBy": "migration-script",
       "changes": {},
       "note": "Changelog system initialized. Historical changes before this date are not tracked."
+    },
+    {
+      "action": "update",
+      "changedAt": "2025-08-12T15:02:02.034Z",
+      "changedBy": "tocomax",
+      "commit": "3566b205",
+      "commitMessage": "chore: update interest rates and APR values for multiple providers to reflect recent changes",
+      "changes": {
+        "details.apr_min.value": {
+          "from": 14.1,
+          "to": 14.2
+        },
+        "details.interest_rate_min.value": {
+          "from": 12.6,
+          "to": 12.7
+        }
+      }
     }
   ]
 }

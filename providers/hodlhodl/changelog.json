@@ -7,6 +7,39 @@
       "changedBy": "migration-script",
       "changes": {},
       "note": "Changelog system initialized. Historical changes before this date are not tracked."
+    },
+    {
+      "action": "update",
+      "changedAt": "2025-08-12T15:02:02.177Z",
+      "changedBy": "tocomax",
+      "commit": "3566b205",
+      "commitMessage": "chore: update interest rates and APR values for multiple providers to reflect recent changes",
+      "changes": {
+        "details.loan_value_min.value": {
+          "from": 0,
+          "to": 50
+        },
+        "details.loan_value_min.note": {
+          "from": "No minimum",
+          "to": ""
+        },
+        "details.loan_value_max.value": {
+          "from": 0,
+          "to": 50000
+        },
+        "details.loan_value_max.note": {
+          "from": "N/A",
+          "to": ""
+        },
+        "details.apr_max.value": {
+          "from": 29.1,
+          "to": 28.5
+        },
+        "details.interest_rate_max.value": {
+          "from": 27.6,
+          "to": 27
+        }
+      }
     }
   ]
 }

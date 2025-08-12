@@ -225,7 +225,7 @@
         "note": ""
       },
       "apr_min": {
-        "value": 14.1,
+        "value": 14.2,
         "unit": "%",
         "note": ""
       },
@@ -240,7 +240,7 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 12.6,
+        "value": 12.7,
         "unit": "%",
         "note": ""
       },
@@ -610,12 +610,12 @@
         "note": ""
       },
       "apr_min": {
-        "value": 14,
+        "value": 12.5,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 14,
+        "value": 12.5,
         "unit": "%",
         "note": ""
       },
@@ -625,12 +625,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 12.5,
+        "value": 11,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 12.5,
+        "value": 11,
         "unit": "%",
         "note": ""
       },
@@ -806,12 +806,12 @@
         "note": ""
       },
       "apr_min": {
-        "value": 5.4,
+        "value": 5.2,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 5.4,
+        "value": 5.2,
         "unit": "%",
         "note": ""
       },
@@ -821,12 +821,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 5.4,
+        "value": 5.2,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 5.4,
+        "value": 5.2,
         "unit": "%",
         "note": ""
       },
@@ -2245,14 +2245,14 @@
         "note": ""
       },
       "loan_value_min": {
-        "value": 0,
+        "value": 50,
         "unit": "USD",
-        "note": "No minimum"
+        "note": ""
       },
       "loan_value_max": {
-        "value": 0,
+        "value": 50000,
         "unit": "USD",
-        "note": "N/A"
+        "note": ""
       },
       "loan_duration_min": {
         "value": 1,
@@ -2275,7 +2275,7 @@
         "note": ""
       },
       "apr_max": {
-        "value": 29.1,
+        "value": 28.5,
         "unit": "%",
         "note": ""
       },
@@ -2290,7 +2290,7 @@
         "note": ""
       },
       "interest_rate_max": {
-        "value": 27.6,
+        "value": 27,
         "unit": "%",
         "note": ""
       }
@@ -2452,12 +2452,12 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 8.1,
+        "value": 7.4,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 8.1,
+        "value": 7.4,
         "unit": "%",
         "note": ""
       },
@@ -2467,12 +2467,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 8.1,
+        "value": 7.4,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 8.1,
+        "value": 7.4,
         "unit": "%",
         "note": ""
       }
@@ -2653,12 +2653,12 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 6.5,
+        "value": 4.9,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 6.5,
+        "value": 4.9,
         "unit": "%",
         "note": ""
       },
@@ -2668,12 +2668,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 6.5,
+        "value": 4.9,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 6.5,
+        "value": 4.9,
         "unit": "%",
         "note": ""
       }
@@ -3260,7 +3260,7 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 9,
+        "value": 11.5,
         "unit": "%",
         "note": ""
       },
@@ -3275,7 +3275,7 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 7.5,
+        "value": 10,
         "unit": "%",
         "note": ""
       },
