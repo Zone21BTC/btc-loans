@@ -57,14 +57,14 @@
       "note": ""
     },
     "loan_value_min": {
-      "value": 0,
+      "value": 50,
       "unit": "USD",
-      "note": "No minimum"
+      "note": ""
     },
     "loan_value_max": {
-      "value": 0,
+      "value": 50000,
       "unit": "USD",
-      "note": "N/A"
+      "note": ""
     },
     "loan_duration_min": {
       "value": 1,
@@ -87,7 +87,7 @@
       "note": ""
     },
     "apr_max": {
-      "value": 29.1,
+      "value": 28.5,
       "unit": "%",
       "note": ""
     },
@@ -102,7 +102,7 @@
       "note": ""
     },
     "interest_rate_max": {
-      "value": 27.6,
+      "value": 27,
       "unit": "%",
       "note": ""
     }

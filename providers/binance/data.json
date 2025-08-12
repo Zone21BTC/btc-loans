@@ -81,12 +81,12 @@
       "note": "N/A"
     },
     "apr_min": {
-      "value": 6.5,
+      "value": 4.9,
       "unit": "%",
       "note": ""
     },
     "apr_max": {
-      "value": 6.5,
+      "value": 4.9,
       "unit": "%",
       "note": ""
     },
@@ -96,12 +96,12 @@
       "note": ""
     },
     "interest_rate_min": {
-      "value": 6.5,
+      "value": 4.9,
       "unit": "%",
       "note": ""
     },
     "interest_rate_max": {
-      "value": 6.5,
+      "value": 4.9,
       "unit": "%",
       "note": ""
     }
