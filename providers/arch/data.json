@@ -11,28 +11,13 @@
     "launch_year": 2023,
     "website": "https://archlending.com/",
     "custody_model": "CeFi",
-    "custodians": [
-      "Anchorage"
-    ],
-    "collateral_type": [
-      "BTC",
-      "ETH",
-      "SOL"
-    ],
+    "custodians": ["Anchorage"],
+    "collateral_type": ["BTC", "ETH", "SOL"],
     "rehypothecation": "No",
     "kyc": "Yes",
-    "loan_type": [
-      "Consumer"
-    ],
-    "loan_currency": [
-      "USDC",
-      "USD"
-    ],
-    "support_channels": [
-      "Email",
-      "Chat",
-      "Call"
-    ],
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "USD"],
+    "support_channels": ["Email", "Chat", "Call"],
     "apr_type": {
       "value": "Fixed",
       "note": ""
@@ -68,9 +53,7 @@
       "note": ""
     },
     "margin_call": {
-      "value": [
-        70
-      ],
+      "value": [70],
       "unit": "%",
       "note": ""
     },

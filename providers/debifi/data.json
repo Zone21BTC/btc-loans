@@ -11,37 +11,19 @@
     "launch_year": 2025,
     "website": "https://debifi.com/",
     "custody_model": "DeFi",
-    "custodians": [
-      "3-of-4 multisig"
-    ],
-    "collateral_type": [
-      "BTC"
-    ],
+    "custodians": ["3-of-4 multisig"],
+    "collateral_type": ["BTC"],
     "rehypothecation": "No",
     "kyc": "Varies",
-    "loan_type": [
-      "Consumer"
-    ],
-    "loan_currency": [
-      "USDC",
-      "USDT",
-      "USD",
-      "EUR",
-      "GBP",
-      "AED",
-      "BRL",
-      "CHF"
-    ],
-    "support_channels": [
-      "Email",
-      "Chat"
-    ],
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "USDT", "USD", "EUR", "GBP", "AED", "BRL", "CHF"],
+    "support_channels": ["Email", "Chat"],
     "apr_type": {
       "value": "Fixed",
       "note": ""
     },
     "apr_min": {
-      "value": 14.2,
+      "value": 14.15,
       "unit": "%",
       "note": ""
     },
@@ -56,7 +38,7 @@
       "note": ""
     },
     "interest_rate_min": {
-      "value": 12.7,
+      "value": 12.65,
       "unit": "%",
       "note": ""
     },
@@ -71,11 +53,7 @@
       "note": ""
     },
     "margin_call": {
-      "value": [
-        75,
-        80,
-        85
-      ],
+      "value": [75, 80, 85],
       "unit": "%",
       "note": ""
     },

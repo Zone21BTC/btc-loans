@@ -11,26 +11,13 @@
     "launch_year": 2024,
     "website": "https://firefish.io",
     "custody_model": "DeFi",
-    "custodians": [
-      "Pre-signed txns"
-    ],
-    "collateral_type": [
-      "BTC"
-    ],
+    "custodians": ["Pre-signed txns"],
+    "collateral_type": ["BTC"],
     "rehypothecation": "No",
     "kyc": "Yes",
-    "loan_type": [
-      "Consumer"
-    ],
-    "loan_currency": [
-      "USDC",
-      "EUR",
-      "CHF",
-      "CZK"
-    ],
-    "support_channels": [
-      "Email"
-    ],
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "EUR", "CHF", "CZK"],
+    "support_channels": ["Email"],
     "apr_type": {
       "value": "Fixed",
       "note": ""
@@ -41,11 +28,7 @@
       "note": ""
     },
     "margin_call": {
-      "value": [
-        80,
-        85,
-        90
-      ],
+      "value": [80, 85, 90],
       "unit": "%",
       "note": "Warnings at 80%, 85%, 90% (no margin call)"
     },

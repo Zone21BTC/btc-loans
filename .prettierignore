@@ -3,5 +3,5 @@ dist/**
 build/
 *.min.js
 package-lock.json
-providers/*/data.json
-schema/*.json 
+schema/*.json
+*.md

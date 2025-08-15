@@ -11,24 +11,13 @@
     "launch_year": 2018,
     "website": "https://ledn.io",
     "custody_model": "CeFi",
-    "custodians": [
-      "BitGo"
-    ],
-    "collateral_type": [
-      "BTC"
-    ],
+    "custodians": ["BitGo"],
+    "collateral_type": ["BTC"],
     "rehypothecation": "Limited",
     "kyc": "Yes",
-    "loan_type": [
-      "Consumer"
-    ],
-    "loan_currency": [
-      "USDC",
-      "USD"
-    ],
-    "support_channels": [
-      "Email"
-    ],
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "USD"],
+    "support_channels": ["Email"],
     "apr_type": {
       "value": "Fixed",
       "note": ""
@@ -64,10 +53,7 @@
       "note": ""
     },
     "margin_call": {
-      "value": [
-        70,
-        75
-      ],
+      "value": [70, 75],
       "unit": "%",
       "note": "Warnings at 70%, 75% (no margin call)"
     },

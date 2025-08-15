@@ -11,31 +11,13 @@
     "launch_year": 2018,
     "website": "https://nexo.com/",
     "custody_model": "CeFi",
-    "custodians": [
-      "Ledger Vault",
-      "Fireblocks"
-    ],
-    "collateral_type": [
-      "BTC",
-      "ETH",
-      "+100 other assets"
-    ],
+    "custodians": ["Ledger Vault", "Fireblocks"],
+    "collateral_type": ["BTC", "ETH", "+100 other assets"],
     "rehypothecation": "Yes",
     "kyc": "Yes",
-    "loan_type": [
-      "Consumer"
-    ],
-    "loan_currency": [
-      "USDC",
-      "USDT",
-      "USD",
-      "EUR",
-      "GBP"
-    ],
-    "support_channels": [
-      "Email",
-      "Chat"
-    ],
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "USDT", "USD", "EUR", "GBP"],
+    "support_channels": ["Email", "Chat"],
     "apr_type": {
       "value": "Variable",
       "note": ""
@@ -46,11 +28,7 @@
       "note": ""
     },
     "margin_call": {
-      "value": [
-        71.4,
-        74.1,
-        76.9
-      ],
+      "value": [71.4, 74.1, 76.9],
       "unit": "%",
       "note": "Warnings at 71.4%, 74.1%, 76.9% (no margin call)"
     },

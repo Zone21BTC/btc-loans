@@ -11,24 +11,13 @@
     "launch_year": 2025,
     "website": "https://strike.me",
     "custody_model": "CeFi",
-    "custodians": [
-      "In-house"
-    ],
-    "collateral_type": [
-      "BTC"
-    ],
+    "custodians": ["In-house"],
+    "collateral_type": ["BTC"],
     "rehypothecation": "Limited",
     "kyc": "Yes",
-    "loan_type": [
-      "Consumer"
-    ],
-    "loan_currency": [
-      "USD"
-    ],
-    "support_channels": [
-      "Email",
-      "Chat"
-    ],
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USD"],
+    "support_channels": ["Email", "Chat"],
     "apr_type": {
       "value": "Fixed",
       "note": ""
@@ -39,9 +28,7 @@
       "note": ""
     },
     "margin_call": {
-      "value": [
-        70
-      ],
+      "value": [70],
       "unit": "%",
       "note": ""
     },

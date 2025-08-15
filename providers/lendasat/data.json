@@ -11,26 +11,13 @@
     "launch_year": 0,
     "website": "https://lendasat.com",
     "custody_model": "DeFi",
-    "custodians": [
-      "2-of-3 multisig"
-    ],
-    "collateral_type": [
-      "BTC"
-    ],
+    "custodians": ["2-of-3 multisig"],
+    "collateral_type": ["BTC"],
     "rehypothecation": "No",
     "kyc": "No",
-    "loan_type": [
-      "Consumer"
-    ],
-    "loan_currency": [
-      "USDC",
-      "USDT",
-      "USD"
-    ],
-    "support_channels": [
-      "Discord",
-      "Email"
-    ],
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "USDT", "USD"],
+    "support_channels": ["Discord", "Email"],
     "apr_type": {
       "value": "Fixed",
       "note": ""
@@ -41,10 +28,7 @@
       "note": ""
     },
     "margin_call": {
-      "value": [
-        80,
-        85
-      ],
+      "value": [80, 85],
       "unit": "%",
       "note": ""
     },

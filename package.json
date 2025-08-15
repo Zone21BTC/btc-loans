@@ -11,8 +11,8 @@
     "changelog": "node scripts/update-changelog.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "format": "prettier --write \"**/*.{js,json}\" --ignore-path .prettierignore",
+    "format:check": "prettier --check \"**/*.{js,json}\" --ignore-path .prettierignore",
     "check-dist": "node scripts/check-dist.js",
     "prepare": "husky"
   },

@@ -11,24 +11,13 @@
     "launch_year": 2024,
     "website": "https://lava.xyz",
     "custody_model": "DeFi",
-    "custodians": [
-      "DLC"
-    ],
-    "collateral_type": [
-      "BTC"
-    ],
+    "custodians": ["DLC"],
+    "collateral_type": ["BTC"],
     "rehypothecation": "No",
     "kyc": "No",
-    "loan_type": [
-      "Consumer"
-    ],
-    "loan_currency": [
-      "USDC",
-      "LavaUSD"
-    ],
-    "support_channels": [
-      "Email"
-    ],
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "LavaUSD"],
+    "support_channels": ["Email"],
     "apr_type": {
       "value": "Fixed",
       "note": ""

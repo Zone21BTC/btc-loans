@@ -11,29 +11,13 @@
     "launch_year": 2023,
     "website": "https://www.binance.com/en/loan",
     "custody_model": "CeFi",
-    "custodians": [
-      "In-house"
-    ],
-    "collateral_type": [
-      "BTC",
-      "ETH",
-      "BNB",
-      "Others"
-    ],
+    "custodians": ["In-house"],
+    "collateral_type": ["BTC", "ETH", "BNB", "Others"],
     "rehypothecation": "Yes",
     "kyc": "Yes",
-    "loan_type": [
-      "Consumer"
-    ],
-    "loan_currency": [
-      "USDC",
-      "USDT",
-      "ETH",
-      "Others"
-    ],
-    "support_channels": [
-      "Chat"
-    ],
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "USDT", "ETH", "Others"],
+    "support_channels": ["Chat"],
     "apr_type": {
       "value": "Variable",
       "note": ""
@@ -44,9 +28,7 @@
       "note": ""
     },
     "margin_call": {
-      "value": [
-        85
-      ],
+      "value": [85],
       "unit": "%",
       "note": ""
     },
@@ -81,12 +63,12 @@
       "note": "N/A"
     },
     "apr_min": {
-      "value": 4.9,
+      "value": 6.4,
       "unit": "%",
       "note": ""
     },
     "apr_max": {
-      "value": 4.9,
+      "value": 6.4,
       "unit": "%",
       "note": ""
     },
@@ -96,12 +78,12 @@
       "note": ""
     },
     "interest_rate_min": {
-      "value": 4.9,
+      "value": 6.4,
       "unit": "%",
       "note": ""
     },
     "interest_rate_max": {
-      "value": 4.9,
+      "value": 6.4,
       "unit": "%",
       "note": ""
     }

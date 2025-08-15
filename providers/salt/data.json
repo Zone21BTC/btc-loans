@@ -11,32 +11,13 @@
     "launch_year": 2016,
     "website": "https://saltlending.com/",
     "custody_model": "CeFi",
-    "custodians": [
-      "BitGo",
-      "Fireblocks"
-    ],
-    "collateral_type": [
-      "BTC",
-      "ETH",
-      "USDC",
-      "USDT",
-      "SALT"
-    ],
+    "custodians": ["BitGo", "Fireblocks"],
+    "collateral_type": ["BTC", "ETH", "USDC", "USDT", "SALT"],
     "rehypothecation": "Yes",
     "kyc": "Yes",
-    "loan_type": [
-      "Consumer"
-    ],
-    "loan_currency": [
-      "USDC",
-      "USDT",
-      "USD"
-    ],
-    "support_channels": [
-      "Email",
-      "Chat",
-      "Call"
-    ],
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "USDT", "USD"],
+    "support_channels": ["Email", "Chat", "Call"],
     "apr_type": {
       "value": "Fixed",
       "note": ""
@@ -47,9 +28,7 @@
       "note": ""
     },
     "margin_call": {
-      "value": [
-        83
-      ],
+      "value": [83],
       "unit": "%",
       "note": ""
     },

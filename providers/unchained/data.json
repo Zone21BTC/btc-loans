@@ -11,24 +11,13 @@
     "launch_year": 2017,
     "website": "https://unchained.com",
     "custody_model": "DeFi",
-    "custodians": [
-      "2-of-3 multisig"
-    ],
-    "collateral_type": [
-      "BTC"
-    ],
+    "custodians": ["2-of-3 multisig"],
+    "collateral_type": ["BTC"],
     "rehypothecation": "No",
     "kyc": "Yes",
-    "loan_type": [
-      "Business"
-    ],
-    "loan_currency": [
-      "USD"
-    ],
-    "support_channels": [
-      "Email",
-      "Phone"
-    ],
+    "loan_type": ["Business"],
+    "loan_currency": ["USD"],
+    "support_channels": ["Email", "Phone"],
     "apr_type": {
       "value": "Fixed",
       "note": ""
@@ -64,9 +53,7 @@
       "note": ""
     },
     "margin_call": {
-      "value": [
-        66
-      ],
+      "value": [66],
       "unit": "%",
       "note": ""
     },

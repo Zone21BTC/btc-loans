@@ -11,28 +11,13 @@
     "launch_year": 2020,
     "website": "https://lend.hodlhodl.com/",
     "custody_model": "DeFi",
-    "custodians": [
-      "2-of-3 multisig"
-    ],
-    "collateral_type": [
-      "BTC"
-    ],
+    "custodians": ["2-of-3 multisig"],
+    "collateral_type": ["BTC"],
     "rehypothecation": "No",
     "kyc": "No",
-    "loan_type": [
-      "Consumer"
-    ],
-    "loan_currency": [
-      "USDC",
-      "USDT",
-      "USDP",
-      "DAI",
-      "L-BTC",
-      "wBTC"
-    ],
-    "support_channels": [
-      "Email"
-    ],
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDC", "USDT", "USDP", "DAI", "L-BTC", "wBTC"],
+    "support_channels": ["Email"],
     "apr_type": {
       "value": "Fixed",
       "note": ""
@@ -43,11 +28,7 @@
       "note": ""
     },
     "margin_call": {
-      "value": [
-        75,
-        80,
-        85
-      ],
+      "value": [75, 80, 85],
       "unit": "%",
       "note": ""
     },

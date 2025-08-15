@@ -11,25 +11,13 @@
     "launch_year": 2025,
     "website": "https://www.libre.org/",
     "custody_model": "CeDeFi",
-    "custodians": [
-      "MPC-TSS"
-    ],
-    "collateral_type": [
-      "BTC"
-    ],
+    "custodians": ["MPC-TSS"],
+    "collateral_type": ["BTC"],
     "rehypothecation": "No",
     "kyc": "No",
-    "loan_type": [
-      "Consumer"
-    ],
-    "loan_currency": [
-      "USDT"
-    ],
-    "support_channels": [
-      "Email",
-      "Telegram",
-      "Discord"
-    ],
+    "loan_type": ["Consumer"],
+    "loan_currency": ["USDT"],
+    "support_channels": ["Email", "Telegram", "Discord"],
     "apr_type": {
       "value": "Fixed",
       "note": ""
@@ -40,9 +28,7 @@
       "note": ""
     },
     "margin_call": {
-      "value": [
-        80
-      ],
+      "value": [80],
       "unit": "%",
       "note": ""
     },

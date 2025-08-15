@@ -11,34 +11,13 @@
     "launch_year": 2020,
     "website": "https://coinrabbit.io/",
     "custody_model": "CeFi",
-    "custodians": [
-      "In-house"
-    ],
-    "collateral_type": [
-      "BTC",
-      "wBTC",
-      "ETH",
-      "XRP",
-      "SOL",
-      "and 300+"
-    ],
+    "custodians": ["In-house"],
+    "collateral_type": ["BTC", "wBTC", "ETH", "XRP", "SOL", "and 300+"],
     "rehypothecation": "No",
     "kyc": "Varies",
-    "loan_type": [
-      "Consumer",
-      "Business"
-    ],
-    "loan_currency": [
-      "USDC",
-      "USDT",
-      "BTC",
-      "ETH"
-    ],
-    "support_channels": [
-      "Email",
-      "Telegram",
-      "Chat"
-    ],
+    "loan_type": ["Consumer", "Business"],
+    "loan_currency": ["USDC", "USDT", "BTC", "ETH"],
+    "support_channels": ["Email", "Telegram", "Chat"],
     "apr_type": {
       "value": "Variable",
       "note": ""
