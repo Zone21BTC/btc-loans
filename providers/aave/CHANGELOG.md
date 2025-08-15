@@ -18,3 +18,16 @@
 - **details.interest_rate_max.value:** `5.4` → `5.2`
 
 ---
+## 2025-08-15
+**Action:** update
+**By:** tocomax
+**Commit:** [30f192ce](https://github.com/your-repo/commit/30f192ce)
+**Message:** chore(provider): update APR, interest rate of Binance, Aave
+
+### Changed
+- **details.apr_min.value:** `5.2` → `6`
+- **details.apr_max.value:** `5.2` → `6`
+- **details.interest_rate_min.value:** `5.2` → `6`
+- **details.interest_rate_max.value:** `5.2` → `6`
+
+---

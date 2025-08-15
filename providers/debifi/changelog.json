@@ -24,6 +24,23 @@
           "to": 12.7
         }
       }
+    },
+    {
+      "action": "update",
+      "changedAt": "2025-08-15T08:48:23.964Z",
+      "changedBy": "tocomax",
+      "commit": "30f192ce",
+      "commitMessage": "chore(provider): update APR, interest rate of Binance, Aave",
+      "changes": {
+        "details.apr_min.value": {
+          "from": 14.2,
+          "to": 14.15
+        },
+        "details.interest_rate_min.value": {
+          "from": 12.7,
+          "to": 12.65
+        }
+      }
     }
   ]
 }
