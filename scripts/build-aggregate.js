@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { calculateFinalScore, deriveRiskBand } from '../lib/utils.js'; // implement separately
+import { calculateFinalScore } from '../lib/utils.js'; // implement separately
 
 const providersDir = './providers';
 const distDir = './dist';
@@ -20,10 +20,8 @@ const providers = fs
   .filter(provider => provider !== null)
   .map(raw => {
     const calculatedData = calculateFinalScore(raw.factors);
-    const riskBand = deriveRiskBand(calculatedData.final_score);
     return {
       ...raw,
-      risk_band: riskBand,
       ...calculatedData,
     };
   });
