@@ -27,3 +27,14 @@
 - **details.interest_rate_min.value:** `12.7` → `12.65`
 
 ---
+## 2025-08-19
+**Action:** update
+**By:** tocomax
+**Commit:** [60c630e3](https://github.com/your-repo/commit/60c630e3)
+**Message:** feat(provider): update interest rate
+
+### Changed
+- **details.apr_min.value:** `14.15` → `14`
+- **details.interest_rate_min.value:** `12.65` → `12.5`
+
+---

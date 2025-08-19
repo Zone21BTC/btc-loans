@@ -41,6 +41,23 @@
           "to": 12.65
         }
       }
+    },
+    {
+      "action": "update",
+      "changedAt": "2025-08-19T14:18:57.295Z",
+      "changedBy": "tocomax",
+      "commit": "60c630e3",
+      "commitMessage": "feat(provider): update interest rate",
+      "changes": {
+        "details.apr_min.value": {
+          "from": 14.15,
+          "to": 14
+        },
+        "details.interest_rate_min.value": {
+          "from": 12.65,
+          "to": 12.5
+        }
+      }
     }
   ]
 }

@@ -31,3 +31,16 @@
 - **details.interest_rate_max.value:** `4.9` → `6.4`
 
 ---
+## 2025-08-19
+**Action:** update
+**By:** tocomax
+**Commit:** [60c630e3](https://github.com/your-repo/commit/60c630e3)
+**Message:** feat(provider): update interest rate
+
+### Changed
+- **details.apr_min.value:** `6.4` → `4`
+- **details.apr_max.value:** `6.4` → `4`
+- **details.interest_rate_min.value:** `6.4` → `4`
+- **details.interest_rate_max.value:** `6.4` → `4`
+
+---
