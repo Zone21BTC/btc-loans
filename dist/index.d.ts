@@ -117,6 +117,8 @@ export interface Provider {
   final_score: number;
   critical_penalties: Penalty[];
   bonus_penalties: Penalty[];
+  logo?: string;
+  preview_image?: string;
 }
 
 export interface WeightConfigs {
