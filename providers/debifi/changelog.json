@@ -58,6 +58,23 @@
           "to": 12.5
         }
       }
+    },
+    {
+      "action": "update",
+      "changedAt": "2025-09-09T13:54:06.389Z",
+      "changedBy": "tocomax",
+      "commit": "ee6fb5bf",
+      "commitMessage": "feat: update rate 9/9/2025",
+      "changes": {
+        "details.apr_min.value": {
+          "from": 14,
+          "to": 11.49
+        },
+        "details.interest_rate_min.value": {
+          "from": 12.5,
+          "to": 9.99
+        }
+      }
     }
   ]
 }

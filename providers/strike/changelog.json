@@ -7,6 +7,19 @@
       "changedBy": "migration-script",
       "changes": {},
       "note": "Changelog system initialized. Historical changes before this date are not tracked."
+    },
+    {
+      "action": "update",
+      "changedAt": "2025-09-09T13:54:06.804Z",
+      "changedBy": "tocomax",
+      "commit": "ee6fb5bf",
+      "commitMessage": "feat: update rate 9/9/2025",
+      "changes": {
+        "details.loan_value_min.value": {
+          "from": 10000,
+          "to": 5000
+        }
+      }
     }
   ]
 }
