@@ -38,7 +38,7 @@
       "note": ""
     },
     "loan_value_min": {
-      "value": 10000,
+      "value": 5000,
       "unit": "USD",
       "note": ""
     },
