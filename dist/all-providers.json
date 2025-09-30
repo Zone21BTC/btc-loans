@@ -806,12 +806,12 @@
         "note": ""
       },
       "apr_min": {
-        "value": 6.1,
+        "value": 5.6,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 6.1,
+        "value": 5.6,
         "unit": "%",
         "note": ""
       },
@@ -821,12 +821,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 6.1,
+        "value": 5.6,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 6.1,
+        "value": 5.6,
         "unit": "%",
         "note": ""
       },
@@ -2270,7 +2270,7 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 13.4,
+        "value": 10.4,
         "unit": "%",
         "note": ""
       },
@@ -2285,7 +2285,7 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 11.9,
+        "value": 8.9,
         "unit": "%",
         "note": ""
       },
@@ -2452,12 +2452,12 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 7.3,
+        "value": 7.5,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 7.3,
+        "value": 7.5,
         "unit": "%",
         "note": ""
       },
@@ -2467,12 +2467,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 7.3,
+        "value": 7.5,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 7.3,
+        "value": 7.5,
         "unit": "%",
         "note": ""
       }
@@ -2653,12 +2653,12 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 6.2,
+        "value": 6.3,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 6.2,
+        "value": 6.3,
         "unit": "%",
         "note": ""
       },
@@ -2668,12 +2668,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 6.2,
+        "value": 6.3,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 6.2,
+        "value": 6.3,
         "unit": "%",
         "note": ""
       }

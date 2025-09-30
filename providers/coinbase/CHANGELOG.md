@@ -31,3 +31,16 @@
 - **details.interest_rate_max.value:** `7.4` → `7.3`
 
 ---
+## 2025-09-30
+**Action:** update
+**By:** tocomax
+**Commit:** [f4e3aa0d](https://github.com/your-repo/commit/f4e3aa0d)
+**Message:** chore: update interest rates for providers on 30 Sep 2025
+
+### Changed
+- **details.apr_min.value:** `7.3` → `7.5`
+- **details.apr_max.value:** `7.3` → `7.5`
+- **details.interest_rate_min.value:** `7.3` → `7.5`
+- **details.interest_rate_max.value:** `7.3` → `7.5`
+
+---

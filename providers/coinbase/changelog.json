@@ -57,6 +57,31 @@
           "to": 7.3
         }
       }
+    },
+    {
+      "action": "update",
+      "changedAt": "2025-09-30T14:08:10.838Z",
+      "changedBy": "tocomax",
+      "commit": "f4e3aa0d",
+      "commitMessage": "chore: update interest rates for providers on 30 Sep 2025",
+      "changes": {
+        "details.apr_min.value": {
+          "from": 7.3,
+          "to": 7.5
+        },
+        "details.apr_max.value": {
+          "from": 7.3,
+          "to": 7.5
+        },
+        "details.interest_rate_min.value": {
+          "from": 7.3,
+          "to": 7.5
+        },
+        "details.interest_rate_max.value": {
+          "from": 7.3,
+          "to": 7.5
+        }
+      }
     }
   ]
 }

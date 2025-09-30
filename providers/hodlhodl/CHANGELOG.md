@@ -55,3 +55,14 @@
 - **details.interest_rate_min.value:** `11.4` → `11.9`
 
 ---
+## 2025-09-30
+**Action:** update
+**By:** tocomax
+**Commit:** [f4e3aa0d](https://github.com/your-repo/commit/f4e3aa0d)
+**Message:** chore: update interest rates for providers on 30 Sep 2025
+
+### Changed
+- **details.apr_min.value:** `13.4` → `10.4`
+- **details.interest_rate_min.value:** `11.9` → `8.9`
+
+---
