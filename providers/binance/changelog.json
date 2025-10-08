@@ -132,6 +132,31 @@
           "to": 6.3
         }
       }
+    },
+    {
+      "action": "update",
+      "changedAt": "2025-10-08T02:13:14.965Z",
+      "changedBy": "tocomax",
+      "commit": "7ac06e55",
+      "commitMessage": "chore: update interest rates on 07 Oct 2025",
+      "changes": {
+        "details.apr_min.value": {
+          "from": 6.3,
+          "to": 9.3
+        },
+        "details.apr_max.value": {
+          "from": 6.3,
+          "to": 9.3
+        },
+        "details.interest_rate_min.value": {
+          "from": 6.3,
+          "to": 9.3
+        },
+        "details.interest_rate_max.value": {
+          "from": 6.3,
+          "to": 9.3
+        }
+      }
     }
   ]
 }

@@ -70,3 +70,16 @@
 - **details.interest_rate_max.value:** `6.2` → `6.3`
 
 ---
+## 2025-10-08
+**Action:** update
+**By:** tocomax
+**Commit:** [7ac06e55](https://github.com/your-repo/commit/7ac06e55)
+**Message:** chore: update interest rates on 07 Oct 2025
+
+### Changed
+- **details.apr_min.value:** `6.3` → `9.3`
+- **details.apr_max.value:** `6.3` → `9.3`
+- **details.interest_rate_min.value:** `6.3` → `9.3`
+- **details.interest_rate_max.value:** `6.3` → `9.3`
+
+---
