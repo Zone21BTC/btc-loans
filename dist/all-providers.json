@@ -375,6 +375,193 @@
     ]
   },
   {
+    "provider_name": "Arch",
+    "slug": "arch",
+    "model_version": "1.0",
+    "introduction": "Founded in 2022 in New York, Arch (operated by ChainFi, Inc.) delivers crypto-backed loans using BTC, ETH, and SOL as collateral. It serves individuals and institutions, offering USD or stablecoin financing with concierge-level customer support from a non-bank, NMLS-registered entity.",
+    "highlights": "Anchorage custody in bankruptcy-remote trusts is a solid base, but Arch publishes no public proof of reserves and liabilities and discloses no SOC 2 for its own platform. Ship continuous, publicly verifiable PoR and a SOC 2 Type II so customers get verifiable reserves and audited security.",
+    "status": "active",
+    "is_beta": false,
+    "notes": "",
+    "details": {
+      "launch_year": 2023,
+      "website": "https://archlending.com/",
+      "custody_model": "CeFi",
+      "custodians": [
+        "Anchorage"
+      ],
+      "collateral_type": [
+        "BTC",
+        "ETH",
+        "SOL"
+      ],
+      "rehypothecation": "No",
+      "kyc": "Yes",
+      "loan_type": [
+        "Consumer"
+      ],
+      "loan_currency": [
+        "USDC",
+        "USD"
+      ],
+      "support_channels": [
+        "Email",
+        "Chat",
+        "Call"
+      ],
+      "apr_type": {
+        "value": "Fixed",
+        "note": ""
+      },
+      "apr_min": {
+        "value": 12.5,
+        "unit": "%",
+        "note": ""
+      },
+      "apr_max": {
+        "value": 12.5,
+        "unit": "%",
+        "note": ""
+      },
+      "origination_fee": {
+        "value": 1.5,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_min": {
+        "value": 11,
+        "unit": "%",
+        "note": ""
+      },
+      "interest_rate_max": {
+        "value": 11,
+        "unit": "%",
+        "note": ""
+      },
+      "ltv": {
+        "value": 60,
+        "unit": "%",
+        "note": ""
+      },
+      "margin_call": {
+        "value": [
+          70
+        ],
+        "unit": "%",
+        "note": ""
+      },
+      "liquidation_ltv": {
+        "value": 80,
+        "unit": "%",
+        "note": ""
+      },
+      "loan_value_min": {
+        "value": 1000,
+        "unit": "USD",
+        "note": ""
+      },
+      "loan_value_max": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      },
+      "loan_duration_min": {
+        "value": 1,
+        "unit": "month",
+        "note": ""
+      },
+      "loan_duration_max": {
+        "value": 24,
+        "unit": "month",
+        "note": ""
+      },
+      "total_loan_issued": {
+        "value": 0,
+        "unit": "USD",
+        "note": "N/A"
+      }
+    },
+    "factors": {
+      "collateral": {
+        "score": 0,
+        "note": "Native BTC (on-chain UTXO).",
+        "evidence": []
+      },
+      "rehypothecation": {
+        "score": 2,
+        "note": "Collateral is held in cold, bankruptcy-remote custody at Anchorage Digital under a strict \"no-rehypothecation\" policy; assets are pooled in omnibus wallets (individual segregated wallets only for loans > $100k).",
+        "evidence": []
+      },
+      "custody": {
+        "score": 4,
+        "note": "Assets are held in segregated, bankruptcy-remote trust accounts at Anchorage. Borrowers have no key.",
+        "evidence": []
+      },
+      "security_governance": {
+        "score": 7,
+        "note": "Collateral sits at Anchorage, a SOC 1/SOC 2-certified, federally-chartered custodian, in cold, bankruptcy-remote trusts. Arch cites penetration testing & a bug-bounty program but discloses no independent security audit or SOC-2 for its own key-management / wallet software.",
+        "evidence": []
+      },
+      "platform": {
+        "score": 0,
+        "note": "Native Bitcoin script.",
+        "evidence": []
+      },
+      "oracle": {
+        "score": 4,
+        "note": "Arch discloses a single third-party oracle: CoinMarketCap's market price feed, refreshed roughly every 60 seconds. CoinMarketCap aggregates quotes from multiple exchanges and applies data-cleaning/outlier filters before publishing a USD price. Arch adds guardrails (alerts for stale prices and a manual hold on liquidations when an 'extreme' LTV is computed), which reduces auto-liquidation risk from a bad tick.",
+        "evidence": []
+      },
+      "liquidation_buffer": {
+        "score": 2,
+        "note": "Arch sets LTV at 60%, issues margin calls at 70%, and triggers partial liquidation at 80% with a 24h grace window.",
+        "evidence": []
+      },
+      "rate_and_term": {
+        "score": 2,
+        "note": "Fixed APR; no uncapped variability.",
+        "evidence": []
+      },
+      "transparency": {
+        "score": 7,
+        "note": "Collateral sits with Anchorage; no public PoR or liability proof.  Borrowers over  $100  k can request a block‑explorer link to their segregated wallet  – a one‑off, opt‑in disclosure. Smaller loans stay pooled and opaque; code is closed‑source.",
+        "evidence": []
+      },
+      "loan_currency": {
+        "score": 4,
+        "note": "Borrowers receive USD wires or stablecoin (USDC).",
+        "evidence": []
+      },
+      "privacy": {
+        "score": 7,
+        "note": "Arch requires full KYC with government ID, handled via Persona. Personal data is encrypted and stored in the cloud.",
+        "evidence": []
+      },
+      "history": {
+        "score": 4,
+        "note": "Official Launch Jan 2023.",
+        "evidence": []
+      },
+      "jurisdiction": {
+        "score": 2,
+        "note": "Operated by ChainFi Inc. (NMLS #2637200); crypto-loan licences filed, product geofenced to permitted U.S. states—more regulated than most peers but not a bank or trust itself.",
+        "evidence": []
+      }
+    },
+    "risk_band": "Medium",
+    "linear_score": 33,
+    "final_score": 38,
+    "critical_penalties": [],
+    "bonus_penalties": [
+      {
+        "key": "security_governance_7",
+        "label": "Security & Governance = 7",
+        "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. CeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
+        "penalty": 5
+      }
+    ]
+  },
+  {
     "provider_name": "Ledn",
     "slug": "ledn",
     "model_version": "1.0",
@@ -567,199 +754,6 @@
         "label": "Security & Governance = 4",
         "description": "DeFi: audit partial/outdated; borrower key module audited but builds not reproducible; cosigner & oracle keys kept in non-HSMs. CeFi: custodian tech audited, but cold-to-hot workflow only self-declared; hot-wallet balance larger than minimal float.",
         "penalty": 3
-      }
-    ]
-  },
-  {
-    "provider_name": "Arch",
-    "slug": "arch",
-    "model_version": "1.0",
-    "introduction": "Founded in 2022 in New York, Arch (operated by ChainFi, Inc.) delivers crypto-backed loans using BTC, ETH, and SOL as collateral. It serves individuals and institutions, offering USD or stablecoin financing with concierge-level customer support from a non-bank, NMLS-registered entity.",
-    "highlights": "Uses native BTC escrow but offers no public proof-of-reserves and depends on a single oracle, leaving users blind to hidden leverage or price-feed failure. Live PoR and multiple independent pricing sources would materially shrink uncertainty.",
-    "status": "active",
-    "is_beta": false,
-    "notes": "",
-    "details": {
-      "launch_year": 2023,
-      "website": "https://archlending.com/",
-      "custody_model": "CeFi",
-      "custodians": [
-        "Anchorage"
-      ],
-      "collateral_type": [
-        "BTC",
-        "ETH",
-        "SOL"
-      ],
-      "rehypothecation": "No",
-      "kyc": "Yes",
-      "loan_type": [
-        "Consumer"
-      ],
-      "loan_currency": [
-        "USDC",
-        "USD"
-      ],
-      "support_channels": [
-        "Email",
-        "Chat",
-        "Call"
-      ],
-      "apr_type": {
-        "value": "Fixed",
-        "note": ""
-      },
-      "apr_min": {
-        "value": 12.5,
-        "unit": "%",
-        "note": ""
-      },
-      "apr_max": {
-        "value": 12.5,
-        "unit": "%",
-        "note": ""
-      },
-      "origination_fee": {
-        "value": 1.5,
-        "unit": "%",
-        "note": ""
-      },
-      "interest_rate_min": {
-        "value": 11,
-        "unit": "%",
-        "note": ""
-      },
-      "interest_rate_max": {
-        "value": 11,
-        "unit": "%",
-        "note": ""
-      },
-      "ltv": {
-        "value": 60,
-        "unit": "%",
-        "note": ""
-      },
-      "margin_call": {
-        "value": [
-          70
-        ],
-        "unit": "%",
-        "note": ""
-      },
-      "liquidation_ltv": {
-        "value": 80,
-        "unit": "%",
-        "note": ""
-      },
-      "loan_value_min": {
-        "value": 1000,
-        "unit": "USD",
-        "note": ""
-      },
-      "loan_value_max": {
-        "value": 0,
-        "unit": "USD",
-        "note": "N/A"
-      },
-      "loan_duration_min": {
-        "value": 1,
-        "unit": "month",
-        "note": ""
-      },
-      "loan_duration_max": {
-        "value": 24,
-        "unit": "month",
-        "note": ""
-      },
-      "total_loan_issued": {
-        "value": 0,
-        "unit": "USD",
-        "note": "N/A"
-      }
-    },
-    "factors": {
-      "collateral": {
-        "score": 0,
-        "note": "Native BTC (on-chain UTXO).",
-        "evidence": []
-      },
-      "rehypothecation": {
-        "score": 2,
-        "note": "Collateral is held in cold, bankruptcy-remote custody at Anchorage Digital under a strict \"no-rehypothecation\" policy; assets are pooled in omnibus wallets (individual segregated wallets only for loans > $100k).",
-        "evidence": []
-      },
-      "custody": {
-        "score": 4,
-        "note": "Assets are held in segregated, bankruptcy-remote trust accounts at Anchorage. Borrowers have no key.",
-        "evidence": []
-      },
-      "security_governance": {
-        "score": 7,
-        "note": "Collateral sits at Anchorage, a SOC 1/SOC 2-certified, federally-chartered custodian, in cold, bankruptcy-remote trusts. Arch cites penetration testing & a bug-bounty program but discloses no independent security audit or SOC-2 for its own key-management / wallet software.",
-        "evidence": []
-      },
-      "platform": {
-        "score": 0,
-        "note": "Native Bitcoin script.",
-        "evidence": []
-      },
-      "oracle": {
-        "score": 10,
-        "note": "Arch Lending's public materials never disclose where their BTC-USD price comes from, how often it updates, or whether more than one exchange is consulted.",
-        "evidence": []
-      },
-      "liquidation_buffer": {
-        "score": 2,
-        "note": "Arch sets LTV at 60%, issues margin calls at 70%, and triggers partial liquidation at 80% with a 24h grace window.",
-        "evidence": []
-      },
-      "rate_and_term": {
-        "score": 2,
-        "note": "Fixed APR; no uncapped variability.",
-        "evidence": []
-      },
-      "transparency": {
-        "score": 7,
-        "note": "Collateral sits with Anchorage; no public PoR or liability proof.  Borrowers over  $100  k can request a block‑explorer link to their segregated wallet  – a one‑off, opt‑in disclosure. Smaller loans stay pooled and opaque; code is closed‑source.",
-        "evidence": []
-      },
-      "loan_currency": {
-        "score": 4,
-        "note": "Borrowers receive USD wires or stablecoin (USDC).",
-        "evidence": []
-      },
-      "privacy": {
-        "score": 7,
-        "note": "Arch requires full KYC with government ID, handled via Persona. Personal data is encrypted and stored in the cloud.",
-        "evidence": []
-      },
-      "history": {
-        "score": 4,
-        "note": "Official Launch Jan 2023.",
-        "evidence": []
-      },
-      "jurisdiction": {
-        "score": 2,
-        "note": "Operated by ChainFi Inc. (NMLS #2637200); crypto-loan licences filed, product geofenced to permitted U.S. states—more regulated than most peers but not a bank or trust itself.",
-        "evidence": []
-      }
-    },
-    "risk_band": "Medium",
-    "linear_score": 39,
-    "final_score": 49,
-    "critical_penalties": [],
-    "bonus_penalties": [
-      {
-        "key": "security_governance_7",
-        "label": "Security & Governance = 7",
-        "description": "DeFi: no public audit; borrower key generated in-browser or with OSS lacking a reproducible build; cosigner/oracle key locations undisclosed; critical off-chain bots unaudited. CeFi: audit private/redacted; Internet-exposed or single-sig hot wallet; staff can change wallet software without oversight.",
-        "penalty": 5
-      },
-      {
-        "key": "oracle_10",
-        "label": "Oracle = 10",
-        "description": "Closed, provider-controlled feed can inject hidden spreads or false prints to force liquidations.",
-        "penalty": 5
       }
     ]
   },
