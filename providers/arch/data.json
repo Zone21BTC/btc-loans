@@ -3,7 +3,7 @@
   "slug": "arch",
   "model_version": "1.0",
   "introduction": "Founded in 2022 in New York, Arch (operated by ChainFi, Inc.) delivers crypto-backed loans using BTC, ETH, and SOL as collateral. It serves individuals and institutions, offering USD or stablecoin financing with concierge-level customer support from a non-bank, NMLS-registered entity.",
-  "highlights": "Uses native BTC escrow but offers no public proof-of-reserves and depends on a single oracle, leaving users blind to hidden leverage or price-feed failure. Live PoR and multiple independent pricing sources would materially shrink uncertainty.",
+  "highlights": "Anchorage custody in bankruptcy-remote trusts is a solid base, but Arch publishes no public proof of reserves and liabilities and discloses no SOC 2 for its own platform. Ship continuous, publicly verifiable PoR and a SOC 2 Type II so customers get verifiable reserves and audited security.",
   "status": "active",
   "is_beta": false,
   "notes": "",
@@ -115,8 +115,8 @@
       "evidence": []
     },
     "oracle": {
-      "score": 10,
-      "note": "Arch Lending's public materials never disclose where their BTC-USD price comes from, how often it updates, or whether more than one exchange is consulted.",
+      "score": 4,
+      "note": "Arch discloses a single third-party oracle: CoinMarketCap's market price feed, refreshed roughly every 60 seconds. CoinMarketCap aggregates quotes from multiple exchanges and applies data-cleaning/outlier filters before publishing a USD price. Arch adds guardrails (alerts for stale prices and a manual hold on liquidations when an 'extreme' LTV is computed), which reduces auto-liquidation risk from a bad tick.",
       "evidence": []
     },
     "liquidation_buffer": {
