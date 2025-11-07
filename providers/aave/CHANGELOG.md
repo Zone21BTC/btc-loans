@@ -83,3 +83,17 @@
 - **details.interest_rate_max.value:** `5.7` → `5.3`
 
 ---
+## 2025-11-07
+**Action:** update
+**By:** tocomax
+**Commit:** [cca1e2db](https://github.com/your-repo/commit/cca1e2db)
+**Message:** feat: update rate 11/04/2025
+
+### Changed
+- **details.apr_min.value:** `5.3` → `5.5`
+- **details.apr_max.value:** `5.3` → `5.5`
+- **details.interest_rate_min.value:** `5.3` → `5.5`
+- **details.interest_rate_max.value:** `5.3` → `5.5`
+- **factors.loan_currency.note:** `Fully open-source code and on-chain balances; real-time PoR is inherent, so no separate attestation needed.` → `Supported loan currencies include USDC, DAI, USDT, GHO, LUSD, sUSDe, and XAUt. Availability may vary by network (e.g. Polygon, Base) or pool type.`
+
+---

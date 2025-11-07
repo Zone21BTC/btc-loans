@@ -122,3 +122,16 @@
 - **details.interest_rate_max.value:** `5.9` → `6`
 
 ---
+## 2025-11-07
+**Action:** update
+**By:** tocomax
+**Commit:** [cca1e2db](https://github.com/your-repo/commit/cca1e2db)
+**Message:** feat: update rate 11/04/2025
+
+### Changed
+- **details.apr_min.value:** `6` → `5.2`
+- **details.apr_max.value:** `6` → `5.2`
+- **details.interest_rate_min.value:** `6` → `5.2`
+- **details.interest_rate_max.value:** `6` → `5.2`
+
+---

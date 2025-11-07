@@ -800,12 +800,12 @@
         "note": ""
       },
       "apr_min": {
-        "value": 5.3,
+        "value": 5.5,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 5.3,
+        "value": 5.5,
         "unit": "%",
         "note": ""
       },
@@ -815,12 +815,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 5.3,
+        "value": 5.5,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 5.3,
+        "value": 5.5,
         "unit": "%",
         "note": ""
       },
@@ -913,7 +913,7 @@
       },
       "loan_currency": {
         "score": 7,
-        "note": "Fully open-source code and on-chain balances; real-time PoR is inherent, so no separate attestation needed.",
+        "note": "Supported loan currencies include USDC, DAI, USDT, GHO, LUSD, sUSDe, and XAUt. Availability may vary by network (e.g. Polygon, Base) or pool type.",
         "evidence": []
       },
       "privacy": {
@@ -1868,12 +1868,12 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 11.99,
+        "value": 7,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 11.99,
+        "value": 7,
         "unit": "%",
         "note": ""
       },
@@ -1883,12 +1883,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 9.99,
+        "value": 5,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 9.99,
+        "value": 5,
         "unit": "%",
         "note": ""
       }
@@ -2263,7 +2263,7 @@
         "note": ""
       },
       "apr_max": {
-        "value": 28.5,
+        "value": 23.5,
         "unit": "%",
         "note": ""
       },
@@ -2278,7 +2278,7 @@
         "note": ""
       },
       "interest_rate_max": {
-        "value": 27,
+        "value": 22,
         "unit": "%",
         "note": ""
       }
@@ -2641,12 +2641,12 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 6,
+        "value": 5.2,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 6,
+        "value": 5.2,
         "unit": "%",
         "note": ""
       },
@@ -2656,12 +2656,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 6,
+        "value": 5.2,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 6,
+        "value": 5.2,
         "unit": "%",
         "note": ""
       }

@@ -92,3 +92,14 @@
 - **details.interest_rate_max.value:** `22` → `27`
 
 ---
+## 2025-11-07
+**Action:** update
+**By:** tocomax
+**Commit:** [cca1e2db](https://github.com/your-repo/commit/cca1e2db)
+**Message:** feat: update rate 11/04/2025
+
+### Changed
+- **details.apr_max.value:** `28.5` → `23.5`
+- **details.interest_rate_max.value:** `27` → `22`
+
+---

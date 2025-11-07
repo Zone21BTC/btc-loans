@@ -166,6 +166,23 @@
           "to": 27
         }
       }
+    },
+    {
+      "action": "update",
+      "changedAt": "2025-11-07T01:56:13.575Z",
+      "changedBy": "tocomax",
+      "commit": "cca1e2db",
+      "commitMessage": "feat: update rate 11/04/2025",
+      "changes": {
+        "details.apr_max.value": {
+          "from": 28.5,
+          "to": 23.5
+        },
+        "details.interest_rate_max.value": {
+          "from": 27,
+          "to": 22
+        }
+      }
     }
   ]
 }
