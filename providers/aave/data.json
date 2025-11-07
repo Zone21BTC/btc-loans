@@ -136,7 +136,7 @@
     },
     "loan_currency": {
       "score": 7,
-      "note": "Fully open-source code and on-chain balances; real-time PoR is inherent, so no separate attestation needed.",
+      "note": "Supported loan currencies include USDC, DAI, USDT, GHO, LUSD, sUSDe, and XAUt. Availability may vary by network (e.g. Polygon, Base) or pool type.",
       "evidence": []
     },
     "privacy": {
