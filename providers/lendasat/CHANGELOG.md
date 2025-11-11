@@ -38,3 +38,14 @@
 - **details.interest_rate_min.value:** `11` → `10`
 
 ---
+## 2025-11-11
+**Action:** update
+**By:** tocomax
+**Commit:** [53a5053c](https://github.com/your-repo/commit/53a5053c)
+**Message:** feat: update interest rate 11/11/2025
+
+### Changed
+- **details.apr_min.value:** `11.5` → `12`
+- **details.interest_rate_min.value:** `10` → `10.5`
+
+---

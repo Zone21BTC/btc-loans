@@ -97,3 +97,16 @@
 - **factors.loan_currency.note:** `Fully open-source code and on-chain balances; real-time PoR is inherent, so no separate attestation needed.` → `Supported loan currencies include USDC, DAI, USDT, GHO, LUSD, sUSDe, and XAUt. Availability may vary by network (e.g. Polygon, Base) or pool type.`
 
 ---
+## 2025-11-11
+**Action:** update
+**By:** tocomax
+**Commit:** [53a5053c](https://github.com/your-repo/commit/53a5053c)
+**Message:** feat: update interest rate 11/11/2025
+
+### Changed
+- **details.apr_min.value:** `5.5` → `5.8`
+- **details.apr_max.value:** `5.5` → `5.8`
+- **details.interest_rate_min.value:** `5.5` → `5.8`
+- **details.interest_rate_max.value:** `5.5` → `5.8`
+
+---

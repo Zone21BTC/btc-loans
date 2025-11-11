@@ -186,6 +186,31 @@
           "to": "Supported loan currencies include USDC, DAI, USDT, GHO, LUSD, sUSDe, and XAUt. Availability may vary by network (e.g. Polygon, Base) or pool type."
         }
       }
+    },
+    {
+      "action": "update",
+      "changedAt": "2025-11-11T14:22:29.883Z",
+      "changedBy": "tocomax",
+      "commit": "53a5053c",
+      "commitMessage": "feat: update interest rate 11/11/2025",
+      "changes": {
+        "details.apr_min.value": {
+          "from": 5.5,
+          "to": 5.8
+        },
+        "details.apr_max.value": {
+          "from": 5.5,
+          "to": 5.8
+        },
+        "details.interest_rate_min.value": {
+          "from": 5.5,
+          "to": 5.8
+        },
+        "details.interest_rate_max.value": {
+          "from": 5.5,
+          "to": 5.8
+        }
+      }
     }
   ]
 }
