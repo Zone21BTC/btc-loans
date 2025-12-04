@@ -800,12 +800,12 @@
         "note": ""
       },
       "apr_min": {
-        "value": 5.5,
+        "value": 4.8,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 5.5,
+        "value": 4.8,
         "unit": "%",
         "note": ""
       },
@@ -815,12 +815,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 5.5,
+        "value": 4.8,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 5.5,
+        "value": 4.8,
         "unit": "%",
         "note": ""
       },
@@ -2258,7 +2258,7 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 11.5,
+        "value": 12.5,
         "unit": "%",
         "note": ""
       },
@@ -2273,7 +2273,7 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 10,
+        "value": 11,
         "unit": "%",
         "note": ""
       },
@@ -2440,12 +2440,12 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 7.5,
+        "value": 6.6,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 7.5,
+        "value": 6.6,
         "unit": "%",
         "note": ""
       },
@@ -2455,12 +2455,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 7.5,
+        "value": 6.6,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 7.5,
+        "value": 6.6,
         "unit": "%",
         "note": ""
       }
@@ -2641,12 +2641,12 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 5,
+        "value": 3.7,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 5,
+        "value": 3.7,
         "unit": "%",
         "note": ""
       },
@@ -2656,12 +2656,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 5,
+        "value": 3.7,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 5,
+        "value": 3.7,
         "unit": "%",
         "note": ""
       }
