@@ -63,7 +63,7 @@
       "note": "N/A"
     },
     "apr_min": {
-      "value": 12,
+      "value": 12.5,
       "unit": "%",
       "note": ""
     },
@@ -78,7 +78,7 @@
       "note": ""
     },
     "interest_rate_min": {
-      "value": 10.5,
+      "value": 11,
       "unit": "%",
       "note": ""
     },
