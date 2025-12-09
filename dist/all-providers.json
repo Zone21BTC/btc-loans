@@ -597,12 +597,12 @@
         "note": ""
       },
       "apr_min": {
-        "value": 12.4,
+        "value": 11.9,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 12.4,
+        "value": 11.9,
         "unit": "%",
         "note": ""
       },
@@ -612,12 +612,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 10.4,
+        "value": 9.9,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 10.4,
+        "value": 9.9,
         "unit": "%",
         "note": ""
       },
@@ -2440,12 +2440,12 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 6.6,
+        "value": 6.3,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 6.6,
+        "value": 6.3,
         "unit": "%",
         "note": ""
       },
@@ -2455,12 +2455,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 6.6,
+        "value": 6.3,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 6.6,
+        "value": 6.3,
         "unit": "%",
         "note": ""
       }
@@ -2641,12 +2641,12 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 3.7,
+        "value": 3.6,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 3.7,
+        "value": 3.6,
         "unit": "%",
         "note": ""
       },
@@ -2656,12 +2656,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 3.7,
+        "value": 3.6,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 3.7,
+        "value": 3.6,
         "unit": "%",
         "note": ""
       }
@@ -3248,7 +3248,7 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 12,
+        "value": 12.5,
         "unit": "%",
         "note": ""
       },
@@ -3263,7 +3263,7 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 10.5,
+        "value": 11,
         "unit": "%",
         "note": ""
       },

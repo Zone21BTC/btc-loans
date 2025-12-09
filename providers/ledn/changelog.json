@@ -7,6 +7,31 @@
       "changedBy": "migration-script",
       "changes": {},
       "note": "Changelog system initialized. Historical changes before this date are not tracked."
+    },
+    {
+      "action": "update",
+      "changedAt": "2025-12-09T15:19:50.617Z",
+      "changedBy": "tocomax",
+      "commit": "c473af13",
+      "commitMessage": "feat: update interest rate 12/09/2025",
+      "changes": {
+        "details.apr_min.value": {
+          "from": 12.4,
+          "to": 11.9
+        },
+        "details.apr_max.value": {
+          "from": 12.4,
+          "to": 11.9
+        },
+        "details.interest_rate_min.value": {
+          "from": 10.4,
+          "to": 9.9
+        },
+        "details.interest_rate_max.value": {
+          "from": 10.4,
+          "to": 9.9
+        }
+      }
     }
   ]
 }

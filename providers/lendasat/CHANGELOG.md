@@ -60,3 +60,14 @@
 - **details.interest_rate_max.value:** `25` → `18`
 
 ---
+## 2025-12-09
+**Action:** update
+**By:** tocomax
+**Commit:** [c473af13](https://github.com/your-repo/commit/c473af13)
+**Message:** feat: update interest rate 12/09/2025
+
+### Changed
+- **details.apr_min.value:** `12` → `12.5`
+- **details.interest_rate_min.value:** `10.5` → `11`
+
+---
