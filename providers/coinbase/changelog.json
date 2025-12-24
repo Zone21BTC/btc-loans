@@ -132,6 +132,31 @@
           "to": 6.3
         }
       }
+    },
+    {
+      "action": "update",
+      "changedAt": "2025-12-24T14:32:29.010Z",
+      "changedBy": "tocomax",
+      "commit": "3a965b18",
+      "commitMessage": "feat: update interest rate 12/24/2025",
+      "changes": {
+        "details.apr_min.value": {
+          "from": 6.3,
+          "to": 6
+        },
+        "details.apr_max.value": {
+          "from": 6.3,
+          "to": 6
+        },
+        "details.interest_rate_min.value": {
+          "from": 6.3,
+          "to": 6
+        },
+        "details.interest_rate_max.value": {
+          "from": 6.3,
+          "to": 6
+        }
+      }
     }
   ]
 }
