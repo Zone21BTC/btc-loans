@@ -2258,7 +2258,7 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 12.5,
+        "value": 11.5,
         "unit": "%",
         "note": ""
       },
@@ -2273,7 +2273,7 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 11,
+        "value": 10,
         "unit": "%",
         "note": ""
       },
@@ -2641,12 +2641,12 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 4.2,
+        "value": 6.1,
         "unit": "%",
         "note": ""
       },
       "apr_max": {
-        "value": 4.2,
+        "value": 6.1,
         "unit": "%",
         "note": ""
       },
@@ -2656,12 +2656,12 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 4.2,
+        "value": 6.1,
         "unit": "%",
         "note": ""
       },
       "interest_rate_max": {
-        "value": 4.2,
+        "value": 6.1,
         "unit": "%",
         "note": ""
       }
@@ -3248,7 +3248,7 @@
         "note": "N/A"
       },
       "apr_min": {
-        "value": 12.5,
+        "value": 11.5,
         "unit": "%",
         "note": ""
       },
@@ -3263,7 +3263,7 @@
         "note": ""
       },
       "interest_rate_min": {
-        "value": 11,
+        "value": 10,
         "unit": "%",
         "note": ""
       },
