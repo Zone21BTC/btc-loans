@@ -71,3 +71,14 @@
 - **details.interest_rate_min.value:** `9.5` → `12`
 
 ---
+## 2026-01-14
+**Action:** update
+**By:** tocomax
+**Commit:** [f4d266da](https://github.com/your-repo/commit/f4d266da)
+**Message:** feat: update interest rate 01/14/2026
+
+### Changed
+- **details.apr_min.value:** `13.5` → `9.5`
+- **details.interest_rate_min.value:** `12` → `8`
+
+---

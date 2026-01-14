@@ -83,3 +83,16 @@
 - **details.interest_rate_max.value:** `6.3` → `6`
 
 ---
+## 2026-01-14
+**Action:** update
+**By:** tocomax
+**Commit:** [f4d266da](https://github.com/your-repo/commit/f4d266da)
+**Message:** feat: update interest rate 01/14/2026
+
+### Changed
+- **details.apr_min.value:** `6` → `5.3`
+- **details.apr_max.value:** `6` → `5.3`
+- **details.interest_rate_min.value:** `6` → `5.3`
+- **details.interest_rate_max.value:** `6` → `5.3`
+
+---
