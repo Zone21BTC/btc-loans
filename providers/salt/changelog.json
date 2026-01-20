@@ -7,6 +7,23 @@
       "changedBy": "migration-script",
       "changes": {},
       "note": "Changelog system initialized. Historical changes before this date are not tracked."
+    },
+    {
+      "action": "update",
+      "changedAt": "2026-01-20T17:43:42.748Z",
+      "changedBy": "tocomax",
+      "commit": "e62b90af",
+      "commitMessage": "feat: update interest rate 01/20/2026",
+      "changes": {
+        "details.apr_min.value": {
+          "from": 8.95,
+          "to": 9.95
+        },
+        "details.interest_rate_min.value": {
+          "from": 7.95,
+          "to": 8.95
+        }
+      }
     }
   ]
 }

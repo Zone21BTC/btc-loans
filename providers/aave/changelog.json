@@ -311,6 +311,31 @@
           "to": 4.8
         }
       }
+    },
+    {
+      "action": "update",
+      "changedAt": "2026-01-20T17:43:42.315Z",
+      "changedBy": "tocomax",
+      "commit": "e62b90af",
+      "commitMessage": "feat: update interest rate 01/20/2026",
+      "changes": {
+        "details.apr_min.value": {
+          "from": 4.8,
+          "to": 4.6
+        },
+        "details.apr_max.value": {
+          "from": 4.8,
+          "to": 4.6
+        },
+        "details.interest_rate_min.value": {
+          "from": 4.8,
+          "to": 4.6
+        },
+        "details.interest_rate_max.value": {
+          "from": 4.8,
+          "to": 4.6
+        }
+      }
     }
   ]
 }
