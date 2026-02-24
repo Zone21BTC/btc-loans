@@ -143,6 +143,23 @@
           "to": 10
         }
       }
+    },
+    {
+      "action": "update",
+      "changedAt": "2026-02-24T16:51:39.968Z",
+      "changedBy": "tocomax",
+      "commit": "c752310d",
+      "commitMessage": "feat: update interest rate 02/24/2026",
+      "changes": {
+        "details.apr_min.value": {
+          "from": 11.5,
+          "to": 9.5
+        },
+        "details.interest_rate_min.value": {
+          "from": 10,
+          "to": 8.5
+        }
+      }
     }
   ]
 }

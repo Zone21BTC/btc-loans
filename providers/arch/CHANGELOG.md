@@ -30,3 +30,16 @@
 - **factors.oracle.note:** `Arch Lending's public materials never disclose where their BTC-USD price comes from, how often it updates, or whether more than one exchange is consulted.` → `Arch discloses a single third-party oracle: CoinMarketCap's market price feed, refreshed roughly every 60 seconds. CoinMarketCap aggregates quotes from multiple exchanges and applies data-cleaning/outlier filters before publishing a USD price. Arch adds guardrails (alerts for stale prices and a manual hold on liquidations when an 'extreme' LTV is computed), which reduces auto-liquidation risk from a bad tick.`
 
 ---
+## 2026-02-24
+**Action:** update
+**By:** tocomax
+**Commit:** [c752310d](https://github.com/your-repo/commit/c752310d)
+**Message:** feat: update interest rate 02/24/2026
+
+### Changed
+- **details.apr_min.value:** `12.5` → `8.49`
+- **details.apr_max.value:** `12.5` → `11.84`
+- **details.interest_rate_min.value:** `11` → `7`
+- **details.interest_rate_max.value:** `11` → `10.35`
+
+---

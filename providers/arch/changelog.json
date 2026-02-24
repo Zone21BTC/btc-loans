@@ -53,6 +53,31 @@
           "to": "Arch discloses a single third-party oracle: CoinMarketCap's market price feed, refreshed roughly every 60 seconds. CoinMarketCap aggregates quotes from multiple exchanges and applies data-cleaning/outlier filters before publishing a USD price. Arch adds guardrails (alerts for stale prices and a manual hold on liquidations when an 'extreme' LTV is computed), which reduces auto-liquidation risk from a bad tick."
         }
       }
+    },
+    {
+      "action": "update",
+      "changedAt": "2026-02-24T16:51:39.547Z",
+      "changedBy": "tocomax",
+      "commit": "c752310d",
+      "commitMessage": "feat: update interest rate 02/24/2026",
+      "changes": {
+        "details.apr_min.value": {
+          "from": 12.5,
+          "to": 8.49
+        },
+        "details.apr_max.value": {
+          "from": 12.5,
+          "to": 11.84
+        },
+        "details.interest_rate_min.value": {
+          "from": 11,
+          "to": 7
+        },
+        "details.interest_rate_max.value": {
+          "from": 11,
+          "to": 10.35
+        }
+      }
     }
   ]
 }
