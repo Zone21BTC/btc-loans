@@ -239,3 +239,16 @@
 - **details.interest_rate_max.value:** `4.7` → `2.9`
 
 ---
+## 2026-04-22
+**Action:** update
+**By:** tocomax
+**Commit:** [41552235](https://github.com/your-repo/commit/41552235)
+**Message:** feat: update interest rate 04/21/2026
+
+### Changed
+- **details.apr_min.value:** `2.9` → `2.8`
+- **details.apr_max.value:** `2.9` → `2.8`
+- **details.interest_rate_min.value:** `2.9` → `2.8`
+- **details.interest_rate_max.value:** `2.9` → `2.8`
+
+---
