@@ -23,12 +23,12 @@
       "note": ""
     },
     "apr_min": {
-      "value": 11.9,
+      "value": 9.99,
       "unit": "%",
       "note": ""
     },
     "apr_max": {
-      "value": 11.9,
+      "value": 11.49,
       "unit": "%",
       "note": ""
     },
@@ -38,12 +38,12 @@
       "note": ""
     },
     "interest_rate_min": {
-      "value": 9.9,
+      "value": 7.99,
       "unit": "%",
       "note": ""
     },
     "interest_rate_max": {
-      "value": 9.9,
+      "value": 9.49,
       "unit": "%",
       "note": ""
     },
@@ -63,12 +63,12 @@
       "note": ""
     },
     "loan_value_min": {
-      "value": 1000,
+      "value": 500,
       "unit": "USD",
       "note": ""
     },
     "loan_value_max": {
-      "value": 1000000,
+      "value": 0,
       "unit": "USD",
       "note": ""
     },

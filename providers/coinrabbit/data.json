@@ -63,27 +63,27 @@
       "note": "N/A"
     },
     "apr_min": {
-      "value": 17.4,
+      "value": 12.8,
       "unit": "%",
       "note": ""
     },
     "apr_max": {
-      "value": 19.4,
+      "value": 17.6,
       "unit": "%",
       "note": ""
     },
     "origination_fee": {
-      "value": 0.4,
+      "value": 0.8,
       "unit": "%",
       "note": ""
     },
     "interest_rate_min": {
-      "value": 17,
+      "value": 12,
       "unit": "%",
       "note": ""
     },
     "interest_rate_max": {
-      "value": 19,
+      "value": 16.8,
       "unit": "%",
       "note": ""
     }
