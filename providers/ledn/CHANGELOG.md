@@ -33,3 +33,14 @@
 - **details.loan_value_max.value:** `1000000` → `0`
 
 ---
+## 2026-06-23
+**Action:** update
+**By:** tocomax
+**Commit:** [e975bfff](https://github.com/your-repo/commit/e975bfff)
+**Message:** docs: update interest rate 04/26/2026
+
+### Changed
+- **details.apr_min.value:** `9.99` → `9.25`
+- **details.interest_rate_min.value:** `7.99` → `7.25`
+
+---

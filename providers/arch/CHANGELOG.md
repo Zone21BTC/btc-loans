@@ -43,3 +43,16 @@
 - **details.interest_rate_max.value:** `11` → `10.35`
 
 ---
+## 2026-06-23
+**Action:** update
+**By:** tocomax
+**Commit:** [e975bfff](https://github.com/your-repo/commit/e975bfff)
+**Message:** docs: update interest rate 04/26/2026
+
+### Changed
+- **details.apr_min.value:** `8.49` → `7.25`
+- **details.apr_max.value:** `11.84` → `10.49`
+- **details.interest_rate_max.value:** `10.35` → `9`
+- **details.loan_duration_max.value:** `24` → `12`
+
+---
