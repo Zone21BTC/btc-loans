@@ -68,7 +68,7 @@
       "note": ""
     },
     "apr_max": {
-      "value": 19.5,
+      "value": 21.5,
       "unit": "%",
       "note": ""
     },
@@ -83,7 +83,7 @@
       "note": ""
     },
     "interest_rate_max": {
-      "value": 18,
+      "value": 20,
       "unit": "%",
       "note": ""
     }

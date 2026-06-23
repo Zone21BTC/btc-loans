@@ -23,12 +23,12 @@
       "note": ""
     },
     "apr_min": {
-      "value": 8.49,
+      "value": 7.25,
       "unit": "%",
       "note": ""
     },
     "apr_max": {
-      "value": 11.84,
+      "value": 10.49,
       "unit": "%",
       "note": ""
     },
@@ -43,7 +43,7 @@
       "note": ""
     },
     "interest_rate_max": {
-      "value": 10.35,
+      "value": 9,
       "unit": "%",
       "note": ""
     },
@@ -78,7 +78,7 @@
       "note": ""
     },
     "loan_duration_max": {
-      "value": 24,
+      "value": 12,
       "unit": "month",
       "note": ""
     },
